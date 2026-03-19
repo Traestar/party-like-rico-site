@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media &amp; Gallery | Party Like Rico Promotions LLC</title>
+  <meta name="description" content="Browse photos, event recaps, flyers, and social highlights from Party Like Rico Promotions LLC.">
+  <meta property="og:image" content="images/420-weekend-flyer.jpg">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* MEDIA PAGE */
+    .gallery-grid-9{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:240px;gap:.5rem;border-radius:16px;overflow:hidden;}
+    .gg-item{position:relative;overflow:hidden;background:#0c1016;cursor:pointer;}
+    .gg-item.wide{grid-column:span 2;}
+    .gg-item.tall{grid-row:span 2;}
+    .gg-item img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s ease,filter .3s;}
+    .gg-item:hover img{transform:scale(1.07);filter:brightness(1.1);}
+    .gg-ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;color:rgba(255,255,255,.15);font-size:.72rem;font-family:var(--font-sub);background:linear-gradient(135deg,#0d0d10,#111318);}
+    .gg-ph .gg-emoji{font-size:2.5rem;opacity:.3;}
+    .gg-overlay{position:absolute;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .3s;gap:.5rem;font-family:var(--font-sub);font-size:.75rem;font-weight:700;letter-spacing:.08em;color:#fff;}
+    .gg-expand{width:40px;height:40px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem;}
+    .gg-item:hover .gg-overlay{opacity:1;}
+
+    /* Flyer split hero */
+    .flyer-split{display:grid;grid-template-columns:300px 1fr;gap:3rem;align-items:center;background:linear-gradient(135deg,rgba(4,14,4,.96),rgba(8,10,18,.98));border:1px solid rgba(58,140,74,.2);border-radius:20px;padding:3rem;position:relative;overflow:hidden;}
+    .flyer-split::before{content:'';position:absolute;top:-80px;right:-80px;width:360px;height:360px;background:radial-gradient(circle,rgba(58,140,74,.07) 0%,transparent 70%);pointer-events:none;}
+    .fs-img{border-radius:12px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,.8);aspect-ratio:3/4;background:#060e06;position:relative;}
+    .fs-img img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;}
+    .fs-img .fs-ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.75rem;color:rgba(255,255,255,.18);font-size:.72rem;font-family:var(--font-sub);text-align:center;padding:1rem;}
+
+    /* Recap cards */
+    .recap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+    .recap-card{background:#0e1218;border:1px solid rgba(255,255,255,.06);border-radius:14px;overflow:hidden;transition:transform .3s,box-shadow .3s;}
+    .recap-card:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(0,0,0,.5);}
+    .recap-thumb{aspect-ratio:16/9;background:#0a0a0a;position:relative;overflow:hidden;}
+    .recap-thumb img{width:100%;height:100%;object-fit:cover;}
+    .recap-thumb .rt-ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:2.5rem;background:linear-gradient(135deg,#0d0d12,#141420);color:rgba(255,255,255,.08);}
+    .play-wrap{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;}
+    .play-btn{width:56px;height:56px;background:rgba(255,255,255,.12);backdrop-filter:blur(6px);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;border:2px solid rgba(255,255,255,.25);transition:background .2s;}
+    .recap-card:hover .play-btn{background:var(--gold);}
+    .recap-body{padding:1.5rem;}
+    .recap-body .badge{margin-bottom:.75rem;display:inline-block;}
+    .recap-body h4{margin-bottom:.5rem;font-size:1.05rem;}
+    .recap-body p{font-size:.87rem;color:rgba(255,255,255,.45);line-height:1.6;margin:0;}
+
+    /* Social grid */
+    .social-grid-8{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem;}
+    .sg-post{aspect-ratio:1/1;background:#0e1218;border-radius:10px;overflow:hidden;position:relative;cursor:pointer;}
+    .sg-post img{width:100%;height:100%;object-fit:cover;}
+    .sg-ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:2rem;background:linear-gradient(135deg,#0d0d12,#111318);color:rgba(255,255,255,.12);}
+    .sg-hover{position:absolute;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .25s;font-size:1.4rem;}
+    .sg-post:hover .sg-hover{opacity:1;}
+
+    /* Tab bar */
+    .tab-bar{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:2.5rem;}
+    .tab-btn{padding:.5rem 1.2rem;border-radius:100px;border:1.5px solid rgba(255,255,255,.08);background:transparent;color:rgba(255,255,255,.55);font-family:var(--font-sub);font-size:.82rem;font-weight:700;letter-spacing:.06em;cursor:pointer;transition:all .2s;}
+    .tab-btn:hover{border-color:var(--gold);color:var(--gold);}
+    .tab-btn.active{background:var(--gold);border-color:var(--gold);color:#000;}
+
+    /* Lightbox */
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.94);z-index:9999;display:flex;align-items:center;justify-content:center;padding:2rem;opacity:0;pointer-events:none;transition:opacity .3s;}
+    .lightbox.open{opacity:1;pointer-events:all;}
+    .lb-inner{position:relative;max-width:860px;width:100%;}
+    .lb-close{position:absolute;top:-2.5rem;right:0;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer;padding:.5rem;opacity:.7;transition:opacity .2s;}
+    .lb-close:hover{opacity:1;}
+    .lb-ph{width:100%;aspect-ratio:16/9;background:#111;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;color:rgba(255,255,255,.3);font-family:var(--font-sub);}
+
+    /* bg section */
+    .media-bg-cta{position:relative;padding:clamp(5rem,10vw,7rem) 0;overflow:hidden;}
+    .media-bg-cta .mbc-img{position:absolute;inset:0;}
+    .media-bg-cta .mbc-img img{width:100%;height:100%;object-fit:cover;}
+    .media-bg-cta .mbc-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,.9) 0%,rgba(0,0,0,.75) 100%);}
+    .media-bg-cta .container{position:relative;z-index:2;}
+
+    @media(max-width:900px){
+      .gallery-grid-9{grid-auto-rows:180px;grid-template-columns:repeat(2,1fr);}
+      .gg-item.wide{grid-column:span 1;}
+      .gg-item.tall{grid-row:span 1;}
+      .flyer-split{grid-template-columns:1fr;text-align:center;}
+      .fs-img{width:180px;margin:0 auto;}
+      .recap-grid{grid-template-columns:repeat(2,1fr);}
+      .social-grid-8{grid-template-columns:repeat(2,1fr);}
+    }
+    @media(max-width:600px){
+      .gallery-grid-9{grid-template-columns:repeat(2,1fr);grid-auto-rows:140px;}
+      .recap-grid{grid-template-columns:1fr;}
+      .social-grid-8{grid-template-columns:repeat(2,1fr);}
+    }
+  </style>
+</head>
+<body>
+<div id="progress-bar"></div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo-link">
+      <img src="images/logo.png" alt="Party Like Rico Promotions LLC" class="logo-img" onerror="this.style.display='none'">
+      <div class="logo-text"><span class="logo-main">Party Like Rico</span><span class="logo-sub">Promotions LLC</span></div>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="media.html" class="active">Media</a></li>
+        <li><a href="promote.html">Promote</a></li>
+        <li class="nav-item-dropdown">
+          <a href="contact.html" class="nav-dropdown-trigger">Contact <span class="arrow">&#9660;</span></a>
+          <div class="nav-dropdown-menu">
+            <a href="contact.html"><span class="dd-icon">&#x2709;&#xFE0F;</span> Contact Us</a>
+            <a href="about.html"><span class="dd-icon">&#x1F464;</span> About Us</a>
+            <a href="mission.html"><span class="dd-icon">&#x1F3AF;</span> Mission</a>
+            <a href="mission.html#vision"><span class="dd-icon">&#x1F31F;</span> Vision</a>
+          </div>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+      <a href="event-detail.html" class="btn btn-orange nav-cta">&#127915; Tickets</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="nav-overlay"></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <div data-animate>
+      <span class="section-label">Photos &middot; Flyers &middot; Recaps</span>
+      <h1>Media <span class="text-gold">&amp; Gallery</span></h1>
+      <p class="lead">Relive the moments that made the night unforgettable. Browse event photos, flyers, and highlights from Party Like Rico events.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED FLYER -->
+<section class="section" style="background:linear-gradient(180deg,#030b03 0%,#080c14 100%);">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3rem;" data-animate>
+      <span class="section-label">Featured</span>
+      <h2 class="section-title">Official Event <span class="text-gold">Flyer</span></h2>
+    </div>
+    <div class="flyer-split" data-animate>
+      <div class="fs-img">
+        <!-- 420-weekend-flyer.jpg is the official event flyer; place in /images/ -->
+        <img src="images/420-weekend-flyer.jpg" alt="420 Weekend AC Bud Crawl Official Flyer" onerror="this.style.display='none'">
+        <div class="fs-ph"><span style="font-size:2.5rem;">&#127807;</span><span>420-weekend-flyer.jpg</span><span style="opacity:.4;font-size:.65rem;">Place in /images/</span></div>
+      </div>
+      <div style="position:relative;z-index:1;">
+        <span class="badge badge-green" style="margin-bottom:1rem;display:inline-block;">&#127807; FEATURED EVENT</span>
+        <h2 style="font-size:clamp(2rem,4vw,3rem);margin-bottom:.75rem;line-height:1.05;">420 Weekend AC<br><span class="text-gold">Bud Crawl 2026</span></h2>
+        <p style="color:rgba(255,255,255,.55);line-height:1.85;margin-bottom:1.5rem;font-size:.95rem;">Atlantic City's first shuttle party experience of 2026. Visit multiple 420-friendly venues, enjoy exclusive drink specials, and party with a curated crowd.</p>
+        <div style="display:flex;flex-direction:column;gap:.6rem;margin-bottom:1.75rem;">
+          <div style="display:flex;gap:.75rem;align-items:center;font-size:.9rem;">&#128197; <span>Saturday, April 18, 2026</span></div>
+          <div style="display:flex;gap:.75rem;align-items:center;font-size:.9rem;">&#128336; <span>Check-in: 12:30 PM &ndash; 2:30 PM</span></div>
+          <div style="display:flex;gap:.75rem;align-items:center;font-size:.9rem;">&#128205; <span>Atlantic City, NJ</span></div>
+          <div style="display:flex;gap:.75rem;align-items:center;font-size:.9rem;">&#127950; <span>21+ Only</span></div>
+        </div>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+          <!-- REPLACE href with actual ticket link -->
+          <a href="event-detail.html" class="btn btn-gold">&#127915; Buy Tickets</a>
+          <a href="event-detail.html" class="btn btn-outline">Event Details</a>
+        </div>
+        <p style="margin-top:1rem;font-size:.78rem;color:rgba(255,255,255,.25);">
+          <!-- REPLACE href if distributing flyer as downloadable PDF -->
+          <a href="#" style="color:var(--gold);text-decoration:none;">&#11015; Download Flyer</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY GRID — 9-image masonry layout -->
+<section class="section" style="background:#080c14;padding-top:0;">
+  <div class="container">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:2.5rem;" data-animate>
+      <div><span class="section-label">Gallery</span><h2 class="section-title" style="margin-bottom:0;">Event <span class="text-gold">Photos</span></h2></div>
+      <div class="tab-bar">
+        <button class="tab-btn active" data-cat="all">All</button>
+        <button class="tab-btn" data-cat="bud-crawl">Bud Crawl</button>
+        <button class="tab-btn" data-cat="nightlife">Nightlife</button>
+        <button class="tab-btn" data-cat="vendors">Vendors</button>
+      </div>
+    </div>
+
+    <!-- 9-image grid with wide and tall feature items -->
+    <div class="gallery-grid-9" data-animate>
+
+      <!-- Item 1 — wide feature -->
+      <div class="gg-item wide" data-cat="bud-crawl" onclick="openLB(0)">
+        <!-- Replace with real Bud Crawl main event photo -->
+        <img src="images/placeholder-gallery-1.jpg" alt="Bud Crawl 2026 Event" onerror="this.style.display='none'">
+        <div class="gg-ph"><span class="gg-emoji">&#127807;</span><span>placeholder-gallery-1.jpg</span><span style="opacity:.5;font-size:.65rem;">Replace with real event photo</span></div>
+        <div class="gg-overlay"><div class="gg-expand">&#128269;</div><span>420 Weekend Bud Crawl</span></div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="gg-item tall" data-cat="nightlife" onclick="openLB(1)">
+        <!-- Replace with real nightlife event photo -->
+        <img src="images/placeholder-nightlife.jpg" alt="Nightlife Event" onerror="this.style.display='none'">
+        <div class="gg-ph"><span class="gg-emoji">&#127751;</span><span>placeholder-nightlife.jpg</span><span style="opacity:.5;font-size:.65rem;">Replace with real event photo</span></div>
+        <div class="gg-overlay"><div class="gg-expand">&#128269;</div><span>AC Nightlife</span></div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="gg-item" data-cat="bud-crawl" onclick="openLB(2)">
+        <!-- Replace with real party/shuttle photo -->
+        <img src="images/placeholder-party.jpg" alt="Party Shuttle" onerror="this.style.display='none'">
+        <div class="gg-ph"><span class="gg-emoji">&#128652;</span><span>placeholder-party.jpg</span><span style="opacity:.5;font-size:.65rem;">Replace with real event photo</span></div>
+        <div class="gg-overlay"><div class="gg-expand">&#128269;</div><span>Party Shuttle</span></div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="gg-item" data-cat="vendors" onclick="openLB(3)">
+        <!-- Replace with real vendor event photo -->
+        <img src="images/placeholder-event-1.jpg" alt="Vendor Pop-Up" onerror="this.style.display='none'">
+        <div class="gg-ph"><span class="gg-emoji">&#128717;</span><span>placeholder-event-1.jpg</span><span style="opacity:.5;font-size:.65rem;">Replace with real event photo</span></div>
+        <div class="gg-overlay"><div class="gg-expand">&#128269;</div><span>Vendor Pop-Up</span></div>
+      </div>
+
+      <!-- Item 5 — wide feature -->
+      <div class="gg-item wide" data-cat="bud-crawl" onclick="openLB(4)">
+        <!-- Replace with real crowd/group shot -->
+        <img src="images/placeholder-crowd.jpg" alt="Crowd at Event" onerror="this.style.display='none'">
+        <div class="gg-ph"><span class="gg-emoji">&#127881;</span><span>placeholder-crowd.jpg</span><span style="opacity:.5;font-size:.65rem;">Replace with real event photo</span></div>
+        <div class="gg-overlay"><div class="gg-expand">&#128269;</div><span>Bud Crawl Crew</span></div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="gg-item" data-cat="nightlife" onclick="openLB(5)">
+        <!-- Replace with real AC venue photo -->
+        <img src="images/placeholder-gallery-2.jpg" alt="AC Venue" onerror="this.style.display='none'">
+        <div class="gg-ph"><span class="gg-emoji">&#127926;</span><span>placeholder-gallery-2.jpg</span><span style="opacity:.5;font-size:.65rem;">Replace with real event photo</span></div>
+        <div class="gg-overlay"><div class="gg-expand">&#128269;</div><span>AC Venue Night</span></div>
+      </div>
+
+      <!-- Item 7 -->
+      <div class="gg-item" data-cat="vendors" onclick="openLB(6)">
+        <!-- Replace with real vendor market photo -->
+        <img src="images/placeholder-event-2.jpg" alt="Vendor Market" onerror="this.style.display='none'">
+        <div class="gg-ph"><span class="gg-emoji">&#127970;</span><span>placeholder-event-2.jpg</span><span style="opacity:.5;font-size:.65rem;">Replace with real event photo</span></div>
+        <div class="gg-overlay"><div class="gg-expand">&#128269;</div><span>Vendor Market</span></div>
+      </div>
+
+      <!-- Item 8 -->
+      <div class="gg-item" data-cat="bud-crawl" onclick="openLB(7)">
+        <!-- Replace with giveaway/gift bag photo -->
+        <img src="images/placeholder-party.jpg" alt="Giveaways" onerror="this.style.display='none'">
+        <div class="gg-ph"><span class="gg-emoji">&#127873;</span><span>Giveaway Photo</span><span style="opacity:.5;font-size:.65rem;">Replace with real event photo</span></div>
+        <div class="gg-overlay"><div class="gg-expand">&#128269;</div><span>VIP Giveaways</span></div>
+      </div>
+
+      <!-- Item 9 — spans full width -->
+      <div class="gg-item wide" data-cat="nightlife" onclick="openLB(8)">
+        <!-- Replace with wide AC skyline / boardwalk shot -->
+        <img src="images/placeholder-crowd.jpg" alt="Atlantic City Shore" onerror="this.style.display='none'">
+        <div class="gg-ph"><span class="gg-emoji">&#127754;</span><span>Shore/Boardwalk Photo</span><span style="opacity:.5;font-size:.65rem;">Replace with real event photo</span></div>
+        <div class="gg-overlay"><div class="gg-expand">&#128269;</div><span>Atlantic City Shore</span></div>
+      </div>
+
+    </div>
+    <!-- END GALLERY — replace all placeholder images with real event photos in /images/ -->
+  </div>
+</section>
+
+<!-- EVENT HIGHLIGHTS / RECAPS -->
+<section class="section" style="background:#060a06;">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3rem;" data-animate>
+      <span class="section-label">Event Highlights</span>
+      <h2 class="section-title">Event <span class="text-gold">Recaps</span></h2>
+      <p class="section-subtitle">Missed an event? Relive the highlights through our recap coverage.</p>
+    </div>
+    <div class="recap-grid">
+
+      <div class="recap-card" data-animate>
+        <div class="recap-thumb">
+          <!-- Replace with real recap thumbnail photo -->
+          <img src="images/placeholder-party.jpg" alt="Recap" onerror="this.style.display='none'">
+          <div class="rt-ph">&#127909;</div>
+          <div class="play-wrap"><div class="play-btn">&#9654;</div></div>
+        </div>
+        <div class="recap-body">
+          <span class="badge badge-gold">Event Recap</span>
+          <h4>420 Weekend AC Bud Crawl &mdash; Coming April 2026</h4>
+          <p>Full event recap, photos, and highlights will be posted here after the event. Stay tuned!</p>
+        </div>
+      </div>
+
+      <div class="recap-card" data-animate>
+        <div class="recap-thumb">
+          <!-- Replace with real preview thumbnail photo -->
+          <img src="images/placeholder-nightlife.jpg" alt="Summer Preview" onerror="this.style.display='none'">
+          <div class="rt-ph">&#127925;</div>
+          <div class="play-wrap"><div class="play-btn">&#9654;</div></div>
+        </div>
+        <div class="recap-body">
+          <span class="badge">Summer Preview</span>
+          <h4>Summer 2026 Event Series &mdash; First Look</h4>
+          <p>A first look at what Party Like Rico has planned for the full 2026 summer season across AC and the Shore.</p>
+        </div>
+      </div>
+
+      <div class="recap-card" data-animate>
+        <div class="recap-thumb">
+          <!-- Replace with behind-the-scenes photo -->
+          <img src="images/placeholder-crowd.jpg" alt="Behind the Scenes" onerror="this.style.display='none'">
+          <div class="rt-ph">&#127908;</div>
+          <div class="play-wrap"><div class="play-btn">&#9654;</div></div>
+        </div>
+        <div class="recap-body">
+          <span class="badge">Behind the Brand</span>
+          <h4>Behind the Brand &mdash; Rico's Vision for AC</h4>
+          <p>Go behind the scenes with Party Like Rico and discover the vision driving one of Atlantic City's most exciting event brands.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BG CTA — placeholder-party.jpg as background -->
+<div class="media-bg-cta">
+  <div class="mbc-img">
+    <!-- Replace with real party/crowd photo for CTA background -->
+    <img src="images/placeholder-party.jpg" alt="" aria-hidden="true" onerror="this.style.opacity='0'">
+  </div>
+  <div class="mbc-overlay"></div>
+  <div class="container" style="text-align:center;" data-animate>
+    <span class="section-label">Social</span>
+    <h2 style="font-size:clamp(2rem,5vw,4rem);margin-bottom:1rem;">Follow the <span class="text-gold">Vibe</span></h2>
+    <p style="color:rgba(255,255,255,.65);max-width:500px;margin:0 auto 2rem;line-height:1.8;">Follow <strong style="color:var(--gold);">@PartyLikeRico</strong> for daily updates, behind-the-scenes content, and event announcements.</p>
+    <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;">
+      <!-- REPLACE href with real social profile links -->
+      <a href="#" class="btn btn-gold">Instagram</a>
+      <a href="#" class="btn btn-outline-white">Facebook</a>
+      <a href="#" class="btn btn-outline-white">TikTok</a>
+    </div>
+  </div>
+</div>
+
+<!-- SOCIAL GRID -->
+<section class="section" style="background:#080c14;">
+  <div class="container">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:2.5rem;" data-animate>
+      <div><span class="section-label">Social Highlights</span><h2 class="section-title" style="margin-bottom:0;">Tag <span class="text-gold">@PartyLikeRico</span></h2></div>
+      <div style="display:flex;gap:.75rem;">
+        <!-- REPLACE href with actual social profile links -->
+        <a href="#" class="btn btn-outline" style="font-size:.82rem;">Instagram</a>
+        <a href="#" class="btn btn-outline" style="font-size:.82rem;">TikTok</a>
+      </div>
+    </div>
+    <!-- 8-image social grid; replace placeholder images with real social media photos -->
+    <div class="social-grid-8" data-animate>
+      <div class="sg-post"><img src="images/placeholder-gallery-1.jpg" alt="" onerror="this.style.display='none'"><div class="sg-ph">&#128247;</div><div class="sg-hover">&#128241;</div></div>
+      <div class="sg-post"><img src="images/placeholder-nightlife.jpg" alt="" onerror="this.style.display='none'"><div class="sg-ph">&#127807;</div><div class="sg-hover">&#128241;</div></div>
+      <div class="sg-post"><img src="images/placeholder-party.jpg" alt="" onerror="this.style.display='none'"><div class="sg-ph">&#127926;</div><div class="sg-hover">&#128241;</div></div>
+      <div class="sg-post"><img src="images/placeholder-crowd.jpg" alt="" onerror="this.style.display='none'"><div class="sg-ph">&#129514;</div><div class="sg-hover">&#128241;</div></div>
+      <div class="sg-post"><img src="images/placeholder-gallery-2.jpg" alt="" onerror="this.style.display='none'"><div class="sg-ph">&#128652;</div><div class="sg-hover">&#128241;</div></div>
+      <div class="sg-post"><img src="images/placeholder-event-1.jpg" alt="" onerror="this.style.display='none'"><div class="sg-ph">&#127881;</div><div class="sg-hover">&#128241;</div></div>
+      <div class="sg-post"><img src="images/placeholder-event-2.jpg" alt="" onerror="this.style.display='none'"><div class="sg-ph">&#127754;</div><div class="sg-hover">&#128241;</div></div>
+      <div class="sg-post"><img src="images/placeholder-party.jpg" alt="" onerror="this.style.display='none'"><div class="sg-ph">&#127965;&#65039;</div><div class="sg-hover">&#128241;</div></div>
+    </div>
+    <p style="text-align:center;margin-top:1.5rem;font-size:.85rem;color:rgba(255,255,255,.3);">Tag us at <strong style="color:var(--gold);">@PartyLikeRico</strong> to be featured here</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-link" style="margin-bottom:1rem;display:inline-flex;">
+          <img src="images/logo.png" alt="Party Like Rico" class="logo-img" style="height:56px;" onerror="this.style.display='none'">
+          <div class="logo-text"><span class="logo-main">Party Like Rico</span><span class="logo-sub">Promotions LLC</span></div>
+        </a>
+        <p style="color:rgba(255,255,255,.35);font-size:.88rem;line-height:1.7;margin-bottom:1.25rem;">Atlantic City's premier event promotion company.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" title="Instagram">IG</a>
+          <a href="#" class="social-link" title="Facebook">FB</a>
+          <a href="#" class="social-link" title="TikTok">TT</a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Navigation</h5><ul><li><a href="index.html">Home</a></li><li><a href="events.html">Events</a></li><li><a href="media.html">Media</a></li><li><a href="blog.html">Blog</a></li><li><a href="shop.html">Shop</a></li></ul></div>
+      <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Us</a></li><li><a href="mission.html">Mission &amp; Vision</a></li><li><a href="promote.html">Promote</a></li><li><a href="vendor.html">Vendor Inquiry</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><ul><li><a href="tel:6095942265">(609) 594-2265</a></li><li><a href="mailto:PartyLikeRico@gmail.com">PartyLikeRico@gmail.com</a></li><li><span style="color:rgba(255,255,255,.3);">Atlantic City, NJ</span></li></ul><a href="event-detail.html" class="btn btn-orange" style="margin-top:1.25rem;font-size:.85rem;">&#127915; Buy Tickets</a></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Party Like Rico Promotions LLC. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLB()">
+  <div class="lb-inner" onclick="event.stopPropagation()">
+    <button class="lb-close" onclick="closeLB()">&#10005;</button>
+    <div class="lb-ph"><span style="font-size:3rem;">&#128247;</span><p>Photo displays here once real images are added to /images/</p></div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+  // Gallery tab filter
+  document.querySelectorAll('.tab-btn').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      const cat=btn.dataset.cat;
+      document.querySelectorAll('.gg-item').forEach(item=>{
+        item.style.display=(cat==='all'||item.dataset.cat===cat)?'':'none';
+      });
+    });
+  });
+  function openLB(i){document.getElementById('lightbox').classList.add('open');document.body.style.overflow='hidden';}
+  function closeLB(){document.getElementById('lightbox').classList.remove('open');document.body.style.overflow='';}
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLB();});
+</script>
+</body>
+</html>

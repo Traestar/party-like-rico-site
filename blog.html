@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog &amp; News | Party Like Rico Promotions LLC</title>
+  <meta name="description" content="The latest news, event updates, Atlantic City guides, and insider tips from Party Like Rico Promotions LLC.">
+  <meta property="og:title" content="Blog &amp; News | Party Like Rico Promotions LLC">
+  <meta property="og:description" content="Event updates, Atlantic City guides, and insider tips from Party Like Rico Promotions.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* ── Blog page extras ── */
+    .blog-tag-bar {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+    .blog-tag {
+      padding: 0.45rem 1.2rem;
+      border-radius: 100px;
+      border: 2px solid var(--border);
+      background: transparent;
+      color: var(--text);
+      font-family: var(--font-sub);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .blog-tag:hover, .blog-tag.active { background: var(--gold); border-color: var(--gold); color: #000; }
+
+    /* Featured article banner */
+    .featured-article {
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 4rem;
+      border: 1px solid var(--border);
+    }
+    .featured-article-img {
+      background: #1a1a1a;
+      min-height: 420px;
+      position: relative;
+      overflow: hidden;
+    }
+    .featured-article-img img { width:100%; height:100%; object-fit:cover; }
+    .fa-img-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      color: var(--muted);
+      font-family: var(--font-sub);
+      font-size: 0.85rem;
+    }
+    .featured-article-body {
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .featured-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--gold);
+      color: #000;
+      font-family: var(--font-sub);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.75rem;
+      border-radius: 100px;
+      margin-bottom: 1.25rem;
+      width: fit-content;
+    }
+    .featured-article-body h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+    .featured-article-body p.excerpt {
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .article-meta span { display: flex; align-items: center; gap: 0.35rem; }
+
+    /* Blog grid */
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .blog-card {
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-card:hover { transform: translateY(-5px); box-shadow: 0 20px 50px rgba(0,0,0,0.3); }
+    .blog-card-img {
+      aspect-ratio: 16/10;
+      background: #1a1a1a;
+      position: relative;
+      overflow: hidden;
+    }
+    .blog-card-img img { width:100%; height:100%; object-fit:cover; transition: transform 0.4s; }
+    .blog-card:hover .blog-card-img img { transform: scale(1.05); }
+    .blog-img-ph {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      color: var(--muted);
+    }
+    .blog-card-body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .blog-card-tags {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.75rem;
+    }
+    .blog-card-tag {
+      font-family: var(--font-sub);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.6rem;
+      border-radius: 100px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+    .blog-card-tag.gold { border-color: var(--gold); color: var(--gold); }
+    .blog-card-tag.green { border-color: var(--green); color: var(--green); }
+    .blog-card-body h4 { font-size: 1.1rem; margin-bottom: 0.6rem; line-height: 1.3; }
+    .blog-card-body p { font-size: 0.88rem; color: var(--muted); line-height: 1.7; flex: 1; margin-bottom: 1.25rem; }
+    .blog-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: var(--muted);
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+    .read-more-link {
+      color: var(--gold);
+      text-decoration: none;
+      font-family: var(--font-sub);
+      font-weight: 700;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      transition: gap 0.2s;
+    }
+    .read-more-link:hover { gap: 0.6rem; }
+
+    /* Sidebar */
+    .blog-layout {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 3rem;
+      align-items: start;
+    }
+    .blog-sidebar { position: sticky; top: 90px; }
+    .sidebar-widget {
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      border: 1px solid var(--border);
+      margin-bottom: 1.5rem;
+    }
+    .sidebar-widget h5 {
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .sidebar-recent-post {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .sidebar-recent-post:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+    .srp-thumb {
+      width: 56px; height: 56px;
+      background: #1a1a1a;
+      border-radius: 6px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+    .srp-content h6 { font-size: 0.82rem; margin-bottom: 0.2rem; line-height: 1.3; }
+    .srp-content span { font-size: 0.75rem; color: var(--muted); }
+    .sidebar-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+    .sidebar-tag {
+      padding: 0.35rem 0.8rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .sidebar-tag:hover { border-color: var(--gold); color: var(--gold); }
+
+    /* Newsletter inline */
+    .newsletter-inline {
+      background: linear-gradient(135deg, var(--surface) 0%, rgba(212,175,55,0.05) 100%);
+      border: 1px solid var(--gold);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+    }
+    .newsletter-inline h5 { color: var(--gold); margin-bottom: 0.5rem; }
+    .newsletter-inline p { font-size: 0.85rem; color: var(--muted); margin-bottom: 1rem; }
+    .nl-inline-form { display: flex; flex-direction: column; gap: 0.75rem; }
+    .nl-inline-form input {
+      width: 100%;
+      padding: 0.65rem 1rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text);
+      font-size: 0.88rem;
+    }
+    .nl-inline-form input:focus { outline: none; border-color: var(--gold); }
+    .nl-inline-form button { width: 100%; }
+
+    /* Pagination */
+    .pagination {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-top: 3rem;
+    }
+    .page-btn {
+      width: 40px; height: 40px;
+      border-radius: var(--radius);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-family: var(--font-sub);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .page-btn:hover, .page-btn.active { background: var(--gold); border-color: var(--gold); color: #000; }
+
+    @media (max-width: 1000px) {
+      .blog-layout { grid-template-columns: 1fr; }
+      .blog-sidebar { position: static; }
+    }
+    @media (max-width: 760px) {
+      .blog-grid { grid-template-columns: 1fr; }
+      .featured-article { grid-template-columns: 1fr; }
+      .featured-article-img { min-height: 240px; }
+    }
+    @media (max-width: 900px) {
+      .blog-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .blog-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<!-- PROMO STRIP -->
+<div class="promo-strip"><span class="promo-strip-inner">&#127807; 420 Weekend AC Bud Crawl &#8212; April 18, 2026 &nbsp;&middot;&nbsp; 21+ Only &nbsp;&middot;&nbsp; First 50 Get Free Giveaways &nbsp;&middot;&nbsp; Atlantic City, NJ &nbsp;&middot;&nbsp; &#127807; 420 Weekend AC Bud Crawl &#8212; April 18, 2026 &nbsp;&middot;&nbsp; 21+ Only &nbsp;&middot;&nbsp; First 50 Get Free Giveaways &nbsp;&middot;&nbsp; Atlantic City, NJ &nbsp;&middot;&nbsp;</span></div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo-link">
+      <!-- Logo: place logo.png in /images/ folder -->
+      <img src="images/logo.png" alt="Party Like Rico Promotions LLC" class="logo-img" onerror="this.style.display='none'">
+      <div class="logo-text"><span class="logo-main">Party Like Rico</span><span class="logo-sub">Promotions LLC</span></div>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="promote.html">Promote</a></li>
+        <li class="nav-item-dropdown">
+          <a href="contact.html" class="nav-dropdown-trigger">Contact <span class="arrow">▼</span></a>
+          <div class="nav-dropdown-menu">
+            <a href="contact.html"><span class="dd-icon">✉️</span> Contact Us</a>
+            <a href="about.html"><span class="dd-icon">👤</span> About Us</a>
+            <a href="mission.html"><span class="dd-icon">🎯</span> Mission</a>
+            <a href="mission.html#vision"><span class="dd-icon">🌟</span> Vision</a>
+          </div>
+        </li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+      <a href="event-detail.html" class="btn btn-orange nav-cta">🎟 Tickets</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="nav-overlay"></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <div data-animate>
+      <span class="section-label">News · Updates · Guides</span>
+      <h1>Blog <span class="text-gold">&amp; News</span></h1>
+      <p class="lead">Your insider guide to Atlantic City events, local highlights, upcoming experiences, and everything Party Like Rico. Stay connected, stay in the know.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="section">
+  <div class="container">
+
+    <!-- FEATURED ARTICLE -->
+    <!-- REPLACE: Update the featured article with your most recent major post -->
+    <div class="featured-article" data-animate>
+      <div class="featured-article-img">
+        <img src="images/blog-featured.jpg" alt="Welcome to Party Like Rico" onerror="this.style.display='none'">
+        <div class="fa-img-placeholder">
+          <span style="font-size:3rem;">📰</span>
+          <span>blog-featured.jpg</span>
+          <span style="font-size:0.75rem;opacity:0.6;">Featured article image</span>
+        </div>
+      </div>
+      <div class="featured-article-body">
+        <span class="featured-label">⭐ Featured Article</span>
+        <div class="article-meta">
+          <span>📅 March 2026</span>
+          <span>✍️ Party Like Rico Team</span>
+          <span>⏱️ 5 min read</span>
+        </div>
+        <h2>Welcome to Party Like Rico Promotions — <span class="text-gold">Atlantic City's New Event Experience</span></h2>
+        <p class="excerpt">Party Like Rico Promotions was created to connect people with the best events, venues, and experiences Atlantic City and the surrounding shore towns have to offer. As we kick off 2026, here's what you can expect from us this year and beyond.</p>
+        <div class="blog-tag-bar">
+          <span class="blog-tag active">Event Updates</span>
+          <span class="blog-tag">Atlantic City News</span>
+        </div>
+        <a href="#" class="btn btn-gold">Read Full Article →</a>
+        <!-- REPLACE: Link href to the actual blog post URL when available -->
+      </div>
+    </div>
+
+    <!-- TAG BAR -->
+    <div style="margin-bottom:2rem;" data-animate>
+      <span class="section-label">Browse by Topic</span>
+      <div class="blog-tag-bar" style="margin-top:0.75rem;margin-bottom:0;">
+        <a href="#" class="blog-tag active">All Posts</a>
+        <a href="#" class="blog-tag">Event Updates</a>
+        <a href="#" class="blog-tag">Atlantic City News</a>
+        <a href="#" class="blog-tag">Upcoming Experiences</a>
+        <a href="#" class="blog-tag">Local Highlights</a>
+        <a href="#" class="blog-tag">Partner Spotlights</a>
+      </div>
+    </div>
+
+    <!-- BLOG LAYOUT WITH SIDEBAR -->
+    <div class="blog-layout">
+
+      <!-- MAIN BLOG GRID -->
+      <div>
+        <div class="blog-grid">
+
+          <!-- CARD 1 — REPLACE with real blog post content -->
+          <article class="blog-card" data-animate>
+            <div class="blog-card-img">
+              <img src="images/blog-1.jpg" alt="420 Bud Crawl Blog" onerror="this.style.display='none'">
+              <div class="blog-img-ph">🌿</div>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-tags">
+                <span class="blog-card-tag green">Event Updates</span>
+                <span class="blog-card-tag gold">Featured</span>
+              </div>
+              <h4>Everything You Need to Know About the 420 Weekend AC Bud Crawl</h4>
+              <p>Mark your calendars for April 18, 2026. Atlantic City's first shuttle party experience of the year is almost here — here's your complete guide to the Bud Crawl event, what's included, and how to secure your ticket.</p>
+              <div class="blog-card-footer">
+                <span>📅 March 2026 · 4 min read</span>
+                <a href="#" class="read-more-link">Read →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="blog-card" data-animate>
+            <div class="blog-card-img">
+              <img src="images/blog-2.jpg" alt="Atlantic City Guide Blog" onerror="this.style.display='none'">
+              <div class="blog-img-ph">🏙️</div>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-tags">
+                <span class="blog-card-tag">Atlantic City News</span>
+                <span class="blog-card-tag">Local Highlights</span>
+              </div>
+              <h4>The Best Things to Do in Atlantic City in 2026 — Beyond the Casino</h4>
+              <p>Atlantic City is so much more than just the casinos. From beachfront events and boardwalk experiences to hidden gems and local dining, here's our guide to getting the most out of your AC visit.</p>
+              <div class="blog-card-footer">
+                <span>📅 February 2026 · 6 min read</span>
+                <a href="#" class="read-more-link">Read →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 3 -->
+          <article class="blog-card" data-animate>
+            <div class="blog-card-img">
+              <img src="images/blog-3.jpg" alt="Vendor Partner Blog" onerror="this.style.display='none'">
+              <div class="blog-img-ph">🤝</div>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-tags">
+                <span class="blog-card-tag">Partner Spotlights</span>
+              </div>
+              <h4>Why Local Businesses Should Partner with Party Like Rico Promotions</h4>
+              <p>Looking to get your brand in front of Atlantic City's most engaged event attendees? Here's how partnering with Party Like Rico Promotions can amplify your reach and drive real foot traffic to your business.</p>
+              <div class="blog-card-footer">
+                <span>📅 January 2026 · 5 min read</span>
+                <a href="#" class="read-more-link">Read →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 4 -->
+          <article class="blog-card" data-animate>
+            <div class="blog-card-img">
+              <img src="images/blog-4.jpg" alt="Summer Events Blog" onerror="this.style.display='none'">
+              <div class="blog-img-ph">☀️</div>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-tags">
+                <span class="blog-card-tag">Upcoming Experiences</span>
+              </div>
+              <h4>Summer 2026 Events Preview — What's Coming to Atlantic City</h4>
+              <p>Summer on the Jersey Shore is about to get a whole lot more exciting. Get a first look at the events, experiences, and activations Party Like Rico is planning for the 2026 summer season.</p>
+              <div class="blog-card-footer">
+                <span>📅 Coming Soon · 3 min read</span>
+                <a href="#" class="read-more-link">Read →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 5 -->
+          <article class="blog-card" data-animate>
+            <div class="blog-card-img">
+              <img src="images/blog-5.jpg" alt="Private Events Blog" onerror="this.style.display='none'">
+              <div class="blog-img-ph">🎂</div>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-tags">
+                <span class="blog-card-tag">Local Highlights</span>
+              </div>
+              <h4>Planning a Birthday, Bachelorette, or Private Celebration in Atlantic City?</h4>
+              <p>Atlantic City is the perfect backdrop for any private celebration. Here's how Party Like Rico Promotions can help you plan and promote a birthday bash, bachelorette party, or special occasion that stands out.</p>
+              <div class="blog-card-footer">
+                <span>📅 Coming Soon · 4 min read</span>
+                <a href="#" class="read-more-link">Read →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 6 -->
+          <article class="blog-card" data-animate>
+            <div class="blog-card-img">
+              <img src="images/blog-6.jpg" alt="AC Weekend Guide Blog" onerror="this.style.display='none'">
+              <div class="blog-img-ph">🌊</div>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-tags">
+                <span class="blog-card-tag">Atlantic City News</span>
+              </div>
+              <h4>The Ultimate Atlantic City Weekend Itinerary — RICO Edition</h4>
+              <p>Planning a weekend in Atlantic City? Let Party Like Rico guide you through the best dining, nightlife, events, and experiences — curated for those who want more than just a casino trip.</p>
+              <div class="blog-card-footer">
+                <span>📅 Coming Soon · 7 min read</span>
+                <a href="#" class="read-more-link">Read →</a>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- end .blog-grid -->
+
+        <!-- Pagination -->
+        <div class="pagination" data-animate>
+          <a href="#" class="page-btn active">1</a>
+          <a href="#" class="page-btn">2</a>
+          <a href="#" class="page-btn">3</a>
+          <a href="#" class="page-btn">→</a>
+        </div>
+      </div><!-- end main -->
+
+      <!-- SIDEBAR -->
+      <aside class="blog-sidebar">
+
+        <!-- Search -->
+        <div class="sidebar-widget" data-animate>
+          <h5>Search</h5>
+          <div style="position:relative;">
+            <input type="text" placeholder="Search articles…" style="width:100%;padding:0.65rem 2.5rem 0.65rem 1rem;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);color:var(--text);font-size:0.88rem;">
+            <span style="position:absolute;right:0.75rem;top:50%;transform:translateY(-50%);color:var(--muted);">🔍</span>
+          </div>
+        </div>
+
+        <!-- Recent Posts -->
+        <div class="sidebar-widget" data-animate>
+          <h5>Recent Posts</h5>
+          <div class="sidebar-recent-post">
+            <div class="srp-thumb">🌿</div>
+            <div class="srp-content">
+              <h6>Everything About the 420 Weekend AC Bud Crawl</h6>
+              <span>March 2026</span>
+            </div>
+          </div>
+          <div class="sidebar-recent-post">
+            <div class="srp-thumb">🏙️</div>
+            <div class="srp-content">
+              <h6>Best Things to Do in Atlantic City in 2026</h6>
+              <span>February 2026</span>
+            </div>
+          </div>
+          <div class="sidebar-recent-post">
+            <div class="srp-thumb">🤝</div>
+            <div class="srp-content">
+              <h6>Why Local Businesses Should Partner With Us</h6>
+              <span>January 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="sidebar-widget" data-animate>
+          <h5>Categories</h5>
+          <div class="sidebar-tags">
+            <a href="#" class="sidebar-tag">Event Updates</a>
+            <a href="#" class="sidebar-tag">Atlantic City News</a>
+            <a href="#" class="sidebar-tag">Upcoming Experiences</a>
+            <a href="#" class="sidebar-tag">Local Highlights</a>
+            <a href="#" class="sidebar-tag">Partner Spotlights</a>
+            <a href="#" class="sidebar-tag">Guides</a>
+            <a href="#" class="sidebar-tag">Nightlife</a>
+          </div>
+        </div>
+
+        <!-- Featured Event CTA -->
+        <div style="background:linear-gradient(135deg,#1a2e1a,#0f1f0f);border:1px solid var(--green);border-radius:var(--radius-lg);padding:1.75rem;margin-bottom:1.5rem;" data-animate>
+          <span class="badge badge-green" style="margin-bottom:0.75rem;display:inline-block;">🎟 Buy Tickets</span>
+          <h5 style="color:#fff;margin-bottom:0.5rem;font-size:1rem;">420 Weekend AC<br>Bud Crawl 2026</h5>
+          <p style="font-size:0.82rem;color:var(--muted);margin-bottom:1rem;">April 18, 2026 · Limited spots — first 50 get free giveaways!</p>
+          <a href="event-detail.html" class="btn btn-green" style="width:100%;text-align:center;display:block;font-size:0.85rem;">Secure Your Ticket</a>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="newsletter-inline" data-animate>
+          <h5>Stay Updated</h5>
+          <p>Get event announcements, ticket drops, and Atlantic City insider tips delivered to your inbox.</p>
+          <!-- Netlify-ready newsletter form -->
+          <form name="newsletter-blog-sidebar" method="POST" data-netlify="true" action="/thank-you.html" class="nl-inline-form">
+            <input type="hidden" name="form-name" value="newsletter-blog-sidebar">
+            <input type="text" name="_gotcha" style="display:none;">
+            <input type="email" name="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-gold" style="font-size:0.85rem;">Subscribe Free</button>
+          </form>
+        </div>
+
+      </aside>
+    </div><!-- end .blog-layout -->
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="container cta-band-inner" data-animate>
+    <div>
+      <h2>Have a story or event to <span class="text-gold">share?</span></h2>
+      <p>Partner spotlights, community events, and business features are welcome. Reach out to be featured on our blog.</p>
+    </div>
+    <div class="cta-band-btns">
+      <a href="contact.html" class="btn btn-gold">Get Featured</a>
+      <a href="events.html" class="btn btn-outline-white">View Events</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-link" style="margin-bottom:1rem;display:inline-flex;">
+          <img src="images/logo.png" alt="Party Like Rico Promotions LLC" style="height:56px;width:auto;" onerror="this.style.display='none'">
+          <div class="logo-text"><span class="logo-main">Party Like Rico</span><span class="logo-sub">Promotions LLC</span></div>
+        </a>
+        <p style="color:var(--muted);font-size:0.9rem;line-height:1.7;margin-bottom:1.25rem;">Atlantic City's premier event promotion company — creating unforgettable experiences across the Jersey Shore.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" title="Instagram">IG</a>
+          <a href="#" class="social-link" title="Facebook">FB</a>
+          <a href="#" class="social-link" title="TikTok">TT</a>
+          <a href="#" class="social-link" title="Twitter/X">X</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="shop.html">Shop</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="mission.html">Mission &amp; Vision</a></li>
+          <li><a href="promote.html">Promote</a></li>
+          <li><a href="vendor.html">Vendor Inquiry</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:6095942265">(609) 594-2265</a></li>
+          <li><a href="mailto:PartyLikeRico@gmail.com">PartyLikeRico@gmail.com</a></li>
+          <li><span style="color:var(--muted);">Atlantic City, NJ</span></li>
+        </ul>
+        <a href="event-detail.html" class="btn btn-orange" style="margin-top:1.25rem;font-size:0.85rem;">🎟 Buy Tickets</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Party Like Rico Promotions LLC. All rights reserved.</p>
+      <p style="color:var(--muted);font-size:0.8rem;">Atlantic City, NJ</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

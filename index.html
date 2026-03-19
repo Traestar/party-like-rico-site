@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Party Like Rico Promotions LLC — Atlantic City Events</title>
+  <meta name="description" content="Atlantic City's premier event promotion company. 420 Weekend Bud Crawl, nightlife, shore experiences, and unforgettable events on the Jersey Shore.">
+  <meta property="og:title" content="Party Like Rico Promotions LLC — Atlantic City Events">
+  <meta property="og:image" content="images/420-weekend-flyer.jpg">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* HOME-ONLY STYLES */
+    .home-hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;padding-top:80px;}
+    .home-hero-bg{position:absolute;inset:0;z-index:0;}
+    .home-hero-bg-fallback{position:absolute;inset:0;background:linear-gradient(135deg,#030d03 0%,#0a1a0a 40%,#080810 100%);z-index:-1;}
+    .home-hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;}
+    .home-hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,rgba(0,0,0,0.94) 0%,rgba(0,0,0,0.78) 42%,rgba(0,0,0,0.42) 75%,rgba(0,0,0,0.2) 100%);}
+    .home-hero-content{position:relative;z-index:2;max-width:680px;}
+    .live-badge{display:inline-flex;align-items:center;gap:0.6rem;padding:0.5rem 1.2rem;background:rgba(58,140,74,0.14);border:1px solid rgba(82,196,104,0.45);border-radius:100px;backdrop-filter:blur(10px);margin-bottom:1.75rem;}
+    .live-dot{width:7px;height:7px;background:#52c468;border-radius:50%;animation:live-pulse 1.6s infinite;flex-shrink:0;}
+    @keyframes live-pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(82,196,104,0.5);}50%{opacity:.5;box-shadow:0 0 0 6px rgba(82,196,104,0);}}
+    .live-badge span{font-family:var(--font-sub);font-size:0.78rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#52c468;}
+    .home-hero h1{font-size:clamp(3.5rem,9vw,7.5rem);line-height:0.9;margin-bottom:1.25rem;text-shadow:0 4px 40px rgba(0,0,0,0.7);}
+    .hero-detail-row{display:flex;flex-wrap:wrap;gap:1rem 2rem;margin:1.5rem 0 2.25rem;padding:1.25rem 1.5rem;background:rgba(0,0,0,0.4);border:1px solid rgba(255,255,255,0.07);border-radius:12px;backdrop-filter:blur(8px);}
+    .hero-detail-item{display:flex;align-items:center;gap:0.5rem;font-family:var(--font-sub);font-size:0.9rem;font-weight:600;color:rgba(255,255,255,0.75);}
+    .hero-detail-item strong{color:#fff;}
+    .hero-btns{display:flex;gap:1rem;flex-wrap:wrap;}
+    .scroll-cue{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:0.4rem;}
+    .scroll-cue span{font-family:var(--font-sub);font-size:0.63rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.25);}
+    .scroll-arrow{width:22px;height:22px;border-right:2px solid rgba(255,255,255,0.2);border-bottom:2px solid rgba(255,255,255,0.2);transform:rotate(45deg);animation:bounce-arrow 1.8s infinite;}
+    @keyframes bounce-arrow{0%,100%{transform:rotate(45deg) translateY(0);opacity:.3;}50%{transform:rotate(45deg) translateY(5px);opacity:.7;}}
+
+    /* Ticker */
+    .ticker-strip{background:linear-gradient(90deg,#a07810,#d4a017,#f0bf3a,#d4a017,#a07810);color:#000;font-family:var(--font-sub);font-size:0.8rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;padding:0.6rem 0;overflow:hidden;white-space:nowrap;}
+    .ticker-inner{display:inline-flex;animation:ticker-move 30s linear infinite;}
+    .ticker-inner span{padding:0 2.5rem;}
+    .ticker-inner .dot{color:rgba(0,0,0,0.35);}
+    @keyframes ticker-move{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+    /* Flyer showcase */
+    .flyer-showcase{display:grid;grid-template-columns:270px 1fr;gap:3.5rem;align-items:center;background:linear-gradient(135deg,rgba(4,15,4,0.95),rgba(8,10,18,0.98));border:1px solid rgba(58,140,74,0.2);border-radius:20px;padding:3rem;position:relative;overflow:hidden;}
+    .flyer-showcase::before{content:'';position:absolute;top:-100px;right:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(58,140,74,0.07) 0%,transparent 70%);pointer-events:none;}
+    .flyer-img-frame{position:relative;border-radius:12px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,0.8),0 0 0 1px rgba(255,255,255,0.05);aspect-ratio:3/4;background:#060e06;flex-shrink:0;}
+    .flyer-img-frame img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;}
+    .flyer-img-frame .flyer-ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.75rem;color:rgba(255,255,255,0.18);font-size:0.72rem;font-family:var(--font-sub);text-align:center;padding:1rem;background:linear-gradient(180deg,#0a1a0a,#040a04);}
+    .ecl{display:grid;grid-template-columns:1fr 1fr;gap:0.6rem 1.5rem;margin:1.5rem 0 2rem;}
+    .ecl-item{display:flex;align-items:center;gap:0.5rem;font-size:0.88rem;color:rgba(255,255,255,0.7);font-family:var(--font-sub);font-weight:600;}
+    .ecl-item strong{color:#fff;}
+
+    /* Event cards */
+    .events-grid-home{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;}
+    .hec{background:#0e1218;border:1px solid rgba(255,255,255,0.06);border-radius:14px;overflow:hidden;transition:transform .3s,box-shadow .3s,border-color .3s;display:flex;flex-direction:column;}
+    .hec:hover{transform:translateY(-6px);box-shadow:0 24px 56px rgba(0,0,0,0.6);border-color:rgba(212,175,55,0.2);}
+    .hec-img{position:relative;aspect-ratio:16/10;overflow:hidden;background:#0a0a0a;}
+    .hec-img img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .5s ease;}
+    .hec:hover .hec-img img{transform:scale(1.07);}
+    .hec-img-ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:3rem;background:linear-gradient(135deg,#0d0d10,#171720);color:rgba(255,255,255,0.08);}
+    .hec-img-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.65) 0%,transparent 55%);}
+    .hec-img-badge{position:absolute;top:.75rem;left:.75rem;z-index:2;}
+    .hec-body{padding:1.25rem;flex:1;display:flex;flex-direction:column;}
+    .hec-date{font-family:var(--font-sub);font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem;}
+    .hec-body h4{font-size:1.05rem;margin-bottom:0.4rem;line-height:1.2;}
+    .hec-body p{font-size:0.83rem;color:rgba(255,255,255,0.45);line-height:1.6;flex:1;margin-bottom:1rem;}
+    .hec-footer{display:flex;align-items:center;justify-content:space-between;padding-top:.75rem;border-top:1px solid rgba(255,255,255,0.05);font-size:0.76rem;color:rgba(255,255,255,0.35);}
+
+    /* BG CTA sections */
+    .bg-cta{position:relative;padding:clamp(5rem,10vw,8rem) 0;overflow:hidden;}
+    .bg-cta .bg-img{position:absolute;inset:0;z-index:0;}
+    .bg-cta .bg-img img{width:100%;height:100%;object-fit:cover;object-position:center;}
+    .bg-cta .bg-overlay{position:absolute;inset:0;z-index:1;}
+    .bg-cta .container{position:relative;z-index:2;}
+
+    /* Why cards */
+    .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;}
+    .why-card{background:linear-gradient(135deg,rgba(255,255,255,0.025),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.06);border-radius:14px;padding:2rem 1.5rem;transition:border-color .3s,transform .3s;}
+    .why-card:hover{border-color:rgba(212,175,55,0.3);transform:translateY(-4px);}
+    .why-icon{font-size:2.25rem;margin-bottom:1rem;}
+    .why-card h4{margin-bottom:.5rem;font-size:1rem;}
+    .why-card p{font-size:0.85rem;color:rgba(255,255,255,0.45);line-height:1.7;margin:0;}
+
+    /* Experience grid */
+    .exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.04);border-radius:16px;overflow:hidden;}
+    .exp-cell{background:#0c1016;padding:2.5rem 2rem;text-decoration:none;transition:background .3s;display:block;}
+    .exp-cell:hover{background:#121820;}
+    .exp-icon{font-size:2.5rem;margin-bottom:1rem;display:block;}
+    .exp-cell h4{margin-bottom:.4rem;font-size:1rem;}
+    .exp-cell p{font-size:0.82rem;color:rgba(255,255,255,0.4);margin:0;line-height:1.6;}
+
+    /* Testimonials */
+    .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;}
+    .testi-card{background:#0e1218;border:1px solid rgba(255,255,255,0.05);border-radius:14px;padding:2rem;position:relative;}
+    .testi-card::before{content:'"';font-family:var(--font-display);font-size:6rem;color:rgba(212,175,55,0.06);position:absolute;top:-0.5rem;left:1.25rem;line-height:1;pointer-events:none;}
+    .testi-stars{font-size:.85rem;margin-bottom:1rem;}
+    .testi-card blockquote{font-size:0.9rem;color:rgba(255,255,255,0.65);line-height:1.8;margin-bottom:1.5rem;font-style:italic;}
+    .testi-author{display:flex;align-items:center;gap:.75rem;}
+    .testi-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--gold-dk),var(--gold));display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1rem;color:#000;flex-shrink:0;}
+    .testi-author strong{display:block;font-size:0.85rem;}
+    .testi-author span{font-size:0.73rem;color:rgba(255,255,255,0.35);}
+
+    /* Social large */
+    .social-link-lg{display:inline-flex;align-items:center;gap:.5rem;padding:.65rem 1.4rem;border:1px solid rgba(255,255,255,0.1);border-radius:100px;font-family:var(--font-sub);font-size:0.82rem;font-weight:700;letter-spacing:.06em;color:rgba(255,255,255,0.55);text-decoration:none;transition:all .2s;}
+    .social-link-lg:hover{border-color:var(--gold);color:var(--gold);}
+
+    /* NL form */
+    .nl-wrap{display:flex;max-width:500px;}
+    .nl-wrap input{flex:1;padding:.85rem 1.25rem;background:#0c1016;border:1px solid rgba(255,255,255,0.08);border-right:none;border-radius:10px 0 0 10px;color:#fff;font-size:.88rem;outline:none;}
+    .nl-wrap input::placeholder{color:rgba(255,255,255,0.25);}
+    .nl-wrap input:focus{border-color:rgba(212,175,55,0.4);}
+    .nl-wrap button{border-radius:0 10px 10px 0;white-space:nowrap;}
+
+    /* Responsive */
+    @media(max-width:1000px){.flyer-showcase{grid-template-columns:1fr;text-align:center;}.flyer-img-frame{width:200px;margin:0 auto;}.ecl{grid-template-columns:1fr;}.events-grid-home{grid-template-columns:repeat(2,1fr);}.why-grid{grid-template-columns:repeat(2,1fr);}.testi-grid{grid-template-columns:1fr;}.exp-grid{grid-template-columns:repeat(2,1fr);}}
+    @media(max-width:600px){.home-hero h1{font-size:clamp(3rem,13vw,5rem);}.events-grid-home{grid-template-columns:1fr;}.why-grid{grid-template-columns:1fr;}.exp-grid{grid-template-columns:1fr;}.hero-btns .btn{width:100%;text-align:center;}.nl-wrap{flex-direction:column;}.nl-wrap input{border-right:1px solid rgba(255,255,255,.08);border-radius:10px 10px 0 0;}.nl-wrap button{border-radius:0 0 10px 10px;}}
+  </style>
+</head>
+<body>
+<div id="progress-bar"></div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo-link">
+      <img src="images/logo.png" alt="Party Like Rico Promotions LLC" class="logo-img" onerror="this.style.display='none'">
+      <div class="logo-text"><span class="logo-main">Party Like Rico</span><span class="logo-sub">Promotions LLC</span></div>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="promote.html">Promote</a></li>
+        <li class="nav-item-dropdown">
+          <a href="contact.html" class="nav-dropdown-trigger">Contact <span class="arrow">▼</span></a>
+          <div class="nav-dropdown-menu">
+            <a href="contact.html"><span class="dd-icon">✉️</span> Contact Us</a>
+            <a href="about.html"><span class="dd-icon">👤</span> About Us</a>
+            <a href="mission.html"><span class="dd-icon">🎯</span> Mission</a>
+            <a href="mission.html#vision"><span class="dd-icon">🌟</span> Vision</a>
+          </div>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+      <a href="event-detail.html" class="btn btn-orange nav-cta">🎟 Tickets</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="nav-overlay"></div>
+
+<!-- HERO — 420-weekend-flyer.jpg fills the background with dark gradient overlay -->
+<section class="home-hero">
+  <div class="home-hero-bg">
+    <div class="home-hero-bg-fallback"></div>
+    <!-- Place 420-weekend-flyer.jpg in /images/ folder -->
+    <img src="images/420-weekend-flyer.jpg" alt="420 Weekend AC Bud Crawl" loading="eager" onerror="this.style.opacity='0'">
+  </div>
+  <div class="container">
+    <div class="home-hero-content" data-animate>
+      <div class="live-badge"><span class="live-dot"></span><span>Tickets Now Available</span></div>
+      <h1>420<br><span class="text-green">Weekend</span><br><span class="text-gold">AC</span></h1>
+      <p style="font-size:1.05rem;color:rgba(255,255,255,0.62);line-height:1.8;max-width:500px;margin-bottom:0.5rem;">
+        Atlantic City's first shuttle party of 2026 — a guided crawl through the city's best venues.
+        <strong style="color:#fff;">First 50 get complimentary giveaways.</strong>
+      </p>
+      <div class="hero-detail-row">
+        <div class="hero-detail-item">📅 <strong>April 18, 2026</strong></div>
+        <div class="hero-detail-item">📍 <strong>Atlantic City, NJ</strong></div>
+        <div class="hero-detail-item">🕐 <strong>Check-in 12:30 PM</strong></div>
+        <div class="hero-detail-item">🔞 <strong>21+ Only</strong></div>
+        <div class="hero-detail-item">🚌 <strong>Shuttle Included</strong></div>
+        <div class="hero-detail-item">🎁 <strong>First 50 Get Gifts</strong></div>
+      </div>
+      <div class="hero-btns">
+        <!-- REPLACE href with your actual ticket link (Eventbrite / TicketTailor / Stripe) -->
+        <a href="event-detail.html" class="btn btn-gold" style="font-size:1rem;padding:.9rem 2rem;">🎟 Buy Tickets</a>
+        <a href="event-detail.html" class="btn btn-outline-white" style="font-size:1rem;padding:.9rem 1.75rem;">View Full Details</a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>Scroll</span><div class="scroll-arrow"></div></div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-strip">
+  <div class="ticker-inner">
+    <span>🌿 420 Weekend AC Bud Crawl</span><span class="dot">·</span>
+    <span>April 18, 2026</span><span class="dot">·</span>
+    <span>Atlantic City, NJ</span><span class="dot">·</span>
+    <span>21+ Only</span><span class="dot">·</span>
+    <span>First 50 Get Free Giveaways</span><span class="dot">·</span>
+    <span>🚌 Shuttle Party</span><span class="dot">·</span>
+    <span>Check-in 12:30–2:30 PM</span><span class="dot">·</span>
+    <span>🎟 Tickets On Sale Now</span><span class="dot">·</span>
+    <span>🌿 420 Weekend AC Bud Crawl</span><span class="dot">·</span>
+    <span>April 18, 2026</span><span class="dot">·</span>
+    <span>Atlantic City, NJ</span><span class="dot">·</span>
+    <span>21+ Only</span><span class="dot">·</span>
+    <span>First 50 Get Free Giveaways</span><span class="dot">·</span>
+    <span>🚌 Shuttle Party</span><span class="dot">·</span>
+    <span>Check-in 12:30–2:30 PM</span><span class="dot">·</span>
+    <span>🎟 Tickets On Sale Now</span><span class="dot">·</span>
+  </div>
+</div>
+
+<!-- FEATURED EVENT — flyer displayed as portrait card -->
+<section class="section" style="background:linear-gradient(180deg,#030b03 0%,#080c14 100%);">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3rem;" data-animate>
+      <span class="section-label">🌿 April 18, 2026</span>
+      <h2 class="section-title">Flagship <span class="text-gold">Event</span></h2>
+    </div>
+    <div class="flyer-showcase" data-animate>
+      <div class="flyer-img-frame">
+        <!-- 420-weekend-flyer.jpg shown as the event flyer card — place in /images/ -->
+        <img src="images/420-weekend-flyer.jpg" alt="420 Weekend AC Bud Crawl Official Flyer" onerror="this.style.display='none'">
+        <div class="flyer-ph"><span style="font-size:3rem;">🌿</span><span>420-weekend-flyer.jpg</span><span style="opacity:.4;font-size:.65rem;">Place in /images/</span></div>
+      </div>
+      <div style="position:relative;z-index:1;">
+        <span class="badge badge-green" style="margin-bottom:1rem;display:inline-block;">🌿 FEATURED EVENT 2026</span>
+        <h2 style="font-size:clamp(2rem,4vw,3.25rem);margin-bottom:.75rem;line-height:1.05;">420 Weekend AC<br><span class="text-gold">Bud Crawl</span></h2>
+        <p style="color:rgba(255,255,255,0.55);line-height:1.8;margin-bottom:0;font-size:.95rem;">A curated shuttle party experience through Atlantic City's most exciting 420-friendly venues. Multiple stops, exclusive drink specials, party vibes, and complimentary giveaways for the first 50 guests.</p>
+        <div class="ecl">
+          <div class="ecl-item">📅 <strong>April 18, 2026</strong></div>
+          <div class="ecl-item">🕐 <strong>Check-in 12:30–2:30 PM</strong></div>
+          <div class="ecl-item">🚌 <strong>Departure 1:00 PM</strong></div>
+          <div class="ecl-item">📍 <strong>Atlantic City, NJ</strong></div>
+          <div class="ecl-item">🔞 <strong>21+ Event</strong></div>
+          <div class="ecl-item">🎁 <strong>First 50 Get Giveaways</strong></div>
+        </div>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+          <!-- REPLACE href with your actual ticket purchase link -->
+          <a href="event-detail.html" class="btn btn-gold">🎟 Buy Tickets Now</a>
+          <a href="event-detail.html" class="btn btn-outline">Full Event Details →</a>
+        </div>
+        <p style="margin-top:1.25rem;font-size:.78rem;color:rgba(255,255,255,.25);">📞 Questions? <a href="tel:6095942265" style="color:var(--gold);">(609) 594-2265</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UPCOMING EVENTS GRID -->
+<section class="section" style="background:#080c14;">
+  <div class="container">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:2.5rem;" data-animate>
+      <div><span class="section-label">What's Next</span><h2 class="section-title" style="margin-bottom:0;">Upcoming <span class="text-gold">Events</span></h2></div>
+      <a href="events.html" class="btn btn-outline" style="font-size:.88rem;">See All Events →</a>
+    </div>
+    <div class="events-grid-home">
+
+      <div class="hec" data-animate>
+        <div class="hec-img">
+          <!-- 420-weekend-flyer.jpg — featured card image; place in /images/ -->
+          <img src="images/420-weekend-flyer.jpg" alt="420 Weekend AC Bud Crawl" onerror="this.style.display='none'">
+          <div class="hec-img-ph">🌿</div><div class="hec-img-overlay"></div>
+          <div class="hec-img-badge"><span class="badge badge-green">🌿 Featured</span></div>
+        </div>
+        <div class="hec-body">
+          <div class="hec-date">Sat · April 18, 2026</div>
+          <h4>420 Weekend AC Bud Crawl</h4>
+          <p>Shuttle party through AC's best 420-friendly venues. First 50 get giveaways.</p>
+          <div class="hec-footer">
+            <span>📍 Atlantic City, NJ</span>
+            <!-- REPLACE href with ticket link -->
+            <a href="event-detail.html" class="btn btn-sm btn-gold">Buy Tickets</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hec" data-animate>
+        <div class="hec-img">
+          <!-- Replace with real Summer Kickoff event photo -->
+          <img src="images/placeholder-nightlife.jpg" alt="Summer Kickoff AC" onerror="this.style.display='none'">
+          <div class="hec-img-ph">🌃</div><div class="hec-img-overlay"></div>
+          <div class="hec-img-badge"><span class="badge">Nightlife</span></div>
+        </div>
+        <div class="hec-body">
+          <div class="hec-date">May 2026 · TBD</div>
+          <h4>Summer Kickoff AC</h4>
+          <p>Atlantic City's hottest venues — one epic kickoff night on the Shore.</p>
+          <div class="hec-footer"><span>📍 Atlantic City, NJ</span><a href="events.html" class="btn btn-sm btn-outline">Details →</a></div>
+        </div>
+      </div>
+
+      <div class="hec" data-animate>
+        <div class="hec-img">
+          <!-- Replace with real vendor pop-up event photo -->
+          <img src="images/placeholder-event-1.jpg" alt="Summer Vendor Pop-Up" onerror="this.style.display='none'">
+          <div class="hec-img-ph">🛍️</div><div class="hec-img-overlay"></div>
+          <div class="hec-img-badge"><span class="badge">Vendor Market</span></div>
+        </div>
+        <div class="hec-body">
+          <div class="hec-date">June 2026 · TBD</div>
+          <h4>Summer Vendor Pop-Up Market</h4>
+          <p>Shop local vendors, artisans, food, and brands at our biggest outdoor market.</p>
+          <div class="hec-footer"><span>📍 Atlantic City, NJ</span><a href="events.html" class="btn btn-sm btn-outline">Details →</a></div>
+        </div>
+      </div>
+
+      <div class="hec" data-animate>
+        <div class="hec-img">
+          <!-- Replace with real July 4th event photo -->
+          <img src="images/placeholder-party.jpg" alt="Independence Day AC" onerror="this.style.display='none'">
+          <div class="hec-img-ph">🎆</div><div class="hec-img-overlay"></div>
+          <div class="hec-img-badge"><span class="badge">Holiday</span></div>
+        </div>
+        <div class="hec-body">
+          <div class="hec-date">July 4, 2026</div>
+          <h4>Independence Day AC</h4>
+          <p>Celebrate the 4th the Party Like Rico way — fireworks, music, AC energy.</p>
+          <div class="hec-footer"><span>📍 Atlantic City, NJ</span><a href="events.html" class="btn btn-sm btn-outline">Details →</a></div>
+        </div>
+      </div>
+
+      <div class="hec" data-animate>
+        <div class="hec-img">
+          <!-- Replace with real shore bash event photo -->
+          <img src="images/placeholder-event-2.jpg" alt="End of Summer Shore Bash" onerror="this.style.display='none'">
+          <div class="hec-img-ph">🌊</div><div class="hec-img-overlay"></div>
+          <div class="hec-img-badge"><span class="badge">Shore Event</span></div>
+        </div>
+        <div class="hec-body">
+          <div class="hec-date">August 2026 · TBD</div>
+          <h4>End of Summer Shore Bash</h4>
+          <p>Closing the summer season with a massive shore town party experience.</p>
+          <div class="hec-footer"><span>📍 Shore Towns, NJ</span><a href="events.html" class="btn btn-sm btn-outline">Details →</a></div>
+        </div>
+      </div>
+
+      <div class="hec" data-animate>
+        <div class="hec-img">
+          <!-- Replace with real community event photo -->
+          <img src="images/placeholder-crowd.jpg" alt="AC Community Celebration" onerror="this.style.display='none'">
+          <div class="hec-img-ph">🤝</div><div class="hec-img-overlay"></div>
+          <div class="hec-img-badge"><span class="badge">Community</span></div>
+        </div>
+        <div class="hec-body">
+          <div class="hec-date">September 2026 · TBD</div>
+          <h4>AC Community Celebration</h4>
+          <p>Giving back to Atlantic City — a free community event open to all.</p>
+          <div class="hec-footer"><span>📍 Atlantic City, NJ</span><a href="events.html" class="btn btn-sm btn-outline">Details →</a></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BG CTA #1 — 420-weekend-flyer.jpg as background, dark overlay -->
+<div class="bg-cta">
+  <div class="bg-img">
+    <!-- 420-weekend-flyer.jpg used as CTA background; place in /images/ -->
+    <img src="images/420-weekend-flyer.jpg" alt="" aria-hidden="true" onerror="this.style.opacity='0'">
+  </div>
+  <div class="bg-overlay" style="background:linear-gradient(135deg,rgba(2,10,2,0.93) 0%,rgba(0,0,0,0.82) 100%);"></div>
+  <div class="container" style="text-align:center;" data-animate>
+    <span class="section-label">🎟 Limited Spots</span>
+    <h2 style="font-size:clamp(2.5rem,7vw,5.5rem);margin-bottom:1rem;text-shadow:0 4px 30px rgba(0,0,0,.6);">Don't Miss<br><span class="text-gold">Out.</span></h2>
+    <p style="font-size:1.05rem;color:rgba(255,255,255,.7);max-width:540px;margin:0 auto 2.5rem;line-height:1.85;">April 18 is coming fast. Secure your spot before it sells out. <strong style="color:#fff;">First 50 attendees receive complimentary giveaways.</strong> 21+ event.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <!-- REPLACE href with your actual ticket purchase link -->
+      <a href="event-detail.html" class="btn btn-gold" style="font-size:1.05rem;padding:1rem 2.5rem;">🎟 Buy Tickets Now</a>
+      <a href="event-detail.html" class="btn btn-outline-white" style="font-size:1rem;padding:1rem 2rem;">View Event Details</a>
+    </div>
+  </div>
+</div>
+
+<!-- WHY RICO -->
+<section class="section" style="background:#060a06;">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3rem;" data-animate>
+      <span class="section-label">Why Choose Us</span>
+      <h2 class="section-title">Why Party Like <span class="text-gold">Rico</span></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card" data-animate><div class="why-icon">🌿</div><h4>Curated 420 Experiences</h4><p>Shuttle crawls, exclusive venue access, giveaways — every event is built for the real culture.</p></div>
+      <div class="why-card" data-animate><div class="why-icon">🚌</div><h4>Shuttle Party Format</h4><p>No driving, no stress. Experience multiple venues safely and in style on our party shuttle.</p></div>
+      <div class="why-card" data-animate><div class="why-icon">🏙️</div><h4>Atlantic City Roots</h4><p>We're local. We know AC. We know where the best experiences are — and we deliver every time.</p></div>
+      <div class="why-card" data-animate><div class="why-icon">🎁</div><h4>VIP Giveaways</h4><p>Show up early and get rewarded. First 50 guests at every major event receive complimentary gifts.</p></div>
+      <div class="why-card" data-animate><div class="why-icon">🤝</div><h4>Community Built</h4><p>We partner with local businesses and create events that lift the entire AC community.</p></div>
+      <div class="why-card" data-animate><div class="why-icon">📣</div><h4>Real Promotion</h4><p>Social, digital, on-the-ground — we make sure every event we touch is seen, shared, sold out.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE CATEGORIES -->
+<section class="section" style="background:#080c14;">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3rem;" data-animate>
+      <span class="section-label">What We Do</span>
+      <h2 class="section-title">Experience <span class="text-gold">Categories</span></h2>
+    </div>
+    <div class="exp-grid" data-animate>
+      <a href="events.html" class="exp-cell"><span class="exp-icon">🌿</span><h4>420 Events</h4><p>Bud crawls, shuttle parties, and curated 420-friendly experiences.</p></a>
+      <a href="events.html" class="exp-cell"><span class="exp-icon">🌃</span><h4>Nightlife</h4><p>VIP nights, multi-venue experiences, and AC after-dark done right.</p></a>
+      <a href="events.html" class="exp-cell"><span class="exp-icon">🛍️</span><h4>Vendor Pop-Ups</h4><p>Local makers, artists, and brands in curated outdoor markets.</p></a>
+      <a href="events.html" class="exp-cell"><span class="exp-icon">🎂</span><h4>Private Celebrations</h4><p>Birthdays, bachelorettes, and special occasions on the Shore.</p></a>
+      <a href="events.html" class="exp-cell"><span class="exp-icon">🤝</span><h4>Community Events</h4><p>Free and community-driven gatherings that give back to AC.</p></a>
+      <a href="events.html" class="exp-cell"><span class="exp-icon">🌊</span><h4>Shore Experiences</h4><p>Beach, boardwalk, and shore town events all summer long.</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- BG CTA #2 — placeholder-nightlife.jpg as background -->
+<div class="bg-cta">
+  <div class="bg-img">
+    <!-- Replace with real nightlife or crowd photo -->
+    <img src="images/placeholder-nightlife.jpg" alt="" aria-hidden="true" onerror="this.style.opacity='0'">
+  </div>
+  <div class="bg-overlay" style="background:linear-gradient(105deg,rgba(0,0,0,0.93) 0%,rgba(0,0,0,0.68) 55%,rgba(0,0,0,0.4) 100%);"></div>
+  <div class="container" data-animate>
+    <div style="display:grid;grid-template-columns:1fr auto;align-items:center;gap:3rem;flex-wrap:wrap;">
+      <div>
+        <span class="section-label">Partner With Us</span>
+        <h2 style="font-size:clamp(2rem,5vw,3.5rem);margin-bottom:1rem;">Get Your Brand at<br>Our <span class="text-gold">Events</span></h2>
+        <p style="color:rgba(255,255,255,.6);line-height:1.8;max-width:480px;margin-bottom:2rem;">Reach Atlantic City's most engaged audience. We're always looking for local businesses, vendors, and sponsors.</p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="vendor.html" class="btn btn-gold">Become a Vendor</a>
+          <a href="promote.html" class="btn btn-outline-white">Sponsorship Info</a>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:1rem;min-width:190px;">
+        <div style="background:rgba(0,0,0,.55);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:1.5rem 2rem;text-align:center;">
+          <div style="font-family:var(--font-display);font-size:3rem;color:var(--gold-lt);line-height:1;">500+</div>
+          <div style="font-size:.75rem;color:rgba(255,255,255,.4);font-family:var(--font-sub);">Expected Attendees</div>
+        </div>
+        <div style="background:rgba(0,0,0,.55);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:1.5rem 2rem;text-align:center;">
+          <div style="font-family:var(--font-display);font-size:3rem;color:#52c468;line-height:1;">12+</div>
+          <div style="font-size:.75rem;color:rgba(255,255,255,.4);font-family:var(--font-sub);">Events Planned 2026</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<section class="section" style="background:#060a06;">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3rem;" data-animate>
+      <span class="section-label">Word on the Street</span>
+      <h2 class="section-title">What People <span class="text-gold">Say</span></h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card" data-animate>
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <blockquote>"Party Like Rico knows how to put together an event. The vibe, the organization, the energy — everything was on point. Can't wait for the Bud Crawl."</blockquote>
+        <div class="testi-author"><div class="testi-avatar">AC</div><div><strong>Atlantic City Local</strong><span>Event Attendee</span></div></div>
+      </div>
+      <div class="testi-card" data-animate>
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <blockquote>"Best shuttle party concept in AC. Multiple venues, no driving, no stress. Absolute game changer for anyone doing Atlantic City right."</blockquote>
+        <div class="testi-author"><div class="testi-avatar">SH</div><div><strong>Shore Frequent</strong><span>Repeat Attendee</span></div></div>
+      </div>
+      <div class="testi-card" data-animate>
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <blockquote>"As a local vendor, partnering with Rico's events is a no-brainer. The crowd is exactly who I want to reach — engaged, local, and ready to support small businesses."</blockquote>
+        <div class="testi-author"><div class="testi-avatar">LB</div><div><strong>Local Business Owner</strong><span>Vendor Partner</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="section" style="background:#080c14;">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;" data-animate>
+      <div>
+        <span class="section-label">Stay Connected</span>
+        <h2 style="font-size:clamp(1.75rem,4vw,2.75rem);margin-bottom:1rem;">Get Event <span class="text-gold">Updates</span></h2>
+        <p style="color:rgba(255,255,255,.45);line-height:1.8;margin-bottom:2rem;">Be first to know about new events, ticket drops, and Atlantic City's best experiences delivered to your inbox.</p>
+        <!-- Netlify form — check Netlify dashboard for submissions after deploy -->
+        <form name="newsletter-home" method="POST" data-netlify="true" action="/thank-you.html">
+          <input type="hidden" name="form-name" value="newsletter-home">
+          <input type="text" name="_gotcha" style="display:none;">
+          <div class="nl-wrap">
+            <input type="email" name="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-gold">Subscribe</button>
+          </div>
+        </form>
+        <p style="font-size:.73rem;color:rgba(255,255,255,.2);margin-top:.75rem;">No spam. Just Atlantic City's best events.</p>
+      </div>
+      <div style="text-align:center;">
+        <p style="font-family:var(--font-sub);font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.25);margin-bottom:1.5rem;">Follow for Daily Updates</p>
+        <div style="display:flex;justify-content:center;gap:.75rem;flex-wrap:wrap;margin-bottom:1.5rem;">
+          <!-- REPLACE href with actual social profile links -->
+          <a href="#" class="social-link-lg">📸 Instagram</a>
+          <a href="#" class="social-link-lg">👍 Facebook</a>
+          <a href="#" class="social-link-lg">🎵 TikTok</a>
+        </div>
+        <p style="font-size:.8rem;color:rgba(255,255,255,.25);">Tag us <strong style="color:var(--gold);">@PartyLikeRico</strong> to be featured</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-link" style="margin-bottom:1rem;display:inline-flex;">
+          <!-- Footer logo — place logo.png in /images/ folder -->
+          <img src="images/logo.png" alt="Party Like Rico" class="logo-img" style="height:56px;" onerror="this.style.display='none'">
+          <div class="logo-text"><span class="logo-main">Party Like Rico</span><span class="logo-sub">Promotions LLC</span></div>
+        </a>
+        <p style="color:rgba(255,255,255,.35);font-size:.88rem;line-height:1.7;margin-bottom:1.25rem;">Atlantic City's premier event promotion company — creating unforgettable experiences across the Jersey Shore.</p>
+        <div class="social-links">
+          <!-- REPLACE href with actual social links -->
+          <a href="#" class="social-link" title="Instagram">IG</a>
+          <a href="#" class="social-link" title="Facebook">FB</a>
+          <a href="#" class="social-link" title="TikTok">TT</a>
+          <a href="#" class="social-link" title="Twitter/X">X</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Events</h5>
+        <ul>
+          <li><a href="events.html">All Events</a></li>
+          <li><a href="event-detail.html">🌿 420 Bud Crawl</a></li>
+          <li><a href="calendar.html">Event Calendar</a></li>
+          <li><a href="vendor.html">Vendor Inquiry</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="mission.html">Mission &amp; Vision</a></li>
+          <li><a href="promote.html">Promote</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="shop.html">Shop</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:6095942265">(609) 594-2265</a></li>
+          <li><a href="mailto:PartyLikeRico@gmail.com">PartyLikeRico@gmail.com</a></li>
+          <li><span style="color:rgba(255,255,255,.3);">Atlantic City, NJ</span></li>
+        </ul>
+        <!-- REPLACE href with real ticket link -->
+        <a href="event-detail.html" class="btn btn-orange" style="margin-top:1.25rem;font-size:.85rem;">🎟 Buy Tickets</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Party Like Rico Promotions LLC. All rights reserved.</p>
+      <p style="color:rgba(255,255,255,.2);font-size:.78rem;">Atlantic City, NJ · Realize Individuals Celebrate Occasions</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

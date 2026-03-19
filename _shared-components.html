@@ -1,0 +1,119 @@
+<!--
+  ============================================================
+  PARTY LIKE RICO PROMOTIONS LLC
+  Shared Header & Footer Components
+  
+  USAGE: Copy the header and footer sections into every HTML page.
+  Or use a build tool / Netlify Edge Functions to inject them.
+  ============================================================
+-->
+
+<!-- ══════════════════════════════════════════════════════════
+     HEADER COMPONENT — Copy into every page inside <body>
+     ══════════════════════════════════════════════════════════ -->
+<div id="progress-bar"></div>
+<header class="site-header">
+  <div class="container header-inner">
+    <!-- REPLACE: logo-placeholder.png with your actual logo file -->
+    <a href="index.html" class="logo-link">
+      <img src="images/logo-placeholder.png" alt="Party Like Rico Promotions LLC Logo" class="logo-img"
+           onerror="this.style.display='none'">
+      <div class="logo-text">
+        <span class="logo-main">Party Like Rico</span>
+        <span class="logo-sub">Promotions LLC</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="promote.html">Promote</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+      <!-- REPLACE: Update ticket link for primary CTA -->
+      <a href="event-detail.html" class="btn btn-orange nav-cta">Buy Tickets</a>
+    </nav>
+
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="nav-overlay"></div>
+
+<!-- ══════════════════════════════════════════════════════════
+     FOOTER COMPONENT — Copy into every page before </body>
+     ══════════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand Column -->
+      <div class="footer-brand">
+        <!-- REPLACE: logo-placeholder.png with your actual logo file -->
+        <a href="index.html" class="logo-link">
+          <img src="images/logo-placeholder.png" alt="Party Like Rico Promotions LLC" class="logo-img"
+               onerror="this.style.display='none'">
+          <div class="logo-text">
+            <span class="logo-main">Party Like Rico</span>
+            <span class="logo-sub">Promotions LLC</span>
+          </div>
+        </a>
+        <p>Atlantic City's premier event promoter — connecting people with unforgettable experiences, local businesses, and extraordinary moments.</p>
+        <!-- REPLACE: Add your actual social media URLs -->
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="Facebook" title="Facebook">f</a>
+          <a href="#" class="social-btn" aria-label="Instagram" title="Instagram">📷</a>
+          <a href="#" class="social-btn" aria-label="Twitter/X" title="Twitter/X">𝕏</a>
+          <a href="#" class="social-btn" aria-label="TikTok" title="TikTok">♪</a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="events.html">Events</a>
+          <a href="calendar.html">Calendar</a>
+          <a href="media.html">Media</a>
+          <a href="blog.html">Blog</a>
+          <a href="shop.html">Shop</a>
+        </nav>
+      </div>
+
+      <!-- Company -->
+      <div class="footer-col">
+        <h5>Company</h5>
+        <nav class="footer-nav">
+          <a href="about.html">About Us</a>
+          <a href="mission.html">Mission &amp; Vision</a>
+          <a href="promote.html">Promote</a>
+          <a href="vendor.html">Vendor Inquiry</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-col">
+        <h5>Get In Touch</h5>
+        <div class="footer-contact-info">
+          <!-- REPLACE: Update phone and email -->
+          <a href="tel:6095942265">📞 (609) 594-2265</a>
+          <a href="mailto:PartyLikeRico@gmail.com">✉️ PartyLikeRico@gmail.com</a>
+          <a href="#" style="color: var(--muted)">📍 Atlantic City, NJ</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Party Like Rico Promotions LLC. All rights reserved.</span>
+      <span>Atlantic City, NJ · Events · Experiences · Memories</span>
+    </div>
+  </div>
+</footer>

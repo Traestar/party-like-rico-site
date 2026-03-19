@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | Party Like Rico Promotions LLC</title>
+  <meta name="description" content="Thank you for reaching out to Party Like Rico Promotions LLC. We'll be in touch soon.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* ── Thank you page extras ── */
+    .ty-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6rem 1.5rem;
+      text-align: center;
+    }
+    .ty-card {
+      max-width: 640px;
+      margin: 0 auto;
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      padding: 4rem 3rem;
+      border: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+    .ty-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--gold), var(--green), var(--gold));
+    }
+    .ty-icon {
+      font-size: 5rem;
+      display: block;
+      margin-bottom: 1.5rem;
+      animation: bounce-in 0.6s ease;
+    }
+    @keyframes bounce-in {
+      0% { transform: scale(0.3); opacity: 0; }
+      50% { transform: scale(1.1); }
+      70% { transform: scale(0.9); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .ty-card h1 {
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      margin-bottom: 1rem;
+    }
+    .ty-card p {
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+    .ty-divider {
+      width: 60px;
+      height: 2px;
+      background: var(--gold);
+      margin: 1.5rem auto;
+    }
+    .ty-contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+    .ty-contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .ty-contact-item:hover { color: var(--gold); }
+    .ty-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .ty-confetti {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .confetti-piece {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 2px;
+      animation: confetti-fall linear infinite;
+    }
+    @keyframes confetti-fall {
+      0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+    }
+
+    /* Event teaser on thanks page */
+    .ty-event-teaser {
+      background: linear-gradient(135deg, #1a2e1a, #0d1f0d);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      border: 1px solid var(--green);
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+    .ty-event-teaser h5 { color: var(--green); margin-bottom: 0.3rem; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; font-family: var(--font-sub); }
+    .ty-event-teaser h4 { margin-bottom: 0.25rem; font-size: 1.1rem; }
+    .ty-event-teaser p { font-size: 0.82rem; color: var(--muted); margin: 0; }
+    .ty-event-teaser .ty-event-cta {
+      margin-top: 1rem;
+      display: inline-flex;
+    }
+  </style>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo-link">
+      <!-- Logo: place logo.png in /images/ folder -->
+      <img src="images/logo.png" alt="Party Like Rico Promotions LLC" class="logo-img" onerror="this.style.display='none'">
+      <div class="logo-text"><span class="logo-main">Party Like Rico</span><span class="logo-sub">Promotions LLC</span></div>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="promote.html">Promote</a></li>
+        <li class="nav-item-dropdown">
+          <a href="contact.html" class="nav-dropdown-trigger">Contact <span class="arrow">▼</span></a>
+          <div class="nav-dropdown-menu">
+            <a href="contact.html"><span class="dd-icon">✉️</span> Contact Us</a>
+            <a href="about.html"><span class="dd-icon">👤</span> About Us</a>
+            <a href="mission.html"><span class="dd-icon">🎯</span> Mission</a>
+            <a href="mission.html#vision"><span class="dd-icon">🌟</span> Vision</a>
+          </div>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+      <a href="event-detail.html" class="btn btn-orange nav-cta">🎟 Tickets</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="nav-overlay"></div>
+
+<!-- Thank you confetti canvas -->
+<div class="ty-confetti" id="confetti-container"></div>
+
+<!-- MAIN CONTENT -->
+<main class="ty-page">
+  <div class="container">
+    <div class="ty-card" data-animate>
+      <span class="ty-icon">🎉</span>
+      <h1>You're All Set — <span class="text-gold">Thank You!</span></h1>
+      <p>We received your message and we'll be in touch as soon as possible. Party Like Rico Promotions appreciates you reaching out — we're excited to connect.</p>
+
+      <div class="ty-divider"></div>
+
+      <div class="ty-contact-info">
+        <a href="tel:6095942265" class="ty-contact-item">📞 (609) 594-2265</a>
+        <a href="mailto:PartyLikeRico@gmail.com" class="ty-contact-item">✉️ PartyLikeRico@gmail.com</a>
+      </div>
+
+      <!-- Bud Crawl upsell -->
+      <div class="ty-event-teaser">
+        <h5>🌿 Upcoming Event</h5>
+        <h4>420 Weekend AC Bud Crawl — April 18, 2026</h4>
+        <p>While you wait to hear from us — don't forget to grab your ticket for Atlantic City's first shuttle party experience of 2026. First 50 attendees get complimentary giveaways!</p>
+        <a href="event-detail.html" class="btn btn-green ty-event-cta" style="font-size:0.85rem;">🎟 Buy Tickets Now</a>
+      </div>
+
+      <div class="ty-buttons">
+        <a href="index.html" class="btn btn-gold">Back to Home</a>
+        <a href="events.html" class="btn btn-outline">Browse Events</a>
+        <a href="blog.html" class="btn btn-outline">Read Our Blog</a>
+      </div>
+
+      <p style="margin-top:2rem;font-size:0.8rem;color:var(--muted);">
+        Follow us for event updates: 
+        <!-- REPLACE: Add real social links -->
+        <a href="#" style="color:var(--gold);text-decoration:none;">Instagram</a> · 
+        <a href="#" style="color:var(--gold);text-decoration:none;">Facebook</a> · 
+        <a href="#" style="color:var(--gold);text-decoration:none;">TikTok</a>
+      </p>
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER (minimal) -->
+<footer style="padding:2rem 0;border-top:1px solid var(--border);">
+  <div class="container" style="text-align:center;">
+    <p style="font-size:0.82rem;color:var(--muted);">© 2026 Party Like Rico Promotions LLC · Atlantic City, NJ · <a href="tel:6095942265" style="color:var(--gold);">(609) 594-2265</a></p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  // Confetti animation
+  const colors = ['#D4AF37', '#FFD700', '#228B22', '#FF8C00', '#ffffff'];
+  const container = document.getElementById('confetti-container');
+  for (let i = 0; i < 40; i++) {
+    const piece = document.createElement('div');
+    piece.className = 'confetti-piece';
+    piece.style.cssText = `
+      left: ${Math.random() * 100}%;
+      background: ${colors[Math.floor(Math.random() * colors.length)]};
+      animation-delay: ${Math.random() * 4}s;
+      animation-duration: ${3 + Math.random() * 3}s;
+      transform: rotate(${Math.random() * 360}deg);
+      width: ${6 + Math.random() * 8}px;
+      height: ${6 + Math.random() * 8}px;
+      border-radius: ${Math.random() > 0.5 ? '50%' : '2px'};
+      opacity: ${0.6 + Math.random() * 0.4};
+    `;
+    container.appendChild(piece);
+  }
+</script>
+</body>
+</html>

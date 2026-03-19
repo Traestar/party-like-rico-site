@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Party Like Rico Promotions LLC</title>
+  <meta name="description" content="Learn about Party Like Rico Promotions LLC — Atlantic City's event promotion company connecting people with unforgettable experiences across the Jersey Shore.">
+  <meta property="og:title" content="About Us | Party Like Rico Promotions LLC">
+  <meta property="og:description" content="Atlantic City's premier event promotion company — our story, our purpose, and our vision.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* ── About page extras ── */
+    .about-intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .about-img-block {
+      position: relative;
+    }
+    .about-main-img {
+      width: 100%;
+      aspect-ratio: 4/5;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: var(--surface);
+      position: relative;
+    }
+    .about-main-img img { width:100%; height:100%; object-fit:cover; }
+    .about-img-accent {
+      position: absolute;
+      bottom: -1.5rem;
+      right: -1.5rem;
+      width: 60%;
+      aspect-ratio: 1/1;
+      border-radius: var(--radius-lg);
+      background: linear-gradient(135deg, var(--gold), #b8860b);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      text-align: center;
+      z-index: -1;
+    }
+    .about-stat-float {
+      position: absolute;
+      bottom: 2rem;
+      left: -1.5rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem 1.5rem;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    }
+    .about-stat-float .stat-num {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .about-stat-float .stat-label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-family: var(--font-sub);
+    }
+
+    /* Story timeline */
+    .story-timeline {
+      position: relative;
+      padding-left: 2rem;
+    }
+    .story-timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+    }
+    .timeline-item {
+      position: relative;
+      padding-bottom: 2.5rem;
+      padding-left: 1.5rem;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -2.5rem;
+      top: 0.4rem;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 0 4px rgba(212,175,55,0.2);
+    }
+    .timeline-item .tl-year {
+      font-family: var(--font-sub);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.35rem;
+    }
+    .timeline-item h4 { margin-bottom: 0.5rem; }
+    .timeline-item p { font-size: 0.9rem; color: var(--muted); line-height: 1.7; margin: 0; }
+
+    /* Team / founder */
+    .founder-card {
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      border: 1px solid var(--border);
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+    .founder-avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: #1a1a1a;
+      border: 3px solid var(--gold);
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+    }
+    .founder-avatar img { width:100%; height:100%; object-fit:cover; }
+    .founder-info h3 { margin-bottom: 0.25rem; }
+    .founder-info .founder-title {
+      font-family: var(--font-sub);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .founder-info p { color: var(--muted); font-size: 0.9rem; line-height: 1.8; margin: 0; }
+
+    /* Values grid */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .value-card {
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.5rem;
+      border: 1px solid var(--border);
+      text-align: center;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .value-card:hover { border-color: var(--gold); transform: translateY(-4px); }
+    .value-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .value-card h4 { margin-bottom: 0.5rem; }
+    .value-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.7; margin: 0; }
+
+    /* Stats bar */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .stat-cell {
+      background: var(--surface);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+    .stat-cell .big-num {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--gold);
+      display: block;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .stat-cell p { font-size: 0.85rem; color: var(--muted); margin: 0; font-family: var(--font-sub); }
+
+    /* Expansion vision */
+    .vision-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    .vision-card {
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--gold);
+    }
+    .vision-card h4 { margin-bottom: 0.75rem; font-size: 1.05rem; }
+    .vision-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.7; margin: 0; }
+
+    @media (max-width: 900px) {
+      .about-intro-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .about-stat-float { left: 50%; transform: translateX(-50%); bottom: -4rem; }
+      .founder-card { grid-template-columns: 1fr; text-align: center; }
+      .values-grid { grid-template-columns: repeat(2, 1fr); }
+      .stats-bar { grid-template-columns: repeat(2, 1fr); }
+      .vision-cards { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 540px) {
+      .values-grid { grid-template-columns: 1fr; }
+      .stats-bar { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<!-- PROMO STRIP -->
+<div class="promo-strip"><span class="promo-strip-inner">&#127807; 420 Weekend AC Bud Crawl &#8212; April 18, 2026 &nbsp;&middot;&nbsp; 21+ Only &nbsp;&middot;&nbsp; First 50 Get Free Giveaways &nbsp;&middot;&nbsp; Atlantic City, NJ &nbsp;&middot;&nbsp; &#127807; 420 Weekend AC Bud Crawl &#8212; April 18, 2026 &nbsp;&middot;&nbsp; 21+ Only &nbsp;&middot;&nbsp; First 50 Get Free Giveaways &nbsp;&middot;&nbsp; Atlantic City, NJ &nbsp;&middot;&nbsp;</span></div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo-link">
+      <!-- Logo: place logo.png in /images/ folder -->
+      <img src="images/logo.png" alt="Party Like Rico Promotions LLC" class="logo-img" onerror="this.style.display='none'">
+      <div class="logo-text"><span class="logo-main">Party Like Rico</span><span class="logo-sub">Promotions LLC</span></div>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="promote.html">Promote</a></li>
+        <li class="nav-item-dropdown">
+          <a href="contact.html" class="nav-dropdown-trigger active">Contact <span class="arrow">▼</span></a>
+          <div class="nav-dropdown-menu">
+            <a href="contact.html"><span class="dd-icon">✉️</span> Contact Us</a>
+            <a href="about.html"><span class="dd-icon">👤</span> About Us</a>
+            <a href="mission.html"><span class="dd-icon">🎯</span> Mission</a>
+            <a href="mission.html#vision"><span class="dd-icon">🌟</span> Vision</a>
+          </div>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+      <a href="event-detail.html" class="btn btn-orange nav-cta">🎟 Tickets</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="nav-overlay"></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <div data-animate>
+      <span class="section-label">Our Story</span>
+      <h1>About <span class="text-gold">Party Like Rico</span></h1>
+      <p class="lead">We're Atlantic City's event promotion company — built to connect people with unforgettable experiences, local businesses, and the energy that makes the Jersey Shore unlike anywhere else.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO / STORY -->
+<section class="section">
+  <div class="container">
+    <div class="about-intro-grid">
+      <div class="about-img-block" data-animate>
+        <div class="about-main-img">
+          <!-- REPLACE: Add a brand/founder photo here -->
+          <img src="images/about-main.jpg" alt="Party Like Rico" onerror="this.style.display='none'">
+          <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.75rem;color:var(--muted);font-family:var(--font-sub);font-size:0.85rem;">
+            <span style="font-size:3rem;">🏙️</span>
+            <span>about-main.jpg<br>Brand / Founder photo</span>
+          </div>
+        </div>
+        <div class="about-stat-float">
+          <div class="stat-num">2026</div>
+          <div class="stat-label">Year Founded</div>
+        </div>
+      </div>
+
+      <div data-animate>
+        <span class="section-label">Who We Are</span>
+        <h2 class="section-title">More Than an Event Company —<br><span class="text-gold">We Create Moments</span></h2>
+        <p style="color:var(--muted);line-height:1.8;margin-bottom:1.5rem;">Party Like Rico Promotions LLC was born out of a vision to elevate the Atlantic City experience beyond the casino floor. We saw an opportunity to connect locals, visitors, and businesses through the power of shared experiences — and we went all in.</p>
+        <p style="color:var(--muted);line-height:1.8;margin-bottom:1.5rem;">Our platform was created to connect people with the best events, venues, and experiences Atlantic City and the surrounding shore towns have to offer. From shuttle party experiences and vendor pop-ups to community events and private celebrations, we coordinate it all.</p>
+        <p style="color:var(--muted);line-height:1.8;margin-bottom:2rem;">We bring great energy, good people, and memorable moments together — every time.</p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="events.html" class="btn btn-gold">See Our Events</a>
+          <a href="mission.html" class="btn btn-outline">Our Mission</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<section style="padding: 0 0 4rem;">
+  <div class="container">
+    <div class="stats-bar" data-animate>
+      <div class="stat-cell">
+        <span class="big-num">2026</span>
+        <p>Year of Launch</p>
+      </div>
+      <div class="stat-cell">
+        <span class="big-num">AC</span>
+        <p>Atlantic City Based</p>
+      </div>
+      <div class="stat-cell">
+        <span class="big-num">12+</span>
+        <p>Events Planned for 2026</p>
+      </div>
+      <div class="stat-cell">
+        <span class="big-num">100%</span>
+        <p>Jersey Shore Energy</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER / TEAM -->
+<section class="section" style="background:var(--surface-alt);padding-top:3rem;">
+  <div class="container">
+    <div data-animate>
+      <span class="section-label">The Team</span>
+      <h2 class="section-title">The <span class="text-gold">People Behind the Brand</span></h2>
+    </div>
+    <div class="founder-card" data-animate>
+      <div class="founder-avatar">
+        <!-- REPLACE: Add founder/team photo here as founder-photo.jpg -->
+        <img src="images/founder-photo.jpg" alt="Rico" onerror="this.style.display='none'">
+        <span style="font-size:3rem;">🤵</span>
+      </div>
+      <div class="founder-info">
+        <h3>Rico — Founder &amp; Event Director</h3>
+        <p class="founder-title">Party Like Rico Promotions LLC</p>
+        <p>As the founder of Party Like Rico Promotions, Rico has a passion for creating experiences that bring communities together. With a deep love for Atlantic City and an eye for what makes an event unforgettable, Rico built this platform to fill a genuine gap in how AC events are promoted, experienced, and remembered.</p>
+        <p style="margin-top:0.75rem;">From coordinating shuttle party experiences to partnering with local businesses and building community through events, Rico's vision is simple: every occasion deserves to be celebrated in a big way.</p>
+        <div style="display:flex;gap:0.75rem;margin-top:1rem;flex-wrap:wrap;">
+          <!-- REPLACE: Add real social links -->
+          <a href="#" class="btn btn-outline" style="font-size:0.82rem;padding:0.4rem 1rem;">Instagram</a>
+          <a href="#" class="btn btn-outline" style="font-size:0.82rem;padding:0.4rem 1rem;">Facebook</a>
+          <a href="mailto:PartyLikeRico@gmail.com" class="btn btn-outline" style="font-size:0.82rem;padding:0.4rem 1rem;">Email Rico</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND STORY TIMELINE -->
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;">
+      <div data-animate>
+        <span class="section-label">Our Journey</span>
+        <h2 class="section-title">The <span class="text-gold">Party Like Rico</span> Story</h2>
+        <p style="color:var(--muted);line-height:1.8;">From a vision to elevate Atlantic City nightlife to a full-scale event promotion company — here's how we got here.</p>
+      </div>
+      <div class="story-timeline" data-animate>
+        <div class="timeline-item">
+          <div class="tl-year">The Beginning</div>
+          <h4>The Vision Takes Shape</h4>
+          <p>Recognizing a gap in how Atlantic City events were promoted and experienced, the concept for Party Like Rico Promotions began to take shape — built around the idea that every experience should feel premium, personal, and memorable.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-year">Early 2026</div>
+          <h4>Party Like Rico Promotions LLC Launches</h4>
+          <p>The company officially launches, with the 420 Weekend AC Bud Crawl as the debut flagship event — a shuttle party experience bringing Atlantic City's most exciting venues together under one high-energy event.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-year">April 2026</div>
+          <h4>First Major Event: The AC Bud Crawl</h4>
+          <p>April 18, 2026 — the 420 Weekend AC Bud Crawl launches to a sold-out crowd, establishing Party Like Rico as a trusted name in Atlantic City event experiences.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-year">Summer 2026 &amp; Beyond</div>
+          <h4>Expansion Across the Shore</h4>
+          <p>Growing into new event formats, community partnerships, media coverage, curated travel itineraries, and a broader network of Atlantic City and Jersey Shore experiences.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND VALUES -->
+<section class="section" style="background:var(--surface-alt);">
+  <div class="container">
+    <div data-animate>
+      <span class="section-label">What Drives Us</span>
+      <h2 class="section-title">Our <span class="text-gold">Brand Values</span></h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card" data-animate>
+        <span class="value-icon">🔥</span>
+        <h4>Energy &amp; Excitement</h4>
+        <p>Every event we promote is built around delivering real energy — the kind that makes people want to come back and bring their friends.</p>
+      </div>
+      <div class="value-card" data-animate>
+        <span class="value-icon">🤝</span>
+        <h4>Community First</h4>
+        <p>We're deeply rooted in the Atlantic City community — partnering with local businesses and creating events that lift everyone up.</p>
+      </div>
+      <div class="value-card" data-animate>
+        <span class="value-icon">⭐</span>
+        <h4>Premium Experiences</h4>
+        <p>We don't settle for ordinary. Every experience we coordinate is curated, elevated, and designed to be remembered.</p>
+      </div>
+      <div class="value-card" data-animate>
+        <span class="value-icon">🌊</span>
+        <h4>Shore Town Roots</h4>
+        <p>Atlantic City isn't just where we work — it's who we are. We celebrate everything unique about the Jersey Shore.</p>
+      </div>
+      <div class="value-card" data-animate>
+        <span class="value-icon">🎯</span>
+        <h4>Results-Driven</h4>
+        <p>Whether you're buying tickets or partnering with us, we focus on delivering measurable results and real impact.</p>
+      </div>
+      <div class="value-card" data-animate>
+        <span class="value-icon">📣</span>
+        <h4>Bold Promotion</h4>
+        <p>We promote with passion and purpose. Every event deserves to be seen, heard, and felt — and we make sure it is.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPANSION VISION -->
+<section class="section">
+  <div class="container">
+    <div data-animate>
+      <span class="section-label">What's Next</span>
+      <h2 class="section-title">Where We're <span class="text-gold">Headed</span></h2>
+      <p class="section-subtitle">Party Like Rico Promotions is just getting started. Here's what's on the horizon.</p>
+    </div>
+    <div class="vision-cards" data-animate>
+      <div class="vision-card">
+        <h4>🎬 Event Media Coverage</h4>
+        <p>Professional event documentation, recap videos, and photo coverage that extends the life of every event we promote — giving partners and attendees something to remember and share.</p>
+      </div>
+      <div class="vision-card">
+        <h4>🗺️ Curated Travel Itineraries</h4>
+        <p>Atlantic City weekend guides, shore town itineraries, and experience-based travel content — helping visitors and locals make the most of every trip to the Jersey Shore.</p>
+      </div>
+      <div class="vision-card">
+        <h4>🏪 Expanded Vendor Network</h4>
+        <p>Growing our network of participating local businesses, vendors, and brands — creating a thriving ecosystem where events drive real economic impact for the community.</p>
+      </div>
+      <div class="vision-card">
+        <h4>🎉 Year-Round Event Calendar</h4>
+        <p>Building a consistent, diverse calendar of events covering every season — from winter pop-ups to summer shore parties — making Party Like Rico the go-to source for AC experiences.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:3rem;" data-animate>
+      <a href="mission.html" class="btn btn-gold">Read Our Full Mission &amp; Vision</a>
+    </div>
+  </div>
+</section>
+
+<!-- AC FOCUS BAND -->
+<section style="background:linear-gradient(135deg,#0a1628,#1a2e1a);padding:5rem 0;">
+  <div class="container" style="text-align:center;" data-animate>
+    <span class="section-label">Our Home</span>
+    <h2 style="font-size:clamp(2rem,5vw,3.5rem);margin-bottom:1rem;">Atlantic City <span class="text-gold">Is Our Stage</span></h2>
+    <p style="color:var(--muted);max-width:640px;margin:0 auto 2rem;line-height:1.8;font-size:1.05rem;">From the boardwalk to the Inlet, from the casinos to the shore towns — Atlantic City is more than a backdrop for our events. It's our home, our community, and the city we're proud to help put on the map.</p>
+    <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;">
+      <a href="events.html" class="btn btn-gold">Explore Our Events</a>
+      <a href="contact.html" class="btn btn-outline-white">Get In Touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="container cta-band-inner" data-animate>
+    <div>
+      <h2>Ready to <span class="text-gold">Party Like Rico?</span></h2>
+      <p>Join us at our next event, become a vendor partner, or reach out to promote your own experience.</p>
+    </div>
+    <div class="cta-band-btns">
+      <a href="event-detail.html" class="btn btn-gold">🎟 Buy Tickets</a>
+      <a href="vendor.html" class="btn btn-outline-white">Become a Partner</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-link" style="margin-bottom:1rem;display:inline-flex;">
+          <img src="images/logo.png" alt="Party Like Rico Promotions LLC" style="height:56px;width:auto;" onerror="this.style.display='none'">
+          <div class="logo-text"><span class="logo-main">Party Like Rico</span><span class="logo-sub">Promotions LLC</span></div>
+        </a>
+        <p style="color:var(--muted);font-size:0.9rem;line-height:1.7;margin-bottom:1.25rem;">Atlantic City's premier event promotion company — creating unforgettable experiences across the Jersey Shore.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" title="Instagram">IG</a>
+          <a href="#" class="social-link" title="Facebook">FB</a>
+          <a href="#" class="social-link" title="TikTok">TT</a>
+          <a href="#" class="social-link" title="Twitter/X">X</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+            <li><a href="media.html">Media</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="shop.html">Shop</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="mission.html">Mission &amp; Vision</a></li>
+          <li><a href="promote.html">Promote</a></li>
+          <li><a href="vendor.html">Vendor Inquiry</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:6095942265">(609) 594-2265</a></li>
+          <li><a href="mailto:PartyLikeRico@gmail.com">PartyLikeRico@gmail.com</a></li>
+          <li><span style="color:var(--muted);">Atlantic City, NJ</span></li>
+        </ul>
+        <a href="event-detail.html" class="btn btn-orange" style="margin-top:1.25rem;font-size:0.85rem;">🎟 Buy Tickets</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Party Like Rico Promotions LLC. All rights reserved.</p>
+      <p style="color:var(--muted);font-size:0.8rem;">Atlantic City, NJ</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

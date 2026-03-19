@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | Party Like Rico Promotions LLC</title>
+  <meta name="description" content="Upcoming events in Atlantic City and the NJ Shore — bud crawls, nightlife, community events, vendor pop-ups, and more from Party Like Rico Promotions.">
+  <meta property="og:title" content="Events | Party Like Rico Promotions LLC">
+  <meta property="og:description" content="Find your next unforgettable event in Atlantic City, NJ.">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<!-- PROMO STRIP -->
+<div class="promo-strip"><span class="promo-strip-inner">&#127807; 420 Weekend AC Bud Crawl &#8212; April 18, 2026 &nbsp;&middot;&nbsp; 21+ Only &nbsp;&middot;&nbsp; First 50 Get Free Giveaways &nbsp;&middot;&nbsp; Atlantic City, NJ &nbsp;&middot;&nbsp; &#127807; 420 Weekend AC Bud Crawl &#8212; April 18, 2026 &nbsp;&middot;&nbsp; 21+ Only &nbsp;&middot;&nbsp; First 50 Get Free Giveaways &nbsp;&middot;&nbsp; Atlantic City, NJ &nbsp;&middot;&nbsp;</span></div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo-link">
+      <!-- Logo: place logo.png in /images/ folder -->
+      <img src="images/logo.png" alt="Party Like Rico Promotions LLC" class="logo-img" onerror="this.style.display='none'">
+      <div class="logo-text"><span class="logo-main">Party Like Rico</span><span class="logo-sub">Promotions LLC</span></div>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html" class="active">Events</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="promote.html">Promote</a></li>
+        <li class="nav-item-dropdown">
+          <a href="contact.html" class="nav-dropdown-trigger">Contact <span class="arrow">▼</span></a>
+          <div class="nav-dropdown-menu">
+            <a href="contact.html"><span class="dd-icon">✉️</span> Contact Us</a>
+            <a href="about.html"><span class="dd-icon">👤</span> About Us</a>
+            <a href="mission.html"><span class="dd-icon">🎯</span> Mission</a>
+            <a href="mission.html#vision"><span class="dd-icon">🌟</span> Vision</a>
+          </div>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+      <a href="event-detail.html" class="btn btn-orange nav-cta">🎟 Tickets</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="nav-overlay"></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <div data-animate>
+      <span class="section-label green">All Events</span>
+      <h1>Upcoming <span class="text-gold">Events</span></h1>
+      <p class="lead">From bud crawls to community parties — find your next Atlantic City experience here.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED EVENT BANNER -->
+<section style="background:var(--dark);border-bottom:1px solid var(--border);" class="section-sm">
+  <div class="container">
+    <div class="event-featured-card" data-animate>
+      <div class="card-image">
+        <img src="images/420-weekend-flyer.jpg" alt="420 Bud Crawl Flyer" onerror="this.style.display='none'">
+        <div class="card-image-placeholder">
+          <div>🌿<br><strong style="font-family:var(--font-display);font-size:1.2rem;color:var(--green-lt);">FEATURED EVENT</strong><br>
+          <small>REPLACE: bud-crawl-flyer.jpg</small></div>
+        </div>
+      </div>
+      <div class="card-info">
+        <div>
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1rem;">
+            <span class="badge badge-green">21+ Only</span>
+            <span class="badge badge-gold">🔥 Hot Ticket</span>
+          </div>
+          <h3 style="font-size:1.9rem;margin-bottom:0.75rem;">420 Weekend AC <span class="text-green">Bud Crawl</span></h3>
+          <p style="margin-bottom:1rem;">Shuttle Party Experience — April 18, 2026 · Atlantic City, NJ</p>
+          <p style="font-size:0.9rem;color:var(--off);">Secure your seat for our first shuttle party of 2026. Guided tour of 420-friendly venues, party atmosphere, complimentary giveaways for first 50 attendees.</p>
+        </div>
+        <div class="btn-group mt-3">
+          <!-- REPLACE: with actual ticket link -->
+          <a href="event-detail.html" class="btn btn-green">🎟️ Buy Tickets Now</a>
+          <a href="event-detail.html" class="btn btn-outline">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTS LISTING -->
+<section class="section" style="background:var(--charcoal);">
+  <div class="container">
+    <!-- Filter Bar -->
+    <div class="filter-bar" data-animate>
+      <button class="filter-btn active" data-filter="all">All Events</button>
+      <button class="filter-btn" data-filter="featured">Featured</button>
+      <button class="filter-btn" data-filter="bud-crawl">Bud Crawls</button>
+      <button class="filter-btn" data-filter="nightlife">Nightlife</button>
+      <button class="filter-btn" data-filter="community">Community</button>
+      <button class="filter-btn" data-filter="vendor">Vendor / Pop-Up</button>
+      <button class="filter-btn" data-filter="private">Private</button>
+      <select class="filter-select" id="filter-month" aria-label="Filter by month">
+        <option value="all">All Months</option>
+        <option value="april">April</option>
+        <option value="may">May</option>
+        <option value="june">June</option>
+        <option value="july">July</option>
+        <option value="august">August</option>
+      </select>
+    </div>
+
+    <!-- Events Grid -->
+    <!-- data-type and data-month enable front-end filtering -->
+    <div class="events-grid">
+
+      <!-- Bud Crawl — Featured -->
+      <div class="event-card card" data-type="bud-crawl" data-month="april" data-featured="true" data-animate>
+        <div style="position:relative;aspect-ratio:16/9;overflow:hidden;background:#0d1f0d;">
+          <!-- REPLACE: 420-weekend-flyer.jpg is the real event flyer — place in /images/ folder -->
+          <img src="images/420-weekend-flyer.jpg" alt="420 Weekend AC Bud Crawl" style="width:100%;height:100%;object-fit:cover;object-position:top;transition:transform 0.5s;" onerror="this.style.display='none'">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:3rem;color:rgba(255,255,255,0.2);">🌿</div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.5) 0%,transparent 60%);"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="badge badge-green">Bud Crawl</span>
+            <span class="badge badge-gold">Featured</span>
+          </div>
+          <span class="card-date">Sat, April 18, 2026</span>
+          <h3>420 Weekend AC Bud Crawl</h3>
+          <p>Shuttle party through AC's best 420-friendly venues. Check-in 12:30 PM. 21+ only.</p>
+          <div class="card-actions">
+            <!-- REPLACE: with actual Eventbrite / Stripe / TicketTailor link -->
+            <a href="event-detail.html" class="btn btn-orange btn-sm">Buy Tickets</a>
+            <a href="event-detail.html" class="btn btn-outline btn-sm">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Memorial Day -->
+      <div class="event-card card" data-type="community" data-month="may" data-featured="false" data-animate data-delay="80">
+                <div style="position:relative;aspect-ratio:16/9;overflow:hidden;background:#111;">
+          <!-- Replace this image with real event photo -->
+          <img src="images/placeholder-crowd.jpg" alt="Event" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s;" onerror="this.style.display='none'">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:3rem;color:rgba(255,255,255,0.15);">🎉</div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.5) 0%,transparent 60%);"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge badge-white">Community</span></div>
+          <span class="card-date">May 2026 · TBD</span>
+          <h3>Memorial Day Shore Weekend</h3>
+          <p>Celebrate with Atlantic City's best beach party, live music, and local vendors.</p>
+          <div class="card-actions">
+            <!-- REPLACE: with actual ticket link -->
+            <a href="#" class="btn btn-gold btn-sm">Get Access</a>
+            <a href="#" class="btn btn-outline btn-sm">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Summer Vendor Pop-Up -->
+      <div class="event-card card" data-type="vendor" data-month="june" data-featured="false" data-animate data-delay="160">
+                <div style="position:relative;aspect-ratio:16/9;overflow:hidden;background:#111;">
+          <!-- Replace this image with real event photo -->
+          <img src="images/placeholder-event-1.jpg" alt="Event" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s;" onerror="this.style.display='none'">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:3rem;color:rgba(255,255,255,0.15);">🛍️</div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.5) 0%,transparent 60%);"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge badge-orange">Vendor Pop-Up</span></div>
+          <span class="card-date">June 2026 · TBD</span>
+          <h3>Summer Vendor Pop-Up</h3>
+          <p>Local vendors, artisans, food, and entertainment in the heart of Atlantic City.</p>
+          <div class="card-actions">
+            <!-- REPLACE: with actual ticket/registration link -->
+            <a href="#" class="btn btn-orange btn-sm">Reserve Spot</a>
+            <a href="vendor.html" class="btn btn-outline btn-sm">Vend Here</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Summer Nightlife -->
+      <div class="event-card card" data-type="nightlife" data-month="july" data-featured="false" data-animate>
+                <div style="position:relative;aspect-ratio:16/9;overflow:hidden;background:#111;">
+          <!-- Replace this image with real event photo -->
+          <img src="images/placeholder-nightlife.jpg" alt="Event" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s;" onerror="this.style.display='none'">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:3rem;color:rgba(255,255,255,0.15);">🎶</div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.5) 0%,transparent 60%);"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge badge-orange">Nightlife</span></div>
+          <span class="card-date">July 2026 · TBD</span>
+          <h3>4th of July AC Nightlife Bash</h3>
+          <p>The biggest party of the summer. Fireworks, DJs, open bar packages, and everything Atlantic City has to offer.</p>
+          <div class="card-actions">
+            <!-- REPLACE: with actual ticket link -->
+            <a href="#" class="btn btn-orange btn-sm">Buy Tickets</a>
+            <a href="#" class="btn btn-outline btn-sm">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Summer Crawl -->
+      <div class="event-card card" data-type="bud-crawl" data-month="august" data-featured="false" data-animate data-delay="80">
+                <div style="position:relative;aspect-ratio:16/9;overflow:hidden;background:#111;">
+          <!-- Replace this image with real event photo -->
+          <img src="images/placeholder-event-2.jpg" alt="Event" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s;" onerror="this.style.display='none'">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:3rem;color:rgba(255,255,255,0.15);">🌊</div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.5) 0%,transparent 60%);"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge badge-green">Bud Crawl</span><span class="badge badge-white">Seasonal</span></div>
+          <span class="card-date">August 2026 · TBD</span>
+          <h3>Summer Crawl Experience</h3>
+          <p>Multi-venue summer crawl hitting the best spots on the AC boardwalk and beyond. Details coming soon.</p>
+          <div class="card-actions">
+            <!-- REPLACE: with actual ticket link -->
+            <a href="#" class="btn btn-green btn-sm">View Event</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Private Events CTA -->
+      <div class="event-card card" data-type="private" data-month="all" data-featured="false" data-animate data-delay="160">
+                <div style="position:relative;aspect-ratio:16/9;overflow:hidden;background:#111;">
+          <!-- Replace this image with real event photo -->
+          <img src="images/placeholder-party.jpg" alt="Event" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s;" onerror="this.style.display='none'">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:3rem;color:rgba(255,255,255,0.15);">🥂</div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.5) 0%,transparent 60%);"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge badge-white">Private Events</span></div>
+          <span class="card-date">Year-Round · By Request</span>
+          <h3>Private Celebrations</h3>
+          <p>Birthday parties, bachelorette weekends, corporate events, anniversaries. Let us make your occasion unforgettable.</p>
+          <div class="card-actions">
+            <a href="contact.html" class="btn btn-gold btn-sm">Book Your Event</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /events-grid -->
+
+    <!-- No results -->
+    <div id="no-results" style="display:none;text-align:center;padding:3rem;" data-animate>
+      <p style="font-size:1.1rem;color:var(--muted);">No events match that filter. <a href="#" onclick="location.reload()" style="color:var(--gold-lt);">Reset filters →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <div class="container">
+    <h2>Want to Promote Your Event?</h2>
+    <p class="lead" style="max-width:460px;margin:0 auto 2rem;">Partner with Party Like Rico Promotions and reach thousands of Atlantic City visitors and locals.</p>
+    <div class="btn-group" style="justify-content:center;">
+      <a href="promote.html" class="btn btn-gold btn-lg">Learn How We Promote</a>
+      <a href="contact.html" class="btn btn-outline btn-lg">Contact Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-link" style="margin-bottom:1rem;">
+          <img src="images/logo.png" alt="Party Like Rico" class="logo-img" onerror="this.style.display='none'">
+          <div class="logo-text"><span class="logo-main">Party Like Rico</span><span class="logo-sub">Promotions LLC</span></div>
+        </a>
+        <p>Atlantic City's premier event promoter — connecting people with unforgettable experiences.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn">f</a>
+          <a href="#" class="social-btn">📷</a>
+          <a href="#" class="social-btn">𝕏</a>
+          <a href="#" class="social-btn">♪</a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Quick Links</h5><nav class="footer-nav"><a href="index.html">Home</a><a href="events.html">Events</a><a href="calendar.html">Calendar</a><a href="media.html">Media</a><a href="blog.html">Blog</a></nav></div>
+      <div class="footer-col"><h5>Company</h5><nav class="footer-nav"><a href="about.html">About Us</a><a href="mission.html">Mission &amp; Vision</a><a href="promote.html">Promote</a><a href="vendor.html">Vendor Inquiry</a><a href="contact.html">Contact</a></nav></div>
+      <div class="footer-col"><h5>Contact</h5><div class="footer-contact-info"><a href="tel:6095942265">📞 (609) 594-2265</a><a href="mailto:PartyLikeRico@gmail.com">✉️ PartyLikeRico@gmail.com</a></div></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Party Like Rico Promotions LLC. All rights reserved.</span>
+      <span>Atlantic City, NJ</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
