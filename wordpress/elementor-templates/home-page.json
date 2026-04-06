@@ -1,0 +1,902 @@
+{
+  "version": "0.4",
+  "title": "PLR – Home Page",
+  "type": "page",
+  "content": [
+
+    {
+      "id": "sec-hero",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "_title": "Hero – Main Banner",
+        "background_background": "gradient",
+        "background_color": "#0B1628",
+        "background_color_b": "#0B0F14",
+        "background_gradient_angle": { "unit": "deg", "size": 160, "sizes": [] },
+        "layout": "full_width",
+        "content_width": { "unit": "px", "size": 860, "sizes": [] },
+        "min_height": { "unit": "vh", "size": 92, "sizes": [] },
+        "content_position": "middle",
+        "padding": { "unit": "px", "top": "120", "right": "24", "bottom": "100", "left": "24", "isLinked": false },
+        "padding_mobile": { "unit": "px", "top": "80", "right": "20", "bottom": "64", "left": "20", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "hero-col1",
+          "elType": "column",
+          "isInner": false,
+          "settings": { "_column_size": 100, "content_position": "middle" },
+          "elements": [
+            {
+              "id": "hero-eyebrow",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "🌿 Atlantic City's First Shuttle Party of 2026",
+                "header_size": "h6",
+                "align": "center",
+                "title_color": "#FACC15",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_weight": "700",
+                "typography_font_size": { "unit": "px", "size": 12, "sizes": [] },
+                "typography_letter_spacing": { "unit": "em", "size": 0.15, "sizes": [] },
+                "typography_text_transform": "uppercase",
+                "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0", "isLinked": false }
+              },
+              "elements": []
+            },
+            {
+              "id": "hero-h1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "420 Weekend AC",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_weight": "900",
+                "typography_font_size": { "unit": "px", "size": 80, "sizes": [] },
+                "typography_font_size_tablet": { "unit": "px", "size": 56, "sizes": [] },
+                "typography_font_size_mobile": { "unit": "px", "size": 40, "sizes": [] },
+                "typography_letter_spacing": { "unit": "em", "size": -0.02, "sizes": [] },
+                "typography_line_height": { "unit": "em", "size": 1.05, "sizes": [] },
+                "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "24", "left": "0", "isLinked": false }
+              },
+              "elements": []
+            },
+            {
+              "id": "hero-sub",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>A guided crawl through Atlantic City's best venues — multiple stops, exclusive drink specials, and complimentary giveaways for the first 50 guests.</p>",
+                "align": "center",
+                "text_color": "#D1D5DB",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": { "unit": "px", "size": 20, "sizes": [] },
+                "typography_font_size_mobile": { "unit": "px", "size": 16, "sizes": [] },
+                "typography_line_height": { "unit": "em", "size": 1.7, "sizes": [] },
+                "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "32", "left": "0", "isLinked": false }
+              },
+              "elements": []
+            },
+            {
+              "id": "hero-details",
+              "elType": "widget",
+              "widgetType": "icon-list",
+              "settings": {
+                "icon_list": [
+                  { "_id": "hd1", "text": "April 18, 2026", "icon": { "value": "fas fa-calendar-alt", "library": "fa-solid" }, "icon_color": "#FACC15" },
+                  { "_id": "hd2", "text": "Atlantic City, NJ", "icon": { "value": "fas fa-map-marker-alt", "library": "fa-solid" }, "icon_color": "#FACC15" },
+                  { "_id": "hd3", "text": "Check-in 12:30 PM", "icon": { "value": "fas fa-clock", "library": "fa-solid" }, "icon_color": "#FACC15" },
+                  { "_id": "hd4", "text": "21+ Only", "icon": { "value": "fas fa-id-card", "library": "fa-solid" }, "icon_color": "#F97316" },
+                  { "_id": "hd5", "text": "Shuttle Included", "icon": { "value": "fas fa-bus", "library": "fa-solid" }, "icon_color": "#22C55E" },
+                  { "_id": "hd6", "text": "First 50 Get Gifts", "icon": { "value": "fas fa-gift", "library": "fa-solid" }, "icon_color": "#FACC15" }
+                ],
+                "layout": "inline",
+                "align": "center",
+                "icon_color": "#FACC15",
+                "text_color": "#E5E7EB",
+                "icon_size": { "unit": "px", "size": 13, "sizes": [] },
+                "space_between": { "unit": "px", "size": 20, "sizes": [] },
+                "css_classes": "plr-detail-list",
+                "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "40", "left": "0", "isLinked": false }
+              },
+              "elements": []
+            },
+            {
+              "id": "hero-btn-wrap",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display:flex;gap:16px;justify-content:center;flex-wrap:wrap;\"><a href=\"https://www.paypal.com/ncp/payment/AWCDNEHMYVWAG\" target=\"_blank\" rel=\"noopener\" style=\"display:inline-flex;align-items:center;gap:8px;background:#FACC15;color:#0B0F14;font-family:Montserrat,sans-serif;font-weight:700;font-size:16px;padding:16px 40px;border-radius:8px;text-decoration:none;transition:background .2s,transform .2s;\" onmouseover=\"this.style.background='#EAB308';this.style.transform='translateY(-2px)'\" onmouseout=\"this.style.background='#FACC15';this.style.transform='translateY(0)'\">🎟 Buy Tickets</a><a href=\"/events/420-weekend-ac-bud-crawl/\" style=\"display:inline-flex;align-items:center;background:transparent;color:#FFFFFF;font-family:Montserrat,sans-serif;font-weight:600;font-size:16px;padding:16px 40px;border-radius:8px;border:2px solid rgba(255,255,255,0.35);text-decoration:none;transition:border-color .2s,color .2s,transform .2s;\" onmouseover=\"this.style.borderColor='#FACC15';this.style.color='#FACC15';this.style.transform='translateY(-2px)'\" onmouseout=\"this.style.borderColor='rgba(255,255,255,0.35)';this.style.color='#FFFFFF';this.style.transform='translateY(0)'\">View Full Details</a></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "sec-ticker",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "_title": "Ticker – Announcement Bar",
+        "background_background": "gradient",
+        "background_color": "#FACC15",
+        "background_color_b": "#F97316",
+        "background_gradient_angle": { "unit": "deg", "size": 90, "sizes": [] },
+        "layout": "full_width",
+        "padding": { "unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": false },
+        "overflow": "hidden",
+        "z_index": 10
+      },
+      "elements": [
+        {
+          "id": "ticker-col1",
+          "elType": "column",
+          "isInner": false,
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "ticker-html",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<style>@keyframes plr-tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}</style><div style=\"overflow:hidden;white-space:nowrap;padding:10px 0;\"><div style=\"display:inline-flex;align-items:center;animation:plr-tick 32s linear infinite;\"><span style=\"font-family:Montserrat,sans-serif;font-weight:700;font-size:12px;letter-spacing:.06em;color:#0B0F14;text-transform:uppercase;padding:0 24px;\">🌿 420 Weekend AC Bud Crawl</span><span style=\"color:rgba(11,15,20,.4);padding:0 4px;font-size:16px;\">·</span><span style=\"font-family:Montserrat,sans-serif;font-weight:700;font-size:12px;letter-spacing:.06em;color:#0B0F14;text-transform:uppercase;padding:0 24px;\">April 18, 2026</span><span style=\"color:rgba(11,15,20,.4);padding:0 4px;font-size:16px;\">·</span><span style=\"font-family:Montserrat,sans-serif;font-weight:700;font-size:12px;letter-spacing:.06em;color:#0B0F14;text-transform:uppercase;padding:0 24px;\">Atlantic City, NJ</span><span style=\"color:rgba(11,15,20,.4);padding:0 4px;font-size:16px;\">·</span><span style=\"font-family:Montserrat,sans-serif;font-weight:700;font-size:12px;letter-spacing:.06em;color:#0B0F14;text-transform:uppercase;padding:0 24px;\">21+ Only</span><span style=\"color:rgba(11,15,20,.4);padding:0 4px;font-size:16px;\">·</span><span style=\"font-family:Montserrat,sans-serif;font-weight:700;font-size:12px;letter-spacing:.06em;color:#0B0F14;text-transform:uppercase;padding:0 24px;\">First 50 Get Free Giveaways</span><span style=\"color:rgba(11,15,20,.4);padding:0 4px;font-size:16px;\">·</span><span style=\"font-family:Montserrat,sans-serif;font-weight:700;font-size:12px;letter-spacing:.06em;color:#0B0F14;text-transform:uppercase;padding:0 24px;\">🚌 Shuttle Party</span><span style=\"color:rgba(11,15,20,.4);padding:0 4px;font-size:16px;\">·</span><span style=\"font-family:Montserrat,sans-serif;font-weight:700;font-size:12px;letter-spacing:.06em;color:#0B0F14;text-transform:uppercase;padding:0 24px;\">Check-in 12:30–2:30 PM</span><span style=\"color:rgba(11,15,20,.4);padding:0 4px;font-size:16px;\">·</span><span style=\"font-family:Montserrat,sans-serif;font-weight:700;font-size:12px;letter-spacing:.06em;color:#0B0F14;text-transform:uppercase;padding:0 24px;\">🎟 Tickets On Sale Now</span><span style=\"color:rgba(11,15,20,.4);padding:0 4px;font-size:16px;\">·</span><span style=\"font-family:Montserrat,sans-serif;font-weight:700;font-size:12px;letter-spacing:.06em;color:#0B0F14;text-transform:uppercase;padding:0 24px;\">🌿 420 Weekend AC Bud Crawl</span><span style=\"color:rgba(11,15,20,.4);padding:0 4px;font-size:16px;\">·</span><span style=\"font-family:Montserrat,sans-serif;font-weight:700;font-size:12px;letter-spacing:.06em;color:#0B0F14;text-transform:uppercase;padding:0 24px;\">April 18, 2026</span><span style=\"color:rgba(11,15,20,.4);padding:0 4px;font-size:16px;\">·</span><span style=\"font-family:Montserrat,sans-serif;font-weight:700;font-size:12px;letter-spacing:.06em;color:#0B0F14;text-transform:uppercase;padding:0 24px;\">Atlantic City, NJ</span><span style=\"color:rgba(11,15,20,.4);padding:0 4px;font-size:16px;\">·</span><span style=\"font-family:Montserrat,sans-serif;font-weight:700;font-size:12px;letter-spacing:.06em;color:#0B0F14;text-transform:uppercase;padding:0 24px;\">21+ Only</span><span style=\"color:rgba(11,15,20,.4);padding:0 4px;font-size:16px;\">·</span><span style=\"font-family:Montserrat,sans-serif;font-weight:700;font-size:12px;letter-spacing:.06em;color:#0B0F14;text-transform:uppercase;padding:0 24px;\">First 50 Get Free Giveaways</span><span style=\"color:rgba(11,15,20,.4);padding:0 4px;font-size:16px;\">·</span><span style=\"font-family:Montserrat,sans-serif;font-weight:700;font-size:12px;letter-spacing:.06em;color:#0B0F14;text-transform:uppercase;padding:0 24px;\">🚌 Shuttle Party</span><span style=\"color:rgba(11,15,20,.4);padding:0 4px;font-size:16px;\">·</span><span style=\"font-family:Montserrat,sans-serif;font-weight:700;font-size:12px;letter-spacing:.06em;color:#0B0F14;text-transform:uppercase;padding:0 24px;\">Check-in 12:30–2:30 PM</span><span style=\"color:rgba(11,15,20,.4);padding:0 4px;font-size:16px;\">·</span><span style=\"font-family:Montserrat,sans-serif;font-weight:700;font-size:12px;letter-spacing:.06em;color:#0B0F14;text-transform:uppercase;padding:0 24px;\">🎟 Tickets On Sale Now</span></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "sec-flagship",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "_title": "Featured – Flagship Event Card",
+        "background_background": "classic",
+        "background_color": "#0B0F14",
+        "layout": "full_width",
+        "content_width": { "unit": "px", "size": 720, "sizes": [] },
+        "padding": { "unit": "px", "top": "80", "right": "24", "bottom": "80", "left": "24", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "flagship-col1",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100,
+            "content_position": "top",
+            "background_background": "classic",
+            "background_color": "#111827",
+            "border_border": "solid",
+            "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+            "border_color": "rgba(250,204,21,0.25)",
+            "border_radius": { "unit": "px", "top": 16, "right": 16, "bottom": 16, "left": 16, "isLinked": true },
+            "padding": { "unit": "px", "top": "48", "right": "48", "bottom": "48", "left": "48", "isLinked": false },
+            "padding_mobile": { "unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24", "isLinked": false }
+          },
+          "elements": [
+            {
+              "id": "flagship-label",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "🌿 April 18, 2026 — Flagship Event",
+                "header_size": "h6",
+                "align": "center",
+                "title_color": "#FACC15",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_weight": "700",
+                "typography_font_size": { "unit": "px", "size": 11, "sizes": [] },
+                "typography_letter_spacing": { "unit": "em", "size": 0.15, "sizes": [] },
+                "typography_text_transform": "uppercase",
+                "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0", "isLinked": false }
+              },
+              "elements": []
+            },
+            {
+              "id": "flagship-h2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "420 Weekend AC Bud Crawl",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_weight": "800",
+                "typography_font_size": { "unit": "px", "size": 36, "sizes": [] },
+                "typography_font_size_mobile": { "unit": "px", "size": 26, "sizes": [] },
+                "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0", "isLinked": false }
+              },
+              "elements": []
+            },
+            {
+              "id": "flagship-desc",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>A curated shuttle party experience through Atlantic City's most exciting 420-friendly venues. Multiple stops, exclusive drink specials, party vibes, and complimentary giveaways for the first 50 guests.</p>",
+                "align": "center",
+                "text_color": "#9CA3AF",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": { "unit": "px", "size": 16, "sizes": [] },
+                "typography_line_height": { "unit": "em", "size": 1.7, "sizes": [] },
+                "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "28", "left": "0", "isLinked": false }
+              },
+              "elements": []
+            },
+            {
+              "id": "flagship-details",
+              "elType": "widget",
+              "widgetType": "icon-list",
+              "settings": {
+                "icon_list": [
+                  { "_id": "fd1", "text": "April 18, 2026", "icon": { "value": "fas fa-calendar-alt", "library": "fa-solid" }, "icon_color": "#FACC15" },
+                  { "_id": "fd2", "text": "Check-in 12:30–2:30 PM", "icon": { "value": "fas fa-clock", "library": "fa-solid" }, "icon_color": "#FACC15" },
+                  { "_id": "fd3", "text": "Departure 1:00 PM", "icon": { "value": "fas fa-bus", "library": "fa-solid" }, "icon_color": "#22C55E" },
+                  { "_id": "fd4", "text": "Atlantic City, NJ", "icon": { "value": "fas fa-map-marker-alt", "library": "fa-solid" }, "icon_color": "#FACC15" },
+                  { "_id": "fd5", "text": "21+ Event", "icon": { "value": "fas fa-id-card", "library": "fa-solid" }, "icon_color": "#F97316" },
+                  { "_id": "fd6", "text": "First 50 Get Giveaways", "icon": { "value": "fas fa-gift", "library": "fa-solid" }, "icon_color": "#FACC15" }
+                ],
+                "layout": "inline",
+                "align": "center",
+                "icon_color": "#FACC15",
+                "text_color": "#E5E7EB",
+                "icon_size": { "unit": "px", "size": 13, "sizes": [] },
+                "space_between": { "unit": "px", "size": 16, "sizes": [] },
+                "css_classes": "plr-detail-list",
+                "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "32", "left": "0", "isLinked": false }
+              },
+              "elements": []
+            },
+            {
+              "id": "flagship-btn-wrap",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:20px;\"><a href=\"https://www.paypal.com/ncp/payment/AWCDNEHMYVWAG\" target=\"_blank\" rel=\"noopener\" style=\"display:inline-flex;align-items:center;gap:8px;background:#FACC15;color:#0B0F14;font-family:Montserrat,sans-serif;font-weight:700;font-size:15px;padding:14px 36px;border-radius:8px;text-decoration:none;\">🎟 Buy Tickets Now</a><a href=\"/events/420-weekend-ac-bud-crawl/\" style=\"display:inline-flex;align-items:center;background:transparent;color:#FFFFFF;font-family:Montserrat,sans-serif;font-weight:600;font-size:15px;padding:14px 36px;border-radius:8px;border:2px solid rgba(255,255,255,0.35);text-decoration:none;\">Full Event Details →</a></div>"
+              },
+              "elements": []
+            },
+            {
+              "id": "flagship-phone",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Questions? <a href=\"tel:6095942265\" style=\"color:#FACC15;text-decoration:none;\">(609) 594-2265</a></p>",
+                "align": "center",
+                "text_color": "#6B7280",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": { "unit": "px", "size": 14, "sizes": [] }
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "sec-events",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "_title": "Events – Upcoming Grid",
+        "background_background": "classic",
+        "background_color": "#0D1117",
+        "layout": "full_width",
+        "content_width": { "unit": "px", "size": 1200, "sizes": [] },
+        "padding": { "unit": "px", "top": "80", "right": "24", "bottom": "80", "left": "24", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "events-col-hd",
+          "elType": "column",
+          "isInner": false,
+          "settings": { "_column_size": 100, "content_position": "middle" },
+          "elements": [
+            {
+              "id": "events-h2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "What's Next — Upcoming Events",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_weight": "800",
+                "typography_font_size": { "unit": "px", "size": 40, "sizes": [] },
+                "typography_font_size_mobile": { "unit": "px", "size": 28, "sizes": [] },
+                "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "8", "left": "0", "isLinked": false }
+              },
+              "elements": []
+            },
+            {
+              "id": "events-see-all",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align:center;\"><a href=\"/events/\" style=\"color:#FACC15;font-family:Montserrat,sans-serif;font-weight:600;font-size:14px;text-decoration:none;letter-spacing:.05em;\">See All Events →</a></p>",
+                "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "48", "left": "0", "isLinked": false }
+              },
+              "elements": []
+            },
+            {
+              "id": "events-inner-row1",
+              "elType": "section",
+              "isInner": true,
+              "settings": {
+                "layout": "full_width",
+                "gap": "custom",
+                "gap_columns_custom": { "unit": "px", "size": 20, "sizes": [] },
+                "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0", "isLinked": false }
+              },
+              "elements": [
+                {
+                  "id": "ec-col1",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 33,
+                    "background_background": "classic",
+                    "background_color": "#111827",
+                    "border_border": "solid",
+                    "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                    "border_color": "rgba(250,204,21,0.2)",
+                    "border_radius": { "unit": "px", "top": 12, "right": 12, "bottom": 12, "left": 12, "isLinked": true },
+                    "padding": { "unit": "px", "top": "28", "right": "24", "bottom": "28", "left": "24", "isLinked": false },
+                    "css_classes": "plr-card"
+                  },
+                  "elements": [
+                    { "id": "ec1-badge", "elType": "widget", "widgetType": "html", "settings": { "html": "<span class=\"plr-badge plr-badge-featured\">🌿 Featured</span>" }, "elements": [] },
+                    { "id": "ec1-title", "elType": "widget", "widgetType": "heading", "settings": { "title": "420 Weekend AC Bud Crawl", "header_size": "h3", "align": "left", "title_color": "#FFFFFF", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "700", "typography_font_size": { "unit": "px", "size": 18, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "6", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec1-date", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Sat · April 18, 2026</p>", "text_color": "#FACC15", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "600", "typography_font_size": { "unit": "px", "size": 13, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec1-desc", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Shuttle party through AC's best 420-friendly venues. First 50 get giveaways.</p>", "text_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 14, "sizes": [] }, "typography_line_height": { "unit": "em", "size": 1.65, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec1-loc", "elType": "widget", "widgetType": "icon-list", "settings": { "icon_list": [ { "_id": "l1", "text": "Atlantic City, NJ", "icon": { "value": "fas fa-map-marker-alt", "library": "fa-solid" }, "icon_color": "#FACC15" } ], "layout": "traditional", "icon_color": "#FACC15", "text_color": "#6B7280", "icon_size": { "unit": "px", "size": 12, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec1-btn", "elType": "widget", "widgetType": "button", "settings": { "text": "Buy Tickets", "link": { "url": "https://www.paypal.com/ncp/payment/AWCDNEHMYVWAG", "is_external": true }, "align": "left", "size": "sm", "background_color": "#FACC15", "button_text_color": "#0B0F14", "border_radius": { "unit": "px", "top": 6, "right": 6, "bottom": 6, "left": 6, "isLinked": true }, "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "700", "typography_font_size": { "unit": "px", "size": 13, "sizes": [] }, "css_classes": "plr-btn-gold" }, "elements": [] }
+                  ]
+                },
+                {
+                  "id": "ec-col2",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 33,
+                    "background_background": "classic",
+                    "background_color": "#111827",
+                    "border_border": "solid",
+                    "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                    "border_color": "rgba(255,255,255,0.07)",
+                    "border_radius": { "unit": "px", "top": 12, "right": 12, "bottom": 12, "left": 12, "isLinked": true },
+                    "padding": { "unit": "px", "top": "28", "right": "24", "bottom": "28", "left": "24", "isLinked": false },
+                    "css_classes": "plr-card"
+                  },
+                  "elements": [
+                    { "id": "ec2-badge", "elType": "widget", "widgetType": "html", "settings": { "html": "<span class=\"plr-badge plr-badge-nightlife\">🌃 Nightlife</span>" }, "elements": [] },
+                    { "id": "ec2-title", "elType": "widget", "widgetType": "heading", "settings": { "title": "Summer Kickoff AC", "header_size": "h3", "align": "left", "title_color": "#FFFFFF", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "700", "typography_font_size": { "unit": "px", "size": 18, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "6", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec2-date", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>May 2026 · TBD</p>", "text_color": "#F97316", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "600", "typography_font_size": { "unit": "px", "size": 13, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec2-desc", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Atlantic City's hottest venues — one epic kickoff night on the Shore.</p>", "text_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 14, "sizes": [] }, "typography_line_height": { "unit": "em", "size": 1.65, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec2-loc", "elType": "widget", "widgetType": "icon-list", "settings": { "icon_list": [ { "_id": "l2", "text": "Atlantic City, NJ", "icon": { "value": "fas fa-map-marker-alt", "library": "fa-solid" }, "icon_color": "#F97316" } ], "layout": "traditional", "icon_color": "#F97316", "text_color": "#6B7280", "icon_size": { "unit": "px", "size": 12, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec2-btn", "elType": "widget", "widgetType": "button", "settings": { "text": "Details →", "link": { "url": "/events/", "is_external": false }, "align": "left", "size": "sm", "background_color": "transparent", "button_text_color": "#E5E7EB", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(255,255,255,0.25)", "border_radius": { "unit": "px", "top": 6, "right": 6, "bottom": 6, "left": 6, "isLinked": true }, "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "600", "typography_font_size": { "unit": "px", "size": 13, "sizes": [] } }, "elements": [] }
+                  ]
+                },
+                {
+                  "id": "ec-col3",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 33,
+                    "background_background": "classic",
+                    "background_color": "#111827",
+                    "border_border": "solid",
+                    "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                    "border_color": "rgba(255,255,255,0.07)",
+                    "border_radius": { "unit": "px", "top": 12, "right": 12, "bottom": 12, "left": 12, "isLinked": true },
+                    "padding": { "unit": "px", "top": "28", "right": "24", "bottom": "28", "left": "24", "isLinked": false },
+                    "css_classes": "plr-card"
+                  },
+                  "elements": [
+                    { "id": "ec3-badge", "elType": "widget", "widgetType": "html", "settings": { "html": "<span class=\"plr-badge plr-badge-vendor\">🛍️ Vendor Market</span>" }, "elements": [] },
+                    { "id": "ec3-title", "elType": "widget", "widgetType": "heading", "settings": { "title": "Summer Vendor Pop-Up Market", "header_size": "h3", "align": "left", "title_color": "#FFFFFF", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "700", "typography_font_size": { "unit": "px", "size": 18, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "6", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec3-date", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>June 2026 · TBD</p>", "text_color": "#22C55E", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "600", "typography_font_size": { "unit": "px", "size": 13, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec3-desc", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Shop local vendors, artisans, food, and brands at our biggest outdoor market.</p>", "text_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 14, "sizes": [] }, "typography_line_height": { "unit": "em", "size": 1.65, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec3-loc", "elType": "widget", "widgetType": "icon-list", "settings": { "icon_list": [ { "_id": "l3", "text": "Atlantic City, NJ", "icon": { "value": "fas fa-map-marker-alt", "library": "fa-solid" }, "icon_color": "#22C55E" } ], "layout": "traditional", "icon_color": "#22C55E", "text_color": "#6B7280", "icon_size": { "unit": "px", "size": 12, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec3-btn", "elType": "widget", "widgetType": "button", "settings": { "text": "Details →", "link": { "url": "/events/", "is_external": false }, "align": "left", "size": "sm", "background_color": "transparent", "button_text_color": "#E5E7EB", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(255,255,255,0.25)", "border_radius": { "unit": "px", "top": 6, "right": 6, "bottom": 6, "left": 6, "isLinked": true }, "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "600", "typography_font_size": { "unit": "px", "size": 13, "sizes": [] } }, "elements": [] }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "events-inner-row2",
+              "elType": "section",
+              "isInner": true,
+              "settings": {
+                "layout": "full_width",
+                "gap": "custom",
+                "gap_columns_custom": { "unit": "px", "size": 20, "sizes": [] }
+              },
+              "elements": [
+                {
+                  "id": "ec-col4",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": { "_column_size": 33, "background_background": "classic", "background_color": "#111827", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(255,255,255,0.07)", "border_radius": { "unit": "px", "top": 12, "right": 12, "bottom": 12, "left": 12, "isLinked": true }, "padding": { "unit": "px", "top": "28", "right": "24", "bottom": "28", "left": "24", "isLinked": false }, "css_classes": "plr-card" },
+                  "elements": [
+                    { "id": "ec4-badge", "elType": "widget", "widgetType": "html", "settings": { "html": "<span class=\"plr-badge plr-badge-holiday\">🎆 Holiday</span>" }, "elements": [] },
+                    { "id": "ec4-title", "elType": "widget", "widgetType": "heading", "settings": { "title": "Independence Day AC", "header_size": "h3", "align": "left", "title_color": "#FFFFFF", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "700", "typography_font_size": { "unit": "px", "size": 18, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "6", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec4-date", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>July 4, 2026</p>", "text_color": "#EF4444", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "600", "typography_font_size": { "unit": "px", "size": 13, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec4-desc", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Celebrate the 4th the Party Like Rico way — fireworks, music, AC energy.</p>", "text_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 14, "sizes": [] }, "typography_line_height": { "unit": "em", "size": 1.65, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec4-loc", "elType": "widget", "widgetType": "icon-list", "settings": { "icon_list": [ { "_id": "l4", "text": "Atlantic City, NJ", "icon": { "value": "fas fa-map-marker-alt", "library": "fa-solid" }, "icon_color": "#EF4444" } ], "layout": "traditional", "icon_color": "#EF4444", "text_color": "#6B7280", "icon_size": { "unit": "px", "size": 12, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec4-btn", "elType": "widget", "widgetType": "button", "settings": { "text": "Details →", "link": { "url": "/events/", "is_external": false }, "align": "left", "size": "sm", "background_color": "transparent", "button_text_color": "#E5E7EB", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(255,255,255,0.25)", "border_radius": { "unit": "px", "top": 6, "right": 6, "bottom": 6, "left": 6, "isLinked": true }, "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "600", "typography_font_size": { "unit": "px", "size": 13, "sizes": [] } }, "elements": [] }
+                  ]
+                },
+                {
+                  "id": "ec-col5",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": { "_column_size": 33, "background_background": "classic", "background_color": "#111827", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(255,255,255,0.07)", "border_radius": { "unit": "px", "top": 12, "right": 12, "bottom": 12, "left": 12, "isLinked": true }, "padding": { "unit": "px", "top": "28", "right": "24", "bottom": "28", "left": "24", "isLinked": false }, "css_classes": "plr-card" },
+                  "elements": [
+                    { "id": "ec5-badge", "elType": "widget", "widgetType": "html", "settings": { "html": "<span class=\"plr-badge plr-badge-shore\">🌊 Shore Event</span>" }, "elements": [] },
+                    { "id": "ec5-title", "elType": "widget", "widgetType": "heading", "settings": { "title": "End of Summer Shore Bash", "header_size": "h3", "align": "left", "title_color": "#FFFFFF", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "700", "typography_font_size": { "unit": "px", "size": 18, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "6", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec5-date", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>August 2026 · TBD</p>", "text_color": "#3B82F6", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "600", "typography_font_size": { "unit": "px", "size": 13, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec5-desc", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Closing the summer season with a massive shore town party experience.</p>", "text_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 14, "sizes": [] }, "typography_line_height": { "unit": "em", "size": 1.65, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec5-loc", "elType": "widget", "widgetType": "icon-list", "settings": { "icon_list": [ { "_id": "l5", "text": "Shore Towns, NJ", "icon": { "value": "fas fa-map-marker-alt", "library": "fa-solid" }, "icon_color": "#3B82F6" } ], "layout": "traditional", "icon_color": "#3B82F6", "text_color": "#6B7280", "icon_size": { "unit": "px", "size": 12, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec5-btn", "elType": "widget", "widgetType": "button", "settings": { "text": "Details →", "link": { "url": "/events/", "is_external": false }, "align": "left", "size": "sm", "background_color": "transparent", "button_text_color": "#E5E7EB", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(255,255,255,0.25)", "border_radius": { "unit": "px", "top": 6, "right": 6, "bottom": 6, "left": 6, "isLinked": true }, "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "600", "typography_font_size": { "unit": "px", "size": 13, "sizes": [] } }, "elements": [] }
+                  ]
+                },
+                {
+                  "id": "ec-col6",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": { "_column_size": 33, "background_background": "classic", "background_color": "#111827", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(255,255,255,0.07)", "border_radius": { "unit": "px", "top": 12, "right": 12, "bottom": 12, "left": 12, "isLinked": true }, "padding": { "unit": "px", "top": "28", "right": "24", "bottom": "28", "left": "24", "isLinked": false }, "css_classes": "plr-card" },
+                  "elements": [
+                    { "id": "ec6-badge", "elType": "widget", "widgetType": "html", "settings": { "html": "<span class=\"plr-badge plr-badge-community\">🤝 Community</span>" }, "elements": [] },
+                    { "id": "ec6-title", "elType": "widget", "widgetType": "heading", "settings": { "title": "AC Community Celebration", "header_size": "h3", "align": "left", "title_color": "#FFFFFF", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "700", "typography_font_size": { "unit": "px", "size": 18, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "6", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec6-date", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>September 2026 · TBD</p>", "text_color": "#A855F7", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "600", "typography_font_size": { "unit": "px", "size": 13, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec6-desc", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Giving back to Atlantic City — a free community event open to all.</p>", "text_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 14, "sizes": [] }, "typography_line_height": { "unit": "em", "size": 1.65, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec6-loc", "elType": "widget", "widgetType": "icon-list", "settings": { "icon_list": [ { "_id": "l6", "text": "Atlantic City, NJ", "icon": { "value": "fas fa-map-marker-alt", "library": "fa-solid" }, "icon_color": "#A855F7" } ], "layout": "traditional", "icon_color": "#A855F7", "text_color": "#6B7280", "icon_size": { "unit": "px", "size": 12, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "ec6-btn", "elType": "widget", "widgetType": "button", "settings": { "text": "Details →", "link": { "url": "/events/", "is_external": false }, "align": "left", "size": "sm", "background_color": "transparent", "button_text_color": "#E5E7EB", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(255,255,255,0.25)", "border_radius": { "unit": "px", "top": 6, "right": 6, "bottom": 6, "left": 6, "isLinked": true }, "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "600", "typography_font_size": { "unit": "px", "size": 13, "sizes": [] } }, "elements": [] }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "sec-urgency",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "_title": "CTA – Urgency Banner",
+        "background_background": "gradient",
+        "background_color": "#1a1200",
+        "background_color_b": "#2d1a00",
+        "background_gradient_angle": { "unit": "deg", "size": 135, "sizes": [] },
+        "layout": "full_width",
+        "content_width": { "unit": "px", "size": 760, "sizes": [] },
+        "padding": { "unit": "px", "top": "80", "right": "24", "bottom": "80", "left": "24", "isLinked": false },
+        "border_top_width": { "unit": "px", "size": 1 },
+        "border_bottom_width": { "unit": "px", "size": 1 },
+        "border_color": "rgba(250,204,21,0.2)"
+      },
+      "elements": [
+        {
+          "id": "urgency-col1",
+          "elType": "column",
+          "isInner": false,
+          "settings": { "_column_size": 100, "content_position": "middle" },
+          "elements": [
+            { "id": "urg-h2", "elType": "widget", "widgetType": "heading", "settings": { "title": "Don't Miss Out.", "header_size": "h2", "align": "center", "title_color": "#FACC15", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "900", "typography_font_size": { "unit": "px", "size": 56, "sizes": [] }, "typography_font_size_mobile": { "unit": "px", "size": 36, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0", "isLinked": false } }, "elements": [] },
+            { "id": "urg-text", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>April 18 is coming fast. Secure your spot before it sells out. First 50 attendees receive complimentary giveaways. 21+ event.</p>", "align": "center", "text_color": "#D1D5DB", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 18, "sizes": [] }, "typography_line_height": { "unit": "em", "size": 1.7, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "40", "left": "0", "isLinked": false } }, "elements": [] },
+            { "id": "urg-btns", "elType": "widget", "widgetType": "html", "settings": { "html": "<div style=\"display:flex;gap:16px;justify-content:center;flex-wrap:wrap;\"><a href=\"https://www.paypal.com/ncp/payment/AWCDNEHMYVWAG\" target=\"_blank\" rel=\"noopener\" style=\"display:inline-flex;align-items:center;gap:8px;background:#FACC15;color:#0B0F14;font-family:Montserrat,sans-serif;font-weight:700;font-size:16px;padding:16px 40px;border-radius:8px;text-decoration:none;\">🎟 Buy Tickets Now</a><a href=\"/events/420-weekend-ac-bud-crawl/\" style=\"display:inline-flex;align-items:center;background:transparent;color:#E5E7EB;font-family:Montserrat,sans-serif;font-weight:600;font-size:16px;padding:16px 40px;border-radius:8px;border:2px solid rgba(255,255,255,0.3);text-decoration:none;\">View Event Details</a></div>" }, "elements": [] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "sec-why",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "_title": "Features – Why Party Like Rico",
+        "background_background": "classic",
+        "background_color": "#0B0F14",
+        "layout": "full_width",
+        "content_width": { "unit": "px", "size": 1200, "sizes": [] },
+        "padding": { "unit": "px", "top": "80", "right": "24", "bottom": "80", "left": "24", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "why-col-hd",
+          "elType": "column",
+          "isInner": false,
+          "settings": { "_column_size": 100 },
+          "elements": [
+            { "id": "why-h2", "elType": "widget", "widgetType": "heading", "settings": { "title": "Why Party Like Rico", "header_size": "h2", "align": "center", "title_color": "#FFFFFF", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "800", "typography_font_size": { "unit": "px", "size": 40, "sizes": [] }, "typography_font_size_mobile": { "unit": "px", "size": 28, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "56", "left": "0", "isLinked": false } }, "elements": [] },
+            {
+              "id": "why-inner-r1",
+              "elType": "section",
+              "isInner": true,
+              "settings": { "layout": "full_width", "gap": "custom", "gap_columns_custom": { "unit": "px", "size": 20, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0", "isLinked": false } },
+              "elements": [
+                {
+                  "id": "why-c1", "elType": "column", "isInner": true,
+                  "settings": { "_column_size": 33, "background_background": "classic", "background_color": "#1A2332", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(255,255,255,0.07)", "border_radius": { "unit": "px", "top": 12, "right": 12, "bottom": 12, "left": 12, "isLinked": true }, "padding": { "unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28", "isLinked": false }, "css_classes": "plr-feature-card" },
+                  "elements": [
+                    { "id": "why1-icon", "elType": "widget", "widgetType": "heading", "settings": { "title": "🌿", "header_size": "h3", "align": "left", "typography_font_size": { "unit": "px", "size": 36, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "why1-title", "elType": "widget", "widgetType": "heading", "settings": { "title": "Curated 420 Experiences", "header_size": "h4", "align": "left", "title_color": "#FFFFFF", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "700", "typography_font_size": { "unit": "px", "size": 17, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "10", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "why1-desc", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Shuttle crawls, exclusive venue access, giveaways — every event is built for the real culture.</p>", "text_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 14, "sizes": [] }, "typography_line_height": { "unit": "em", "size": 1.65, "sizes": [] } }, "elements": [] }
+                  ]
+                },
+                {
+                  "id": "why-c2", "elType": "column", "isInner": true,
+                  "settings": { "_column_size": 33, "background_background": "classic", "background_color": "#1A2332", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(255,255,255,0.07)", "border_radius": { "unit": "px", "top": 12, "right": 12, "bottom": 12, "left": 12, "isLinked": true }, "padding": { "unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28", "isLinked": false }, "css_classes": "plr-feature-card" },
+                  "elements": [
+                    { "id": "why2-icon", "elType": "widget", "widgetType": "heading", "settings": { "title": "🚌", "header_size": "h3", "align": "left", "typography_font_size": { "unit": "px", "size": 36, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "why2-title", "elType": "widget", "widgetType": "heading", "settings": { "title": "Shuttle Party Format", "header_size": "h4", "align": "left", "title_color": "#FFFFFF", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "700", "typography_font_size": { "unit": "px", "size": 17, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "10", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "why2-desc", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>No driving, no stress. Experience multiple venues safely and in style on our party shuttle.</p>", "text_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 14, "sizes": [] }, "typography_line_height": { "unit": "em", "size": 1.65, "sizes": [] } }, "elements": [] }
+                  ]
+                },
+                {
+                  "id": "why-c3", "elType": "column", "isInner": true,
+                  "settings": { "_column_size": 33, "background_background": "classic", "background_color": "#1A2332", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(255,255,255,0.07)", "border_radius": { "unit": "px", "top": 12, "right": 12, "bottom": 12, "left": 12, "isLinked": true }, "padding": { "unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28", "isLinked": false }, "css_classes": "plr-feature-card" },
+                  "elements": [
+                    { "id": "why3-icon", "elType": "widget", "widgetType": "heading", "settings": { "title": "🏙️", "header_size": "h3", "align": "left", "typography_font_size": { "unit": "px", "size": 36, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "why3-title", "elType": "widget", "widgetType": "heading", "settings": { "title": "Atlantic City Roots", "header_size": "h4", "align": "left", "title_color": "#FFFFFF", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "700", "typography_font_size": { "unit": "px", "size": 17, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "10", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "why3-desc", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>We're local. We know AC. We know where the best experiences are — and we deliver every time.</p>", "text_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 14, "sizes": [] }, "typography_line_height": { "unit": "em", "size": 1.65, "sizes": [] } }, "elements": [] }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "why-inner-r2",
+              "elType": "section",
+              "isInner": true,
+              "settings": { "layout": "full_width", "gap": "custom", "gap_columns_custom": { "unit": "px", "size": 20, "sizes": [] } },
+              "elements": [
+                {
+                  "id": "why-c4", "elType": "column", "isInner": true,
+                  "settings": { "_column_size": 33, "background_background": "classic", "background_color": "#1A2332", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(255,255,255,0.07)", "border_radius": { "unit": "px", "top": 12, "right": 12, "bottom": 12, "left": 12, "isLinked": true }, "padding": { "unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28", "isLinked": false }, "css_classes": "plr-feature-card" },
+                  "elements": [
+                    { "id": "why4-icon", "elType": "widget", "widgetType": "heading", "settings": { "title": "🎁", "header_size": "h3", "align": "left", "typography_font_size": { "unit": "px", "size": 36, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "why4-title", "elType": "widget", "widgetType": "heading", "settings": { "title": "VIP Giveaways", "header_size": "h4", "align": "left", "title_color": "#FFFFFF", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "700", "typography_font_size": { "unit": "px", "size": 17, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "10", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "why4-desc", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Show up early and get rewarded. First 50 guests at every major event receive complimentary gifts.</p>", "text_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 14, "sizes": [] }, "typography_line_height": { "unit": "em", "size": 1.65, "sizes": [] } }, "elements": [] }
+                  ]
+                },
+                {
+                  "id": "why-c5", "elType": "column", "isInner": true,
+                  "settings": { "_column_size": 33, "background_background": "classic", "background_color": "#1A2332", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(255,255,255,0.07)", "border_radius": { "unit": "px", "top": 12, "right": 12, "bottom": 12, "left": 12, "isLinked": true }, "padding": { "unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28", "isLinked": false }, "css_classes": "plr-feature-card" },
+                  "elements": [
+                    { "id": "why5-icon", "elType": "widget", "widgetType": "heading", "settings": { "title": "🤝", "header_size": "h3", "align": "left", "typography_font_size": { "unit": "px", "size": 36, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "why5-title", "elType": "widget", "widgetType": "heading", "settings": { "title": "Community Built", "header_size": "h4", "align": "left", "title_color": "#FFFFFF", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "700", "typography_font_size": { "unit": "px", "size": 17, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "10", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "why5-desc", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>We partner with local businesses and create events that lift the entire AC community.</p>", "text_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 14, "sizes": [] }, "typography_line_height": { "unit": "em", "size": 1.65, "sizes": [] } }, "elements": [] }
+                  ]
+                },
+                {
+                  "id": "why-c6", "elType": "column", "isInner": true,
+                  "settings": { "_column_size": 33, "background_background": "classic", "background_color": "#1A2332", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(255,255,255,0.07)", "border_radius": { "unit": "px", "top": 12, "right": 12, "bottom": 12, "left": 12, "isLinked": true }, "padding": { "unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28", "isLinked": false }, "css_classes": "plr-feature-card" },
+                  "elements": [
+                    { "id": "why6-icon", "elType": "widget", "widgetType": "heading", "settings": { "title": "📣", "header_size": "h3", "align": "left", "typography_font_size": { "unit": "px", "size": 36, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "why6-title", "elType": "widget", "widgetType": "heading", "settings": { "title": "Real Promotion", "header_size": "h4", "align": "left", "title_color": "#FFFFFF", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "700", "typography_font_size": { "unit": "px", "size": 17, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "10", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "why6-desc", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Social, digital, on-the-ground — we make sure every event we touch is seen, shared, sold out.</p>", "text_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 14, "sizes": [] }, "typography_line_height": { "unit": "em", "size": 1.65, "sizes": [] } }, "elements": [] }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "sec-categories",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "_title": "Categories – What We Do",
+        "background_background": "classic",
+        "background_color": "#0D1117",
+        "layout": "full_width",
+        "content_width": { "unit": "px", "size": 1200, "sizes": [] },
+        "padding": { "unit": "px", "top": "80", "right": "24", "bottom": "80", "left": "24", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "cat-col-hd",
+          "elType": "column",
+          "isInner": false,
+          "settings": { "_column_size": 100 },
+          "elements": [
+            { "id": "cat-h2", "elType": "widget", "widgetType": "heading", "settings": { "title": "What We Do — Experience Categories", "header_size": "h2", "align": "center", "title_color": "#FFFFFF", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "800", "typography_font_size": { "unit": "px", "size": 40, "sizes": [] }, "typography_font_size_mobile": { "unit": "px", "size": 28, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "56", "left": "0", "isLinked": false } }, "elements": [] },
+            {
+              "id": "cat-inner-r1",
+              "elType": "section",
+              "isInner": true,
+              "settings": { "layout": "full_width", "gap": "custom", "gap_columns_custom": { "unit": "px", "size": 20, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0", "isLinked": false } },
+              "elements": [
+                { "id": "cat-c1", "elType": "column", "isInner": true, "settings": { "_column_size": 33, "background_background": "classic", "background_color": "#111827", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(250,204,21,0.15)", "border_radius": { "unit": "px", "top": 12, "right": 12, "bottom": 12, "left": 12, "isLinked": true }, "padding": { "unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28", "isLinked": false }, "css_classes": "plr-feature-card" }, "elements": [
+                  { "id": "cat1-icon", "elType": "widget", "widgetType": "heading", "settings": { "title": "🌿", "header_size": "h2", "align": "center", "typography_font_size": { "unit": "px", "size": 40, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false } }, "elements": [] },
+                  { "id": "cat1-title", "elType": "widget", "widgetType": "heading", "settings": { "title": "420 Events", "header_size": "h4", "align": "center", "title_color": "#FACC15", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "700", "typography_font_size": { "unit": "px", "size": 17, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "8", "left": "0", "isLinked": false } }, "elements": [] },
+                  { "id": "cat1-desc", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Bud crawls, shuttle parties, and curated 420-friendly experiences.</p>", "align": "center", "text_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 14, "sizes": [] } }, "elements": [] }
+                ] },
+                { "id": "cat-c2", "elType": "column", "isInner": true, "settings": { "_column_size": 33, "background_background": "classic", "background_color": "#111827", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(249,115,22,0.15)", "border_radius": { "unit": "px", "top": 12, "right": 12, "bottom": 12, "left": 12, "isLinked": true }, "padding": { "unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28", "isLinked": false }, "css_classes": "plr-feature-card" }, "elements": [
+                  { "id": "cat2-icon", "elType": "widget", "widgetType": "heading", "settings": { "title": "🌃", "header_size": "h2", "align": "center", "typography_font_size": { "unit": "px", "size": 40, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false } }, "elements": [] },
+                  { "id": "cat2-title", "elType": "widget", "widgetType": "heading", "settings": { "title": "Nightlife", "header_size": "h4", "align": "center", "title_color": "#F97316", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "700", "typography_font_size": { "unit": "px", "size": 17, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "8", "left": "0", "isLinked": false } }, "elements": [] },
+                  { "id": "cat2-desc", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>VIP nights, multi-venue experiences, and AC after-dark done right.</p>", "align": "center", "text_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 14, "sizes": [] } }, "elements": [] }
+                ] },
+                { "id": "cat-c3", "elType": "column", "isInner": true, "settings": { "_column_size": 33, "background_background": "classic", "background_color": "#111827", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(34,197,94,0.15)", "border_radius": { "unit": "px", "top": 12, "right": 12, "bottom": 12, "left": 12, "isLinked": true }, "padding": { "unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28", "isLinked": false }, "css_classes": "plr-feature-card" }, "elements": [
+                  { "id": "cat3-icon", "elType": "widget", "widgetType": "heading", "settings": { "title": "🛍️", "header_size": "h2", "align": "center", "typography_font_size": { "unit": "px", "size": 40, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false } }, "elements": [] },
+                  { "id": "cat3-title", "elType": "widget", "widgetType": "heading", "settings": { "title": "Vendor Pop-Ups", "header_size": "h4", "align": "center", "title_color": "#22C55E", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "700", "typography_font_size": { "unit": "px", "size": 17, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "8", "left": "0", "isLinked": false } }, "elements": [] },
+                  { "id": "cat3-desc", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Local makers, artists, and brands in curated outdoor markets.</p>", "align": "center", "text_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 14, "sizes": [] } }, "elements": [] }
+                ] }
+              ]
+            },
+            {
+              "id": "cat-inner-r2",
+              "elType": "section",
+              "isInner": true,
+              "settings": { "layout": "full_width", "gap": "custom", "gap_columns_custom": { "unit": "px", "size": 20, "sizes": [] } },
+              "elements": [
+                { "id": "cat-c4", "elType": "column", "isInner": true, "settings": { "_column_size": 33, "background_background": "classic", "background_color": "#111827", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(255,255,255,0.07)", "border_radius": { "unit": "px", "top": 12, "right": 12, "bottom": 12, "left": 12, "isLinked": true }, "padding": { "unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28", "isLinked": false }, "css_classes": "plr-feature-card" }, "elements": [
+                  { "id": "cat4-icon", "elType": "widget", "widgetType": "heading", "settings": { "title": "🎂", "header_size": "h2", "align": "center", "typography_font_size": { "unit": "px", "size": 40, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false } }, "elements": [] },
+                  { "id": "cat4-title", "elType": "widget", "widgetType": "heading", "settings": { "title": "Private Celebrations", "header_size": "h4", "align": "center", "title_color": "#FFFFFF", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "700", "typography_font_size": { "unit": "px", "size": 17, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "8", "left": "0", "isLinked": false } }, "elements": [] },
+                  { "id": "cat4-desc", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Birthdays, bachelorettes, and special occasions on the Shore.</p>", "align": "center", "text_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 14, "sizes": [] } }, "elements": [] }
+                ] },
+                { "id": "cat-c5", "elType": "column", "isInner": true, "settings": { "_column_size": 33, "background_background": "classic", "background_color": "#111827", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(255,255,255,0.07)", "border_radius": { "unit": "px", "top": 12, "right": 12, "bottom": 12, "left": 12, "isLinked": true }, "padding": { "unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28", "isLinked": false }, "css_classes": "plr-feature-card" }, "elements": [
+                  { "id": "cat5-icon", "elType": "widget", "widgetType": "heading", "settings": { "title": "🤝", "header_size": "h2", "align": "center", "typography_font_size": { "unit": "px", "size": 40, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false } }, "elements": [] },
+                  { "id": "cat5-title", "elType": "widget", "widgetType": "heading", "settings": { "title": "Community Events", "header_size": "h4", "align": "center", "title_color": "#FFFFFF", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "700", "typography_font_size": { "unit": "px", "size": 17, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "8", "left": "0", "isLinked": false } }, "elements": [] },
+                  { "id": "cat5-desc", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Free and community-driven gatherings that give back to AC.</p>", "align": "center", "text_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 14, "sizes": [] } }, "elements": [] }
+                ] },
+                { "id": "cat-c6", "elType": "column", "isInner": true, "settings": { "_column_size": 33, "background_background": "classic", "background_color": "#111827", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(255,255,255,0.07)", "border_radius": { "unit": "px", "top": 12, "right": 12, "bottom": 12, "left": 12, "isLinked": true }, "padding": { "unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28", "isLinked": false }, "css_classes": "plr-feature-card" }, "elements": [
+                  { "id": "cat6-icon", "elType": "widget", "widgetType": "heading", "settings": { "title": "🌊", "header_size": "h2", "align": "center", "typography_font_size": { "unit": "px", "size": 40, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false } }, "elements": [] },
+                  { "id": "cat6-title", "elType": "widget", "widgetType": "heading", "settings": { "title": "Shore Experiences", "header_size": "h4", "align": "center", "title_color": "#FFFFFF", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "700", "typography_font_size": { "unit": "px", "size": 17, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "8", "left": "0", "isLinked": false } }, "elements": [] },
+                  { "id": "cat6-desc", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Beach, boardwalk, and shore town events all summer long.</p>", "align": "center", "text_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 14, "sizes": [] } }, "elements": [] }
+                ] }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "sec-partner",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "_title": "CTA – Partner With Us",
+        "background_background": "classic",
+        "background_color": "#0B0F14",
+        "layout": "full_width",
+        "content_width": { "unit": "px", "size": 1200, "sizes": [] },
+        "padding": { "unit": "px", "top": "80", "right": "24", "bottom": "80", "left": "24", "isLinked": false },
+        "border_top_width": { "unit": "px", "size": 1 },
+        "border_bottom_width": { "unit": "px", "size": 1 },
+        "border_color": "rgba(250,204,21,0.12)"
+      },
+      "elements": [
+        {
+          "id": "partner-col-text",
+          "elType": "column",
+          "isInner": false,
+          "settings": { "_column_size": 60, "content_position": "middle", "padding": { "unit": "px", "top": "0", "right": "48", "bottom": "0", "left": "0", "isLinked": false } },
+          "elements": [
+            { "id": "partner-h2", "elType": "widget", "widgetType": "heading", "settings": { "title": "Partner With Us", "header_size": "h2", "align": "left", "title_color": "#FFFFFF", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "800", "typography_font_size": { "unit": "px", "size": 40, "sizes": [] }, "typography_font_size_mobile": { "unit": "px", "size": 28, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "8", "left": "0", "isLinked": false } }, "elements": [] },
+            { "id": "partner-h3", "elType": "widget", "widgetType": "heading", "settings": { "title": "Get Your Brand at Our Events", "header_size": "h3", "align": "left", "title_color": "#FACC15", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "600", "typography_font_size": { "unit": "px", "size": 22, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0", "isLinked": false } }, "elements": [] },
+            { "id": "partner-text", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Reach Atlantic City's most engaged audience. We're always looking for local businesses, vendors, and sponsors to join the Party Like Rico family.</p>", "text_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 16, "sizes": [] }, "typography_line_height": { "unit": "em", "size": 1.7, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "32", "left": "0", "isLinked": false } }, "elements": [] },
+            { "id": "partner-btns", "elType": "widget", "widgetType": "html", "settings": { "html": "<div style=\"display:flex;gap:14px;flex-wrap:wrap;\"><a href=\"/vendor/\" style=\"display:inline-flex;align-items:center;background:#FACC15;color:#0B0F14;font-family:Montserrat,sans-serif;font-weight:700;font-size:15px;padding:14px 32px;border-radius:8px;text-decoration:none;\">Become a Vendor</a><a href=\"/promote/\" style=\"display:inline-flex;align-items:center;background:transparent;color:#E5E7EB;font-family:Montserrat,sans-serif;font-weight:600;font-size:15px;padding:14px 32px;border-radius:8px;border:2px solid rgba(255,255,255,0.3);text-decoration:none;\">Sponsorship Info</a></div>" }, "elements": [] }
+          ]
+        },
+        {
+          "id": "partner-col-stats",
+          "elType": "column",
+          "isInner": false,
+          "settings": { "_column_size": 40, "content_position": "middle" },
+          "elements": [
+            {
+              "id": "partner-stats-inner",
+              "elType": "section",
+              "isInner": true,
+              "settings": { "layout": "full_width", "gap": "custom", "gap_columns_custom": { "unit": "px", "size": 24, "sizes": [] } },
+              "elements": [
+                {
+                  "id": "stat-col1", "elType": "column", "isInner": true,
+                  "settings": { "_column_size": 50, "background_background": "classic", "background_color": "#111827", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(250,204,21,0.2)", "border_radius": { "unit": "px", "top": 12, "right": 12, "bottom": 12, "left": 12, "isLinked": true }, "padding": { "unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24", "isLinked": false }, "content_position": "middle" },
+                  "elements": [
+                    { "id": "stat1-num", "elType": "widget", "widgetType": "counter", "settings": { "starting_number": 0, "ending_number": 500, "suffix": "+", "title": "Expected Attendees", "duration": 2000, "thousand_separator": "", "number_color": "#FACC15", "title_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "900", "typography_font_size": { "unit": "px", "size": 48, "sizes": [] }, "suffix_color": "#FACC15", "css_classes": "plr-stat" }, "elements": [] }
+                  ]
+                },
+                {
+                  "id": "stat-col2", "elType": "column", "isInner": true,
+                  "settings": { "_column_size": 50, "background_background": "classic", "background_color": "#111827", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(250,204,21,0.2)", "border_radius": { "unit": "px", "top": 12, "right": 12, "bottom": 12, "left": 12, "isLinked": true }, "padding": { "unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24", "isLinked": false }, "content_position": "middle" },
+                  "elements": [
+                    { "id": "stat2-num", "elType": "widget", "widgetType": "counter", "settings": { "starting_number": 0, "ending_number": 12, "suffix": "+", "title": "Events Planned 2026", "duration": 2000, "thousand_separator": "", "number_color": "#22C55E", "title_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "900", "typography_font_size": { "unit": "px", "size": 48, "sizes": [] }, "suffix_color": "#22C55E", "css_classes": "plr-stat" }, "elements": [] }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "sec-testimonials",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "_title": "Social Proof – Testimonials",
+        "background_background": "classic",
+        "background_color": "#0D1117",
+        "layout": "full_width",
+        "content_width": { "unit": "px", "size": 1200, "sizes": [] },
+        "padding": { "unit": "px", "top": "80", "right": "24", "bottom": "80", "left": "24", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "test-col-hd",
+          "elType": "column",
+          "isInner": false,
+          "settings": { "_column_size": 100 },
+          "elements": [
+            { "id": "test-h2", "elType": "widget", "widgetType": "heading", "settings": { "title": "Word on the Street", "header_size": "h2", "align": "center", "title_color": "#FFFFFF", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "800", "typography_font_size": { "unit": "px", "size": 40, "sizes": [] }, "typography_font_size_mobile": { "unit": "px", "size": 28, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "8", "left": "0", "isLinked": false } }, "elements": [] },
+            { "id": "test-sub", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>What People Say</p>", "align": "center", "text_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 15, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "48", "left": "0", "isLinked": false } }, "elements": [] },
+            {
+              "id": "test-inner-r1",
+              "elType": "section",
+              "isInner": true,
+              "settings": { "layout": "full_width", "gap": "custom", "gap_columns_custom": { "unit": "px", "size": 24, "sizes": [] } },
+              "elements": [
+                {
+                  "id": "test-c1", "elType": "column", "isInner": true,
+                  "settings": { "_column_size": 33, "background_background": "classic", "background_color": "#111827", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(250,204,21,0.18)", "border_radius": { "unit": "px", "top": 12, "right": 12, "bottom": 12, "left": 12, "isLinked": true }, "padding": { "unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28", "isLinked": false }, "css_classes": "plr-testimonial-card" },
+                  "elements": [
+                    { "id": "t1-stars", "elType": "widget", "widgetType": "html", "settings": { "html": "<div class=\"plr-stars\">★★★★★</div>" }, "elements": [] },
+                    { "id": "t1-quote", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>\"Party Like Rico knows how to put together an event. The vibe, the organization, the energy — everything was on point. Can't wait for the Bud Crawl.\"</p>", "text_color": "#E5E7EB", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 15, "sizes": [] }, "typography_line_height": { "unit": "em", "size": 1.7, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "t1-author", "elType": "widget", "widgetType": "html", "settings": { "html": "<div style=\"display:flex;align-items:center;gap:12px;\"><div style=\"width:40px;height:40px;background:#FACC15;color:#0B0F14;font-family:Montserrat,sans-serif;font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;border-radius:50%;\">AC</div><div><div style=\"font-family:Montserrat,sans-serif;font-weight:700;font-size:14px;color:#FFFFFF;\">Atlantic City Local</div><div style=\"font-family:Inter,sans-serif;font-size:12px;color:#9CA3AF;\">Event Attendee</div></div></div>" }, "elements": [] }
+                  ]
+                },
+                {
+                  "id": "test-c2", "elType": "column", "isInner": true,
+                  "settings": { "_column_size": 33, "background_background": "classic", "background_color": "#111827", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(250,204,21,0.18)", "border_radius": { "unit": "px", "top": 12, "right": 12, "bottom": 12, "left": 12, "isLinked": true }, "padding": { "unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28", "isLinked": false }, "css_classes": "plr-testimonial-card" },
+                  "elements": [
+                    { "id": "t2-stars", "elType": "widget", "widgetType": "html", "settings": { "html": "<div class=\"plr-stars\">★★★★★</div>" }, "elements": [] },
+                    { "id": "t2-quote", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>\"Best shuttle party concept in AC. Multiple venues, no driving, no stress. Absolute game changer for anyone doing Atlantic City right.\"</p>", "text_color": "#E5E7EB", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 15, "sizes": [] }, "typography_line_height": { "unit": "em", "size": 1.7, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "t2-author", "elType": "widget", "widgetType": "html", "settings": { "html": "<div style=\"display:flex;align-items:center;gap:12px;\"><div style=\"width:40px;height:40px;background:#F97316;color:#0B0F14;font-family:Montserrat,sans-serif;font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;border-radius:50%;\">SH</div><div><div style=\"font-family:Montserrat,sans-serif;font-weight:700;font-size:14px;color:#FFFFFF;\">Shore Frequent</div><div style=\"font-family:Inter,sans-serif;font-size:12px;color:#9CA3AF;\">Repeat Attendee</div></div></div>" }, "elements": [] }
+                  ]
+                },
+                {
+                  "id": "test-c3", "elType": "column", "isInner": true,
+                  "settings": { "_column_size": 33, "background_background": "classic", "background_color": "#111827", "border_border": "solid", "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }, "border_color": "rgba(250,204,21,0.18)", "border_radius": { "unit": "px", "top": 12, "right": 12, "bottom": 12, "left": 12, "isLinked": true }, "padding": { "unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28", "isLinked": false }, "css_classes": "plr-testimonial-card" },
+                  "elements": [
+                    { "id": "t3-stars", "elType": "widget", "widgetType": "html", "settings": { "html": "<div class=\"plr-stars\">★★★★★</div>" }, "elements": [] },
+                    { "id": "t3-quote", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>\"As a local vendor, partnering with Rico's events is a no-brainer. The crowd is exactly who I want to reach — engaged, local, and ready to support small businesses.\"</p>", "text_color": "#E5E7EB", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 15, "sizes": [] }, "typography_line_height": { "unit": "em", "size": 1.7, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0", "isLinked": false } }, "elements": [] },
+                    { "id": "t3-author", "elType": "widget", "widgetType": "html", "settings": { "html": "<div style=\"display:flex;align-items:center;gap:12px;\"><div style=\"width:40px;height:40px;background:#22C55E;color:#0B0F14;font-family:Montserrat,sans-serif;font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;border-radius:50%;\">LB</div><div><div style=\"font-family:Montserrat,sans-serif;font-weight:700;font-size:14px;color:#FFFFFF;\">Local Business Owner</div><div style=\"font-family:Inter,sans-serif;font-size:12px;color:#9CA3AF;\">Vendor Partner</div></div></div>" }, "elements": [] }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "sec-newsletter",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "_title": "CTA – Newsletter Signup",
+        "background_background": "classic",
+        "background_color": "#0B0F14",
+        "layout": "full_width",
+        "content_width": { "unit": "px", "size": 640, "sizes": [] },
+        "padding": { "unit": "px", "top": "80", "right": "24", "bottom": "80", "left": "24", "isLinked": false },
+        "border_top_width": { "unit": "px", "size": 1 },
+        "border_color": "rgba(250,204,21,0.1)"
+      },
+      "elements": [
+        {
+          "id": "news-col1",
+          "elType": "column",
+          "isInner": false,
+          "settings": { "_column_size": 100, "content_position": "middle" },
+          "elements": [
+            { "id": "news-h2", "elType": "widget", "widgetType": "heading", "settings": { "title": "Stay Connected", "header_size": "h2", "align": "center", "title_color": "#FFFFFF", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "800", "typography_font_size": { "unit": "px", "size": 40, "sizes": [] }, "typography_font_size_mobile": { "unit": "px", "size": 28, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "8", "left": "0", "isLinked": false } }, "elements": [] },
+            { "id": "news-sub", "elType": "widget", "widgetType": "heading", "settings": { "title": "Get Event Updates", "header_size": "h4", "align": "center", "title_color": "#FACC15", "typography_typography": "custom", "typography_font_family": "Montserrat", "typography_font_weight": "600", "typography_font_size": { "unit": "px", "size": 18, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0", "isLinked": false } }, "elements": [] },
+            { "id": "news-text", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Be first to know about new events, ticket drops, and Atlantic City's best experiences delivered to your inbox.</p>", "align": "center", "text_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 16, "sizes": [] }, "typography_line_height": { "unit": "em", "size": 1.7, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "32", "left": "0", "isLinked": false } }, "elements": [] },
+            {
+              "id": "news-form",
+              "elType": "widget",
+              "widgetType": "form",
+              "settings": {
+                "form_name": "PLR Newsletter Signup",
+                "form_fields": [
+                  {
+                    "_id": "nf1",
+                    "field_type": "email",
+                    "field_label": "Email Address",
+                    "placeholder": "your@email.com",
+                    "required": "true",
+                    "width": "100"
+                  }
+                ],
+                "submit_actions": ["email"],
+                "email_to": "PartyLikeRico@gmail.com",
+                "email_subject": "New Newsletter Signup — Party Like Rico",
+                "button_text": "Subscribe",
+                "button_size": "md",
+                "button_background_color": "#FACC15",
+                "button_text_color": "#0B0F14",
+                "button_border_radius": { "unit": "px", "top": 8, "right": 8, "bottom": 8, "left": 8, "isLinked": true },
+                "button_typography_font_family": "Montserrat",
+                "button_typography_font_weight": "700",
+                "field_background_color": "rgba(255,255,255,0.06)",
+                "field_border_color": "rgba(255,255,255,0.15)",
+                "field_text_color": "#FFFFFF",
+                "field_border_radius": { "unit": "px", "top": 8, "right": 8, "bottom": 8, "left": 8, "isLinked": true },
+                "field_padding": { "unit": "px", "top": "14", "right": "18", "bottom": "14", "left": "18", "isLinked": false },
+                "css_classes": "plr-form",
+                "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0", "isLinked": false }
+              },
+              "elements": []
+            },
+            { "id": "news-disclaimer", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>No spam. Just Atlantic City's best events.</p>", "align": "center", "text_color": "#6B7280", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 13, "sizes": [] }, "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "40", "left": "0", "isLinked": false } }, "elements": [] },
+            {
+              "id": "news-social",
+              "elType": "widget",
+              "widgetType": "social-icons",
+              "settings": {
+                "social_icon_list": [
+                  { "_id": "ns1", "social_icon": { "value": "fab fa-instagram", "library": "fa-brands" }, "link": { "url": "https://instagram.com/partylikerico", "is_external": true }, "item_icon_color": "custom", "icon_primary_color": "#FACC15", "icon_secondary_color": "transparent" },
+                  { "_id": "ns2", "social_icon": { "value": "fab fa-facebook-f", "library": "fa-brands" }, "link": { "url": "https://facebook.com/partylikerico", "is_external": true }, "item_icon_color": "custom", "icon_primary_color": "#FACC15", "icon_secondary_color": "transparent" },
+                  { "_id": "ns3", "social_icon": { "value": "fab fa-tiktok", "library": "fa-brands" }, "link": { "url": "https://tiktok.com/@partylikerico", "is_external": true }, "item_icon_color": "custom", "icon_primary_color": "#FACC15", "icon_secondary_color": "transparent" }
+                ],
+                "shape": "circle",
+                "align": "center",
+                "icon_size": { "unit": "px", "size": 20, "sizes": [] },
+                "icon_spacing": { "unit": "px", "size": 12, "sizes": [] },
+                "color": "custom",
+                "icon_hover_primary_color": "#EAB308",
+                "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false }
+              },
+              "elements": []
+            },
+            { "id": "news-hashtag", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Follow for Daily Updates · Tag <strong style=\"color:#FACC15;\">@PartyLikeRico</strong> to be featured</p>", "align": "center", "text_color": "#9CA3AF", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 13, "sizes": [] } }, "elements": [] }
+          ]
+        }
+      ]
+    }
+
+  ],
+  "page_settings": {
+    "background_background": "classic",
+    "background_color": "#0B0F14",
+    "padding": { "unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": false },
+    "margin": { "unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": false }
+  }
+}

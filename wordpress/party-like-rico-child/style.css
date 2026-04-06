@@ -1,0 +1,608 @@
+/*
+Theme Name:   Party Like Rico Child
+Theme URI:    https://partylikerico.com
+Description:  Child theme for Party Like Rico Promotions LLC — built on Hello Elementor
+Author:       Party Like Rico Promotions LLC
+Author URI:   https://partylikerico.com
+Template:     hello-elementor
+Version:      1.0.0
+Text Domain:  party-like-rico-child
+*/
+
+/* ============================================================
+   1. BRAND CSS VARIABLES
+   ============================================================ */
+:root {
+  /* Core Brand Colors */
+  --plr-bg:            #0B0F14;
+  --plr-bg-card:       #111827;
+  --plr-bg-surface:    #1A2332;
+  --plr-gold:          #FACC15;
+  --plr-gold-hover:    #EAB308;
+  --plr-gold-dim:      rgba(250, 204, 21, 0.15);
+  --plr-green:         #22C55E;
+  --plr-green-hover:   #16A34A;
+  --plr-green-dim:     rgba(34, 197, 94, 0.15);
+  --plr-orange:        #F97316;
+  --plr-orange-hover:  #EA580C;
+  --plr-orange-dim:    rgba(249, 115, 22, 0.15);
+  --plr-red-dim:       rgba(239, 68, 68, 0.15);
+  --plr-red:           #EF4444;
+  --plr-blue-dim:      rgba(59, 130, 246, 0.15);
+  --plr-blue:          #3B82F6;
+  --plr-purple-dim:    rgba(168, 85, 247, 0.15);
+  --plr-purple:        #A855F7;
+
+  /* Neutral Palette */
+  --plr-white:         #FFFFFF;
+  --plr-text:          #E5E7EB;
+  --plr-muted:         #9CA3AF;
+  --plr-border:        rgba(255, 255, 255, 0.08);
+  --plr-border-gold:   rgba(250, 204, 21, 0.2);
+
+  /* Typography */
+  --font-heading:      'Montserrat', sans-serif;
+  --font-body:         'Inter', sans-serif;
+
+  /* Layout */
+  --section-pad-v:     80px;
+  --card-radius:       12px;
+  --btn-radius:        8px;
+  --max-width:         1200px;
+
+  /* Shadows */
+  --shadow-gold:       0 8px 32px rgba(250, 204, 21, 0.15);
+  --shadow-gold-lg:    0 12px 48px rgba(250, 204, 21, 0.25);
+  --shadow-card:       0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* ============================================================
+   2. BASE RESETS
+   ============================================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--plr-bg) !important;
+  color: var(--plr-text) !important;
+  font-family: var(--font-body) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+.elementor-heading-title {
+  font-family: var(--font-heading) !important;
+  color: var(--plr-white) !important;
+  line-height: 1.15;
+}
+
+p, li, span, td {
+  font-family: var(--font-body);
+  color: var(--plr-text);
+}
+
+a {
+  color: var(--plr-gold);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--plr-gold-hover);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ============================================================
+   3. TICKER ANIMATION
+   ============================================================ */
+.plr-ticker-wrap {
+  background: linear-gradient(90deg, var(--plr-gold) 0%, var(--plr-orange) 50%, var(--plr-gold) 100%);
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  z-index: 10;
+}
+
+.plr-ticker-track {
+  display: inline-flex;
+  align-items: center;
+  animation: plr-ticker 32s linear infinite;
+  will-change: transform;
+}
+
+.plr-ticker-track span {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--plr-bg);
+  text-transform: uppercase;
+  padding: 0 24px;
+  flex-shrink: 0;
+}
+
+.plr-ticker-track span.sep {
+  color: rgba(11, 15, 20, 0.4);
+  padding: 0 4px;
+  font-size: 16px;
+}
+
+@keyframes plr-ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.plr-ticker-wrap:hover .plr-ticker-track {
+  animation-play-state: paused;
+}
+
+/* ============================================================
+   4. CARD HOVER EFFECTS
+   ============================================================ */
+
+/* Generic card */
+.plr-card,
+.elementor-column.plr-card > .elementor-widget-wrap {
+  background: var(--plr-bg-card);
+  border: 1px solid var(--plr-border-gold);
+  border-radius: var(--card-radius);
+  transition: transform 0.25s ease,
+              border-color 0.25s ease,
+              box-shadow 0.25s ease;
+  height: 100%;
+}
+
+.plr-card:hover,
+.elementor-column.plr-card:hover > .elementor-widget-wrap {
+  transform: translateY(-5px);
+  border-color: var(--plr-gold);
+  box-shadow: var(--shadow-gold);
+}
+
+/* Feature / icon box cards */
+.plr-feature-card {
+  background: var(--plr-bg-surface);
+  border: 1px solid var(--plr-border);
+  border-radius: var(--card-radius);
+  padding: 32px 24px;
+  text-align: center;
+  height: 100%;
+  transition: transform 0.25s ease,
+              border-color 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.plr-feature-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--plr-gold);
+  box-shadow: var(--shadow-gold);
+}
+
+.plr-feature-card .elementor-icon-box-icon {
+  margin-bottom: 16px;
+}
+
+.plr-feature-card .elementor-icon-box-title {
+  font-family: var(--font-heading) !important;
+  font-weight: 700 !important;
+  color: var(--plr-white) !important;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.plr-feature-card .elementor-icon-box-description {
+  color: var(--plr-muted) !important;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Testimonial cards */
+.plr-testimonial-card {
+  background: var(--plr-bg-card);
+  border: 1px solid var(--plr-border-gold);
+  border-radius: var(--card-radius);
+  padding: 32px 28px;
+  height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.plr-testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-gold);
+}
+
+/* ============================================================
+   5. LOGO GLOW
+   ============================================================ */
+.site-logo img,
+.plr-logo img,
+.elementor-widget-site-logo img,
+.custom-logo,
+.custom-logo img {
+  filter: drop-shadow(0 0 8px rgba(250, 204, 21, 0.45));
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.site-logo img:hover,
+.plr-logo img:hover,
+.elementor-widget-site-logo img:hover,
+.custom-logo:hover,
+.custom-logo img:hover {
+  filter: drop-shadow(0 0 18px rgba(250, 204, 21, 0.8));
+  transform: scale(1.03);
+}
+
+/* Logo text fallback */
+.plr-logo-text {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--plr-white);
+  text-decoration: none;
+  text-shadow: 0 0 10px rgba(250, 204, 21, 0.5);
+  transition: text-shadow 0.3s ease;
+}
+
+.plr-logo-text:hover {
+  color: var(--plr-white);
+  text-shadow: 0 0 20px rgba(250, 204, 21, 0.9);
+}
+
+/* ============================================================
+   6. BUTTON OVERRIDES
+   ============================================================ */
+
+/* Gold / Primary */
+.plr-btn-gold.elementor-button,
+.elementor-button.plr-btn-gold {
+  background-color: var(--plr-gold) !important;
+  color: var(--plr-bg) !important;
+  font-family: var(--font-heading) !important;
+  font-weight: 700 !important;
+  border: none !important;
+  border-radius: var(--btn-radius) !important;
+  letter-spacing: 0.02em;
+  transition: background-color 0.2s ease,
+              transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.plr-btn-gold.elementor-button:hover,
+.elementor-button.plr-btn-gold:hover {
+  background-color: var(--plr-gold-hover) !important;
+  color: var(--plr-bg) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(250, 204, 21, 0.4);
+}
+
+/* Outline / Ghost */
+.plr-btn-outline.elementor-button,
+.elementor-button.plr-btn-outline {
+  background-color: transparent !important;
+  color: var(--plr-white) !important;
+  border: 2px solid rgba(255, 255, 255, 0.35) !important;
+  font-family: var(--font-heading) !important;
+  font-weight: 600 !important;
+  border-radius: var(--btn-radius) !important;
+  transition: border-color 0.2s ease,
+              color 0.2s ease,
+              transform 0.2s ease;
+}
+
+.plr-btn-outline.elementor-button:hover,
+.elementor-button.plr-btn-outline:hover {
+  background-color: transparent !important;
+  border-color: var(--plr-gold) !important;
+  color: var(--plr-gold) !important;
+  transform: translateY(-2px);
+}
+
+/* Green */
+.plr-btn-green.elementor-button,
+.elementor-button.plr-btn-green {
+  background-color: var(--plr-green) !important;
+  color: var(--plr-bg) !important;
+  font-family: var(--font-heading) !important;
+  font-weight: 700 !important;
+  border: none !important;
+  border-radius: var(--btn-radius) !important;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.plr-btn-green.elementor-button:hover,
+.elementor-button.plr-btn-green:hover {
+  background-color: var(--plr-green-hover) !important;
+  color: var(--plr-bg) !important;
+  transform: translateY(-2px);
+}
+
+/* Dark CTA (for gold/light backgrounds) */
+.plr-btn-dark.elementor-button,
+.elementor-button.plr-btn-dark {
+  background-color: var(--plr-bg) !important;
+  color: var(--plr-white) !important;
+  font-family: var(--font-heading) !important;
+  font-weight: 700 !important;
+  border: none !important;
+  border-radius: var(--btn-radius) !important;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.plr-btn-dark.elementor-button:hover,
+.elementor-button.plr-btn-dark:hover {
+  background-color: #1f2937 !important;
+  transform: translateY(-2px);
+}
+
+/* ============================================================
+   7. SECTION LABEL / EYEBROW TEXT
+   ============================================================ */
+.plr-eyebrow {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--plr-gold);
+  margin-bottom: 12px;
+}
+
+/* ============================================================
+   8. EVENT DETAIL PILLS (icon-list inline layout)
+   ============================================================ */
+.plr-detail-list .elementor-icon-list-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 0;
+}
+
+.plr-detail-list .elementor-icon-list-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--plr-border);
+  border-radius: 6px;
+  padding: 6px 14px;
+  list-style: none;
+}
+
+.plr-detail-list .elementor-icon-list-icon i,
+.plr-detail-list .elementor-icon-list-icon svg {
+  color: var(--plr-gold);
+}
+
+.plr-detail-list .elementor-icon-list-text {
+  color: var(--plr-text);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* ============================================================
+   9. BADGE STYLES
+   ============================================================ */
+.plr-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 4px 12px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+
+.plr-badge-featured  { background: var(--plr-gold-dim);   color: var(--plr-gold);   border: 1px solid rgba(250, 204, 21, 0.3); }
+.plr-badge-nightlife { background: var(--plr-orange-dim); color: var(--plr-orange); border: 1px solid rgba(249, 115, 22, 0.3); }
+.plr-badge-vendor    { background: var(--plr-green-dim);  color: var(--plr-green);  border: 1px solid rgba(34, 197, 94, 0.3); }
+.plr-badge-holiday   { background: var(--plr-red-dim);    color: var(--plr-red);    border: 1px solid rgba(239, 68, 68, 0.3); }
+.plr-badge-shore     { background: var(--plr-blue-dim);   color: var(--plr-blue);   border: 1px solid rgba(59, 130, 246, 0.3); }
+.plr-badge-community { background: var(--plr-purple-dim); color: var(--plr-purple); border: 1px solid rgba(168, 85, 247, 0.3); }
+
+/* ============================================================
+   10. STAR RATINGS
+   ============================================================ */
+.plr-stars {
+  color: var(--plr-gold);
+  font-size: 18px;
+  letter-spacing: 3px;
+  display: block;
+  margin-bottom: 14px;
+}
+
+/* ============================================================
+   11. COUNTER / STAT DISPLAY
+   ============================================================ */
+.plr-stat .elementor-counter-number-wrapper {
+  font-family: var(--font-heading) !important;
+  font-weight: 900 !important;
+  font-size: clamp(2.5rem, 5vw, 3.5rem) !important;
+  color: var(--plr-gold) !important;
+  line-height: 1;
+}
+
+.plr-stat .elementor-counter-title {
+  font-family: var(--font-body) !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: var(--plr-muted) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  margin-top: 6px;
+}
+
+/* ============================================================
+   12. NEWSLETTER FORM
+   ============================================================ */
+.plr-form .elementor-field-group {
+  margin-bottom: 0;
+}
+
+.plr-form .elementor-field-type-email input,
+.plr-form input[type="email"] {
+  background: rgba(255, 255, 255, 0.07) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: var(--btn-radius) !important;
+  color: var(--plr-white) !important;
+  padding: 14px 18px !important;
+  font-family: var(--font-body) !important;
+  font-size: 15px !important;
+  width: 100%;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.plr-form .elementor-field-type-email input:focus,
+.plr-form input[type="email"]:focus {
+  border-color: var(--plr-gold) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(250, 204, 21, 0.15) !important;
+}
+
+.plr-form .elementor-field-type-email input::placeholder {
+  color: var(--plr-muted) !important;
+}
+
+/* ============================================================
+   13. NAVIGATION OVERRIDES
+   ============================================================ */
+.plr-nav .elementor-nav-menu a {
+  font-family: var(--font-body) !important;
+  font-weight: 500;
+  font-size: 14px;
+  color: #D1D5DB !important;
+  transition: color 0.2s ease;
+}
+
+.plr-nav .elementor-nav-menu a:hover,
+.plr-nav .elementor-nav-menu .current-menu-item > a {
+  color: var(--plr-gold) !important;
+}
+
+.plr-nav .elementor-nav-menu > li > a {
+  padding: 0 14px;
+}
+
+/* Dropdown */
+.plr-nav .elementor-nav-menu--dropdown {
+  background: #0F1623 !important;
+  border: 1px solid var(--plr-border-gold) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5) !important;
+  padding: 8px 0 !important;
+}
+
+.plr-nav .elementor-nav-menu--dropdown a {
+  font-size: 14px !important;
+  padding: 10px 20px !important;
+  color: var(--plr-text) !important;
+}
+
+.plr-nav .elementor-nav-menu--dropdown a:hover {
+  background: var(--plr-gold-dim) !important;
+  color: var(--plr-gold) !important;
+}
+
+/* ============================================================
+   14. FOOTER
+   ============================================================ */
+.plr-footer {
+  background: #080C11;
+  border-top: 1px solid var(--plr-border-gold);
+}
+
+.plr-footer-links a {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--plr-muted) !important;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.2s ease;
+}
+
+.plr-footer-links a:hover {
+  color: var(--plr-gold) !important;
+}
+
+.plr-footer-heading {
+  font-family: var(--font-heading) !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: var(--plr-gold) !important;
+  margin-bottom: 16px !important;
+}
+
+.plr-copyright {
+  background: rgba(0, 0, 0, 0.3);
+  border-top: 1px solid var(--plr-border);
+  padding: 16px 0;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--plr-muted);
+  text-align: center;
+}
+
+/* ============================================================
+   15. UTILITY CLASSES
+   ============================================================ */
+.plr-text-gold    { color: var(--plr-gold) !important; }
+.plr-text-green   { color: var(--plr-green) !important; }
+.plr-text-orange  { color: var(--plr-orange) !important; }
+.plr-text-muted   { color: var(--plr-muted) !important; }
+.plr-text-center  { text-align: center !important; }
+.plr-text-upper   { text-transform: uppercase !important; letter-spacing: 0.1em; }
+.plr-divider-gold { border: none; border-top: 1px solid var(--plr-border-gold); margin: 32px 0; }
+
+/* ============================================================
+   16. RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  :root { --section-pad-v: 64px; }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-pad-v: 48px;
+    --card-radius: 10px;
+  }
+
+  .plr-ticker-track span {
+    font-size: 11px;
+    padding: 0 16px;
+  }
+
+  .elementor-button {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .plr-detail-list .elementor-icon-list-items {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .plr-logo-text { font-size: 16px; }
+
+  .plr-stars { font-size: 15px; }
+}
