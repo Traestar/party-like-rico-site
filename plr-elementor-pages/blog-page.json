@@ -1,0 +1,308 @@
+{
+  "version": "0.4",
+  "title": "Blog & News | Party Like Rico",
+  "type": "page",
+  "page_settings": {
+    "background_color": "#0B0F14",
+    "hide_title": "yes"
+  },
+  "content": [
+    {
+      "id": "tqqbp2uj",
+      "elType": "section",
+      "settings": {
+        "background_color": "#030b03",
+        "padding": {
+          "unit": "px",
+          "top": "140",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "q075zoon",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "12frjkme",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 20
+                }
+              }
+            },
+            {
+              "id": "jmk55r0a",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;margin-bottom:16px;\"><span style=\"display:inline-block;background:#FACC1522;color:#FACC15;border:1px solid #FACC1555;padding:6px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;\">NEWS · UPDATES · GUIDES</span></div>"
+              }
+            },
+            {
+              "id": "5rnterc6",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8
+                }
+              }
+            },
+            {
+              "id": "gjb9vo1f",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "BLOG &amp; NEWS",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 80
+                },
+                "typography_font_weight": "900",
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "eqf1xeae",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 16
+                }
+              }
+            },
+            {
+              "id": "k3q4fqqv",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:#9CA3AF;font-size:18px;font-family:Inter,sans-serif;text-align:center;line-height:1.7;margin:0;\">Your insider guide to Atlantic City events, local highlights, upcoming experiences, and everything Party Like Rico.</p>"
+              }
+            },
+            {
+              "id": "1g9j2kk1",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 20
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yy85l01x",
+      "elType": "section",
+      "settings": {
+        "background_color": "#0B0F14",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "nfprqngi",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "h0brjcb5",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:16px;overflow:hidden;display:flex;flex-wrap:wrap;max-width:1100px;margin:0 auto;\">\n  <div style=\"flex:0 0 40%;min-width:280px;background:#111;display:flex;align-items:center;justify-content:center;min-height:300px;\">\n    <span style=\"font-size:80px;\">📰</span>\n  </div>\n  <div style=\"flex:1;padding:40px;min-width:280px;\">\n    <span style=\"display:inline-block;background:#FACC1522;color:#FACC15;border:1px solid #FACC1555;padding:5px 16px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;\">⭐ Featured Article</span>\n    <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;margin:0 0 12px;\">📅 March 2026 &nbsp;·&nbsp; ✍️ Party Like Rico Team &nbsp;·&nbsp; ⏱️ 5 min read</p>\n    <h2 style=\"font-family:Montserrat,sans-serif;font-weight:900;text-transform:uppercase;color:#fff;font-size:28px;line-height:1.2;margin:0 0 16px;\">Welcome to Party Like Rico Promotions — Atlantic City's New Event Experience</h2>\n    <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:14px;line-height:1.7;margin:0 0 24px;\">Get the inside story on who we are, what we do, and why Atlantic City needed a promotion company like Party Like Rico. From bud crawls to nightlife — we're just getting started.</p>\n    <a href=\"/blog/welcome\" style=\"display:inline-block;background:#F97316;color:#fff;text-decoration:none;padding:14px 28px;border-radius:50px;font-family:Inter,sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;\">Read Full Article →</a>\n  </div>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e03drsw7",
+      "elType": "section",
+      "settings": {
+        "background_color": "#0B0F14",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "1k4dle8k",
+          "elType": "column",
+          "settings": {
+            "_column_size": 67,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "2byu6bdr",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#0e1218;border:1px solid rgba(255,255,255,0.06);border-radius:14px;overflow:hidden;margin-bottom:24px;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(0,0,0,0.4)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.boxShadow='none';\"><div style=\"aspect-ratio:16/10;background:#111;display:flex;align-items:center;justify-content:center;\"><span style=\"font-size:40px;\">📝</span></div><div style=\"padding:20px;\"><span style=\"display:inline-block;background:#22C55E22;color:#22C55E;border:1px solid #22C55E55;padding:3px 10px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;margin-bottom:10px;\">Event Updates</span><h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;margin:0 0 8px;line-height:1.3;\">Everything You Need to Know About the 420 Weekend AC Bud Crawl</h4><p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.6;margin:0 0 16px;\">Date, time, tickets, locations — your complete guide to the biggest 420 event in Atlantic City.</p><div style=\"display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid rgba(255,255,255,0.06);\"><span style=\"color:#9CA3AF;font-size:12px;font-family:Inter,sans-serif;\">March 2026 · 4 min</span><a href=\"#\" style=\"color:#FACC15;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-decoration:none;\">Read →</a></div></div></div><div style=\"background:#0e1218;border:1px solid rgba(255,255,255,0.06);border-radius:14px;overflow:hidden;margin-bottom:24px;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(0,0,0,0.4)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.boxShadow='none';\"><div style=\"aspect-ratio:16/10;background:#111;display:flex;align-items:center;justify-content:center;\"><span style=\"font-size:40px;\">📝</span></div><div style=\"padding:20px;\"><span style=\"display:inline-block;background:#3B82F622;color:#3B82F6;border:1px solid #3B82F655;padding:3px 10px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;margin-bottom:10px;\">AC News</span><h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;margin:0 0 8px;line-height:1.3;\">The Best Things to Do in Atlantic City in 2026 — Beyond the Casino</h4><p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.6;margin:0 0 16px;\">AC has way more to offer than the casino floor. Here's your guide to the best experiences.</p><div style=\"display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid rgba(255,255,255,0.06);\"><span style=\"color:#9CA3AF;font-size:12px;font-family:Inter,sans-serif;\">February 2026 · 6 min</span><a href=\"#\" style=\"color:#FACC15;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-decoration:none;\">Read →</a></div></div></div><div style=\"background:#0e1218;border:1px solid rgba(255,255,255,0.06);border-radius:14px;overflow:hidden;margin-bottom:24px;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(0,0,0,0.4)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.boxShadow='none';\"><div style=\"aspect-ratio:16/10;background:#111;display:flex;align-items:center;justify-content:center;\"><span style=\"font-size:40px;\">📝</span></div><div style=\"padding:20px;\"><span style=\"display:inline-block;background:#A855F722;color:#A855F7;border:1px solid #A855F755;padding:3px 10px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;margin-bottom:10px;\">Partner Spotlights</span><h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;margin:0 0 8px;line-height:1.3;\">Why Local Businesses Should Partner with Party Like Rico</h4><p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.6;margin:0 0 16px;\">Reach Atlantic City's most engaged audience and grow your brand through strategic event partnerships.</p><div style=\"display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid rgba(255,255,255,0.06);\"><span style=\"color:#9CA3AF;font-size:12px;font-family:Inter,sans-serif;\">January 2026 · 5 min</span><a href=\"#\" style=\"color:#FACC15;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-decoration:none;\">Read →</a></div></div></div><div style=\"background:#0e1218;border:1px solid rgba(255,255,255,0.06);border-radius:14px;overflow:hidden;margin-bottom:24px;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(0,0,0,0.4)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.boxShadow='none';\"><div style=\"aspect-ratio:16/10;background:#111;display:flex;align-items:center;justify-content:center;\"><span style=\"font-size:40px;\">📝</span></div><div style=\"padding:20px;\"><span style=\"display:inline-block;background:#FACC1522;color:#FACC15;border:1px solid #FACC1555;padding:3px 10px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;margin-bottom:10px;\">Upcoming Experiences</span><h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;margin:0 0 8px;line-height:1.3;\">Summer 2026 Events Preview — What's Coming to Atlantic City</h4><p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.6;margin:0 0 16px;\">Get an early look at the summer lineup — new events, new venues, new vibes coming to AC.</p><div style=\"display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid rgba(255,255,255,0.06);\"><span style=\"color:#9CA3AF;font-size:12px;font-family:Inter,sans-serif;\">Coming Soon · 3 min</span><a href=\"#\" style=\"color:#FACC15;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-decoration:none;\">Read →</a></div></div></div><div style=\"background:#0e1218;border:1px solid rgba(255,255,255,0.06);border-radius:14px;overflow:hidden;margin-bottom:24px;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(0,0,0,0.4)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.boxShadow='none';\"><div style=\"aspect-ratio:16/10;background:#111;display:flex;align-items:center;justify-content:center;\"><span style=\"font-size:40px;\">📝</span></div><div style=\"padding:20px;\"><span style=\"display:inline-block;background:#06B6D422;color:#06B6D4;border:1px solid #06B6D455;padding:3px 10px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;margin-bottom:10px;\">Local Highlights</span><h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;margin:0 0 8px;line-height:1.3;\">Planning a Birthday, Bachelorette, or Private Celebration in AC?</h4><p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.6;margin:0 0 16px;\">Atlantic City is the perfect backdrop for a private event. Here's how Party Like Rico can help.</p><div style=\"display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid rgba(255,255,255,0.06);\"><span style=\"color:#9CA3AF;font-size:12px;font-family:Inter,sans-serif;\">Coming Soon · 4 min</span><a href=\"#\" style=\"color:#FACC15;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-decoration:none;\">Read →</a></div></div></div><div style=\"background:#0e1218;border:1px solid rgba(255,255,255,0.06);border-radius:14px;overflow:hidden;margin-bottom:24px;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(0,0,0,0.4)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.boxShadow='none';\"><div style=\"aspect-ratio:16/10;background:#111;display:flex;align-items:center;justify-content:center;\"><span style=\"font-size:40px;\">📝</span></div><div style=\"padding:20px;\"><span style=\"display:inline-block;background:#3B82F622;color:#3B82F6;border:1px solid #3B82F655;padding:3px 10px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;margin-bottom:10px;\">AC News</span><h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;margin:0 0 8px;line-height:1.3;\">The Ultimate Atlantic City Weekend Itinerary — RICO Edition</h4><p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.6;margin:0 0 16px;\">From Friday night to Sunday morning — the definitive Party Like Rico guide to a weekend in AC.</p><div style=\"display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid rgba(255,255,255,0.06);\"><span style=\"color:#9CA3AF;font-size:12px;font-family:Inter,sans-serif;\">Coming Soon · 7 min</span><a href=\"#\" style=\"color:#FACC15;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-decoration:none;\">Read →</a></div></div></div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "o6dpmuj2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "ywlnd60o",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display:flex;flex-direction:column;gap:20px;\">\n  <div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:20px;\">\n    <input type=\"text\" placeholder=\"Search articles...\" style=\"width:100%;background:#0B0F14;border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:12px 16px;color:#fff;font-family:Inter,sans-serif;font-size:14px;outline:none;box-sizing:border-box;\" />\n  </div>\n  <div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:20px;\">\n    <p style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;margin:0 0 14px;\">Categories</p>\n    <div style=\"display:flex;flex-wrap:wrap;gap:8px;\">\n      <span style=\"background:#22C55E22;color:#22C55E;border:1px solid #22C55E44;padding:4px 12px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;cursor:pointer;\">Event Updates</span>\n      <span style=\"background:#3B82F622;color:#3B82F6;border:1px solid #3B82F644;padding:4px 12px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;cursor:pointer;\">AC News</span>\n      <span style=\"background:#FACC1522;color:#FACC15;border:1px solid #FACC1544;padding:4px 12px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;cursor:pointer;\">Guides</span>\n      <span style=\"background:#A855F722;color:#A855F7;border:1px solid #A855F744;padding:4px 12px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;cursor:pointer;\">Nightlife</span>\n      <span style=\"background:#F9731622;color:#F97316;border:1px solid #F9731644;padding:4px 12px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;cursor:pointer;\">Partner Spotlights</span>\n    </div>\n  </div>\n  <div style=\"background:#1A2233;border:2px solid #22C55E;border-radius:12px;padding:20px;\">\n    <span style=\"display:inline-block;background:#22C55E22;color:#22C55E;border:1px solid #22C55E55;padding:3px 10px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;margin-bottom:10px;\">🌿 Featured Event</span>\n    <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;margin:0 0 6px;\">420 Weekend AC Bud Crawl</h4>\n    <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:12px;margin:0 0 4px;\">📅 April 18, 2026</p>\n    <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:12px;margin:0 0 14px;\">💵 $25 · 21+ Only</p>\n    <a href=\"https://www.paypal.com/ncp/payment/AWCDNEHMYVWAG\" style=\"display:inline-block;background:#F97316;color:#fff;text-decoration:none;padding:10px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;\">🎟 Buy Tickets</a>\n  </div>\n  <div style=\"background:#1A2233;border:2px solid #FACC15;border-radius:12px;padding:20px;\">\n    <p style=\"color:#FACC15;font-family:Montserrat,sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;margin:0 0 6px;\">Newsletter</p>\n    <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;margin:0 0 14px;\">Get event updates, exclusive offers, and more delivered to your inbox.</p>\n    <div style=\"border:2px dashed rgba(250,204,21,0.3);border-radius:8px;padding:16px;text-align:center;\">\n      <code style=\"color:#FACC15;font-family:monospace;font-size:12px;\">[wpforms id=\"newsletter-form-id\"]</code>\n    </div>\n  </div>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vzvpcshb",
+      "elType": "section",
+      "settings": {
+        "background_color": "#121826",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "n3w8w5a9",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "jdhoz8j4",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;margin-bottom:16px;\"><span style=\"display:inline-block;background:#F9731622;color:#F97316;border:1px solid #F9731655;padding:6px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;\">GET FEATURED</span></div>"
+              }
+            },
+            {
+              "id": "k17pnchn",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8
+                }
+              }
+            },
+            {
+              "id": "4fedmmti",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "HAVE A STORY TO <span style=\"color:#FACC15;\">SHARE</span>?",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_weight": "900",
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "a3kd7sz3",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 16
+                }
+              }
+            },
+            {
+              "id": "idwjeb2b",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:#9CA3AF;font-size:16px;font-family:Inter,sans-serif;text-align:center;line-height:1.7;margin:0;\">Have an event, a brand, or a story that deserves to be heard in Atlantic City? Reach out — we'd love to feature you.</p>"
+              }
+            },
+            {
+              "id": "7wq53a0c",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 24
+                }
+              }
+            },
+            {
+              "id": "mwc15mnx",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display:flex;gap:12px;justify-content:center;flex-wrap:wrap;\"><a href=\"/contact\" style=\"display:inline-block;background:#F97316;color:#FFFFFF;text-decoration:none;padding:14px 32px;border-radius:50px;font-family:Inter,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;\">Get Featured</a><a href=\"/events\" style=\"display:inline-block;background:transparent;color:#FFFFFF;text-decoration:none;padding:14px 32px;border-radius:50px;border:2px solid rgba(255,255,255,0.3);font-family:Inter,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;\">View Events</a></div>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "version": "0.4",
+  "title": "Contact Us | Party Like Rico",
+  "type": "page",
+  "page_settings": {
+    "background_color": "#0B0F14",
+    "hide_title": "yes"
+  },
+  "content": [
+    {
+      "id": "g40m3igx",
+      "elType": "section",
+      "settings": {
+        "background_color": "#030b03",
+        "padding": {
+          "unit": "px",
+          "top": "140",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "evft8wh0",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "jwhsvg9c",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 20
+                }
+              }
+            },
+            {
+              "id": "125r2mx2",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;margin-bottom:16px;\"><span style=\"display:inline-block;background:#F9731622;color:#F97316;border:1px solid #F9731655;padding:6px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;\">REACH OUT</span></div>"
+              }
+            },
+            {
+              "id": "qk5n8e3y",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8
+                }
+              }
+            },
+            {
+              "id": "2e1cdo0k",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "CONTACT US",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 80
+                },
+                "typography_font_weight": "900",
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "k5v61uav",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 16
+                }
+              }
+            },
+            {
+              "id": "rc83hhoq",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:#9CA3AF;font-size:18px;font-family:Inter,sans-serif;text-align:center;line-height:1.7;margin:0;\">Questions about an event, ticket help, vendor inquiries, partnerships, or a private celebration? We&#8217;d love to hear from you.</p>"
+              }
+            },
+            {
+              "id": "kvz1kjgv",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 20
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "y713m2ik",
+      "elType": "section",
+      "settings": {
+        "background_color": "#0B0F14",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "zrp3eos1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 60,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "5d5d21pz",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display:flex;flex-direction:column;gap:24px;\">\n  <div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:16px;padding:40px;\">\n    <h3 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:900;font-size:24px;text-transform:uppercase;margin:0 0 8px;\">Send a Message</h3>\n    <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:14px;line-height:1.7;margin:0 0 24px;\">Fill out the form below and we'll get back to you within 24–48 hours.</p>\n    <div style=\"border:2px dashed rgba(255,255,255,0.15);border-radius:10px;padding:32px;text-align:center;\">\n      <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.7;margin:0 0 8px;\">Insert WPForms Contact Form shortcode here:</p>\n      <code style=\"color:#FACC15;font-family:monospace;font-size:14px;background:rgba(250,204,21,0.1);padding:6px 12px;border-radius:6px;\">[wpforms id=\"contact-form-id\"]</code>\n    </div>\n  </div>\n  <div style=\"background:#1A2233;border:2px solid #FACC15;border-radius:16px;padding:32px;\">\n    <div style=\"font-size:32px;margin-bottom:12px;\">🤝</div>\n    <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:18px;text-transform:uppercase;margin:0 0 10px;\">Vendor &amp; Partnership Inquiries</h4>\n    <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.7;margin:0 0 16px;\">Interested in vending at a Party Like Rico event? Want to partner with us for promotion or sponsorship? We'd love to connect.</p>\n    <a href=\"/vendor\" style=\"display:inline-block;background:#FACC15;color:#0B0F14;text-decoration:none;padding:12px 24px;border-radius:50px;font-family:Inter,sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;\">Vendor Application →</a>\n  </div>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "4s1nr13e",
+          "elType": "column",
+          "settings": {
+            "_column_size": 40,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "igjw89fp",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:16px;padding:40px;height:100%;\">\n  <h3 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:900;font-size:24px;text-transform:uppercase;margin:0 0 24px;\">Get In Touch</h3>\n  <div style=\"display:flex;flex-direction:column;gap:20px;margin-bottom:28px;\">\n    <div style=\"display:flex;align-items:flex-start;gap:16px;\"><span style=\"font-size:22px;min-width:32px;\">📞</span><div><p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 4px;\">Phone</p><a href=\"tel:6095942265\" style=\"color:#FFFFFF;font-family:Inter,sans-serif;font-size:15px;font-weight:600;text-decoration:none;\">(609) 594-2265</a></div></div>\n    <div style=\"display:flex;align-items:flex-start;gap:16px;\"><span style=\"font-size:22px;min-width:32px;\">✉️</span><div><p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 4px;\">Email</p><a href=\"mailto:PartyLikeRico@gmail.com\" style=\"color:#FFFFFF;font-family:Inter,sans-serif;font-size:15px;font-weight:600;text-decoration:none;\">PartyLikeRico@gmail.com</a></div></div>\n    <div style=\"display:flex;align-items:flex-start;gap:16px;\"><span style=\"font-size:22px;min-width:32px;\">📍</span><div><p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 4px;\">Location</p><p style=\"color:#FFFFFF;font-family:Inter,sans-serif;font-size:15px;font-weight:600;margin:0;\">Atlantic City, NJ</p></div></div>\n    <div style=\"display:flex;align-items:flex-start;gap:16px;\"><span style=\"font-size:22px;min-width:32px;\">🌐</span><div><p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 4px;\">Website</p><a href=\"https://acbudcrawl.com\" style=\"color:#FACC15;font-family:Inter,sans-serif;font-size:15px;font-weight:600;text-decoration:none;\">acbudcrawl.com</a></div></div>\n  </div>\n  <div style=\"display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;\">\n    <a href=\"#ig\" style=\"background:#0B0F14;border:1px solid rgba(255,255,255,0.15);color:#9CA3AF;text-decoration:none;padding:8px 16px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;\">IG</a>\n    <a href=\"#fb\" style=\"background:#0B0F14;border:1px solid rgba(255,255,255,0.15);color:#9CA3AF;text-decoration:none;padding:8px 16px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;\">FB</a>\n    <a href=\"#tt\" style=\"background:#0B0F14;border:1px solid rgba(255,255,255,0.15);color:#9CA3AF;text-decoration:none;padding:8px 16px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;\">TT</a>\n    <a href=\"#x\" style=\"background:#0B0F14;border:1px solid rgba(255,255,255,0.15);color:#9CA3AF;text-decoration:none;padding:8px 16px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;\">X</a>\n  </div>\n  <div style=\"background:#0B0F14;border:2px solid #22C55E;border-radius:12px;padding:20px;\">\n    <span style=\"display:inline-block;background:#22C55E22;color:#22C55E;border:1px solid #22C55E55;padding:3px 10px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;margin-bottom:12px;\">🌿 Upcoming Event</span>\n    <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;margin:0 0 6px;\">420 Weekend AC Bud Crawl</h4>\n    <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;margin:0 0 4px;\">📅 April 18, 2026 · 1PM–7PM</p>\n    <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;margin:0 0 16px;\">💵 $25 Entry · 21+</p>\n    <a href=\"https://www.paypal.com/ncp/payment/AWCDNEHMYVWAG\" style=\"display:inline-block;background:#F97316;color:#fff;text-decoration:none;padding:10px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;\">🎟 Buy Tickets</a>\n  </div>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qmg1y32z",
+      "elType": "section",
+      "settings": {
+        "background_color": "#121826",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "xyobczt2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "kasns5j5",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;margin-bottom:16px;\"><span style=\"display:inline-block;background:#F9731622;color:#F97316;border:1px solid #F9731655;padding:6px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;\">DIRECT CONTACT</span></div>"
+              }
+            },
+            {
+              "id": "58614lg8",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8
+                }
+              }
+            },
+            {
+              "id": "h27q72tf",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "REACH US DIRECTLY",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_weight": "900",
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "gcaxnqc2",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 32
+                }
+              }
+            },
+            {
+              "id": "ttygsu09",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display:flex;flex-wrap:wrap;gap:20px;justify-content:center;\">\n  <a href=\"tel:6095942265\" style=\"display:flex;align-items:center;gap:12px;background:#1A2233;border:1px solid rgba(255,255,255,0.07);text-decoration:none;padding:20px 32px;border-radius:50px;min-width:220px;justify-content:center;transition:all 0.3s ease;\" onmouseover=\"this.style.borderColor='rgba(249,115,22,0.4)';\" onmouseout=\"this.style.borderColor='rgba(255,255,255,0.07)';\">\n    <span style=\"font-size:24px;\">📞</span>\n    <div><p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 2px;\">Phone</p><p style=\"color:#fff;font-family:Inter,sans-serif;font-size:15px;font-weight:600;margin:0;\">(609) 594-2265</p></div>\n  </a>\n  <a href=\"mailto:PartyLikeRico@gmail.com\" style=\"display:flex;align-items:center;gap:12px;background:#1A2233;border:1px solid rgba(255,255,255,0.07);text-decoration:none;padding:20px 32px;border-radius:50px;min-width:220px;justify-content:center;transition:all 0.3s ease;\" onmouseover=\"this.style.borderColor='rgba(250,204,21,0.4)';\" onmouseout=\"this.style.borderColor='rgba(255,255,255,0.07)';\">\n    <span style=\"font-size:24px;\">✉️</span>\n    <div><p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 2px;\">Email</p><p style=\"color:#fff;font-family:Inter,sans-serif;font-size:15px;font-weight:600;margin:0;\">PartyLikeRico@gmail.com</p></div>\n  </a>\n  <a href=\"sms:6095942265\" style=\"display:flex;align-items:center;gap:12px;background:#22C55E;border:1px solid #22C55E;text-decoration:none;padding:20px 32px;border-radius:50px;min-width:220px;justify-content:center;\" onmouseover=\"this.style.opacity='0.9';\" onmouseout=\"this.style.opacity='1';\">\n    <span style=\"font-size:24px;\">💬</span>\n    <div><p style=\"color:rgba(255,255,255,0.8);font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 2px;\">Text Us</p><p style=\"color:#fff;font-family:Inter,sans-serif;font-size:15px;font-weight:600;margin:0;\">(609) 594-2265</p></div>\n  </a>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

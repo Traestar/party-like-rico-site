@@ -1,0 +1,570 @@
+{
+  "version": "0.4",
+  "title": "Media & Gallery | Party Like Rico",
+  "type": "page",
+  "page_settings": {
+    "background_color": "#0B0F14",
+    "hide_title": "yes"
+  },
+  "content": [
+    {
+      "id": "3vnl9efu",
+      "elType": "section",
+      "settings": {
+        "background_color": "#030b03",
+        "padding": {
+          "unit": "px",
+          "top": "140",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "ci6a35vd",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "ffghdrhs",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 20
+                }
+              }
+            },
+            {
+              "id": "u855qn6z",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;margin-bottom:16px;\"><span style=\"display:inline-block;background:#22C55E22;color:#22C55E;border:1px solid #22C55E55;padding:6px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;\">PHOTOS · FLYERS · RECAPS</span></div>"
+              }
+            },
+            {
+              "id": "1c1u3yun",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8
+                }
+              }
+            },
+            {
+              "id": "bph0my4i",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "MEDIA &amp; GALLERY",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 80
+                },
+                "typography_font_weight": "900",
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "f4t4kimj",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 16
+                }
+              }
+            },
+            {
+              "id": "kvl8fono",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:#9CA3AF;font-size:18px;font-family:Inter,sans-serif;text-align:center;line-height:1.7;margin:0;\">Relive the moments that made the night unforgettable. Browse event photos, flyers, recaps, and highlights from Party Like Rico events.</p>"
+              }
+            },
+            {
+              "id": "jw1vt02u",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 20
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8r7pv4vg",
+      "elType": "section",
+      "settings": {
+        "background_color": "#030b03",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "jbilgbgz",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "xe8yj5iw",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display:flex;flex-wrap:wrap;gap:40px;max-width:1000px;margin:0 auto;align-items:center;\">\n  <div style=\"flex:0 0 280px;\">\n    <div style=\"aspect-ratio:3/4;background:#1A2233;border-radius:12px;display:flex;align-items:center;justify-content:center;box-shadow:0 30px 80px rgba(0,0,0,0.6);border:1px solid rgba(34,197,94,0.2);\">\n      <div style=\"text-align:center;\"><div style=\"font-size:80px;margin-bottom:12px;\">🌿</div><p style=\"color:#22C55E;font-family:Montserrat,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin:0;\">Official Flyer</p></div>\n    </div>\n  </div>\n  <div style=\"flex:1;min-width:260px;\">\n    <div style=\"text-align:center;margin-bottom:16px;\"><span style=\"display:inline-block;background:#FACC1522;color:#FACC15;border:1px solid #FACC1555;padding:6px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;\">FEATURED</span></div>\n    <h2 style=\"font-family:Montserrat,sans-serif;font-weight:900;text-transform:uppercase;color:#fff;font-size:36px;line-height:1.15;margin:0 0 20px;\">OFFICIAL EVENT <span style=\"color:#FACC15;\">FLYER</span></h2>\n    <div style=\"display:flex;flex-direction:column;gap:10px;margin-bottom:24px;\">\n      <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:14px;margin:0;\"><strong style=\"color:#FACC15;\">📅 Date:</strong> Saturday, April 18, 2026</p>\n      <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:14px;margin:0;\"><strong style=\"color:#FACC15;\">🕐 Time:</strong> 1PM – 7PM</p>\n      <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:14px;margin:0;\"><strong style=\"color:#FACC15;\">📍 Location:</strong> Atlantic City, NJ</p>\n      <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:14px;margin:0;\"><strong style=\"color:#FACC15;\">🔞 Age:</strong> 21+ Only</p>\n      <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:14px;margin:0;\"><strong style=\"color:#FACC15;\">💵 Price:</strong> $25 Entry</p>\n    </div>\n    <div style=\"display:flex;gap:12px;flex-wrap:wrap;\">\n      <a href=\"https://www.paypal.com/ncp/payment/AWCDNEHMYVWAG\" style=\"display:inline-block;background:#F97316;color:#fff;text-decoration:none;padding:14px 28px;border-radius:50px;font-family:Inter,sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;\">🎟 Buy Tickets — $25</a>\n      <a href=\"/events\" style=\"display:inline-block;background:transparent;color:#fff;text-decoration:none;padding:14px 28px;border-radius:50px;border:2px solid rgba(255,255,255,0.25);font-family:Inter,sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;\">View Events</a>\n    </div>\n  </div>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bp6l25y3",
+      "elType": "section",
+      "settings": {
+        "background_color": "#0B0F14",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "vwhx1frd",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "id5u42hs",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;margin-bottom:16px;\"><span style=\"display:inline-block;background:#FACC1522;color:#FACC15;border:1px solid #FACC1555;padding:6px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;\">GALLERY</span></div>"
+              }
+            },
+            {
+              "id": "w4vt7pjc",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8
+                }
+              }
+            },
+            {
+              "id": "x6qxr4ss",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "EVENT <span style=\"color:#FACC15;\">PHOTOS</span>",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_weight": "900",
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "buaf7i89",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 32
+                }
+              }
+            },
+            {
+              "id": "uq3cm4qt",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:32px;\">\n  <button style=\"background:rgba(250,204,21,0.15);color:#FACC15;border:1.5px solid rgba(250,204,21,0.4);padding:8px 22px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;cursor:pointer;\">All</button>\n  <button style=\"background:transparent;color:#9CA3AF;border:1.5px solid rgba(255,255,255,0.1);padding:8px 22px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;cursor:pointer;\">Bud Crawl</button>\n  <button style=\"background:transparent;color:#9CA3AF;border:1.5px solid rgba(255,255,255,0.1);padding:8px 22px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;cursor:pointer;\">Nightlife</button>\n  <button style=\"background:transparent;color:#9CA3AF;border:1.5px solid rgba(255,255,255,0.1);padding:8px 22px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;cursor:pointer;\">Vendors</button>\n  <button style=\"background:transparent;color:#9CA3AF;border:1.5px solid rgba(255,255,255,0.1);padding:8px 22px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;cursor:pointer;\">Community</button>\n</div><div style=\"display:grid;grid-template-columns:repeat(3,1fr);gap:12px;\"><div style=\"aspect-ratio:1;background:#111;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;cursor:pointer;\" onmouseover=\"this.children[1].style.opacity='1';\" onmouseout=\"this.children[1].style.opacity='0';\"><span style=\"font-size:36px;\">🌿</span><div style=\"position:absolute;inset:0;background:rgba(0,0,0,0.75);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s ease;font-size:28px;\">🔍</div></div><div style=\"aspect-ratio:1;background:#111;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;cursor:pointer;\" onmouseover=\"this.children[1].style.opacity='1';\" onmouseout=\"this.children[1].style.opacity='0';\"><span style=\"font-size:36px;\">🎉</span><div style=\"position:absolute;inset:0;background:rgba(0,0,0,0.75);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s ease;font-size:28px;\">🔍</div></div><div style=\"aspect-ratio:1;background:#111;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;cursor:pointer;\" onmouseover=\"this.children[1].style.opacity='1';\" onmouseout=\"this.children[1].style.opacity='0';\"><span style=\"font-size:36px;\">🎶</span><div style=\"position:absolute;inset:0;background:rgba(0,0,0,0.75);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s ease;font-size:28px;\">🔍</div></div><div style=\"aspect-ratio:1;background:#111;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;cursor:pointer;\" onmouseover=\"this.children[1].style.opacity='1';\" onmouseout=\"this.children[1].style.opacity='0';\"><span style=\"font-size:36px;\">🌃</span><div style=\"position:absolute;inset:0;background:rgba(0,0,0,0.75);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s ease;font-size:28px;\">🔍</div></div><div style=\"aspect-ratio:1;background:#111;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;cursor:pointer;\" onmouseover=\"this.children[1].style.opacity='1';\" onmouseout=\"this.children[1].style.opacity='0';\"><span style=\"font-size:36px;\">🍻</span><div style=\"position:absolute;inset:0;background:rgba(0,0,0,0.75);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s ease;font-size:28px;\">🔍</div></div><div style=\"aspect-ratio:1;background:#111;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;cursor:pointer;\" onmouseover=\"this.children[1].style.opacity='1';\" onmouseout=\"this.children[1].style.opacity='0';\"><span style=\"font-size:36px;\">🎤</span><div style=\"position:absolute;inset:0;background:rgba(0,0,0,0.75);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s ease;font-size:28px;\">🔍</div></div><div style=\"aspect-ratio:1;background:#111;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;cursor:pointer;\" onmouseover=\"this.children[1].style.opacity='1';\" onmouseout=\"this.children[1].style.opacity='0';\"><span style=\"font-size:36px;\">🎊</span><div style=\"position:absolute;inset:0;background:rgba(0,0,0,0.75);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s ease;font-size:28px;\">🔍</div></div><div style=\"aspect-ratio:1;background:#111;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;cursor:pointer;\" onmouseover=\"this.children[1].style.opacity='1';\" onmouseout=\"this.children[1].style.opacity='0';\"><span style=\"font-size:36px;\">🏙</span><div style=\"position:absolute;inset:0;background:rgba(0,0,0,0.75);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s ease;font-size:28px;\">🔍</div></div><div style=\"aspect-ratio:1;background:#111;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;cursor:pointer;\" onmouseover=\"this.children[1].style.opacity='1';\" onmouseout=\"this.children[1].style.opacity='0';\"><span style=\"font-size:36px;\">🌟</span><div style=\"position:absolute;inset:0;background:rgba(0,0,0,0.75);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s ease;font-size:28px;\">🔍</div></div></div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vva4fto9",
+      "elType": "section",
+      "settings": {
+        "background_color": "#121826",
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "el18zclr",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "oqc8qozo",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;margin-bottom:16px;\"><span style=\"display:inline-block;background:#FACC1522;color:#FACC15;border:1px solid #FACC1555;padding:6px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;\">RECAPS</span></div>"
+              }
+            },
+            {
+              "id": "wgmwwphi",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8
+                }
+              }
+            },
+            {
+              "id": "i8mla4wb",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "EVENT <span style=\"color:#FACC15;\">HIGHLIGHTS</span>",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_weight": "900",
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "59zud0tz",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 16
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "w6viimq1",
+      "elType": "section",
+      "settings": {
+        "background_color": "#121826",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "o3ahwnbj",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "ssjtco7l",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;overflow:hidden;height:100%;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(0,0,0,0.4)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.boxShadow='none';\">\n  <div style=\"position:relative;aspect-ratio:16/9;background:#0e1218;display:flex;align-items:center;justify-content:center;\">\n    <span style=\"font-size:48px;\">🌿</span>\n    <div style=\"position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.3);\"><span style=\"font-size:36px;background:rgba(0,0,0,0.6);border-radius:50%;width:60px;height:60px;display:flex;align-items:center;justify-content:center;\">▶️</span></div>\n  </div>\n  <div style=\"padding:20px;\">\n    <span style=\"display:inline-block;background:#22C55E22;color:#22C55E;border:1px solid #22C55E55;padding:3px 10px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;margin-bottom:12px;\">Event Recap</span>\n    <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;margin:0 0 8px;line-height:1.3;\">420 Weekend AC Bud Crawl — Coming April 2026</h4>\n    <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.6;margin:0;\">The full event recap drops after April 18th. Check back for photos, highlights, and behind-the-scenes content.</p>\n  </div>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "tw8ykkw9",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "miawx9j1",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;overflow:hidden;height:100%;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(0,0,0,0.4)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.boxShadow='none';\">\n  <div style=\"position:relative;aspect-ratio:16/9;background:#0e1218;display:flex;align-items:center;justify-content:center;\">\n    <span style=\"font-size:48px;\">📱</span>\n    <div style=\"position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.3);\"><span style=\"font-size:36px;background:rgba(0,0,0,0.6);border-radius:50%;width:60px;height:60px;display:flex;align-items:center;justify-content:center;\">▶️</span></div>\n  </div>\n  <div style=\"padding:20px;\">\n    <span style=\"display:inline-block;background:#F9731622;color:#F97316;border:1px solid #F9731655;padding:3px 10px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;margin-bottom:12px;\">Summer Preview</span>\n    <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;margin:0 0 8px;line-height:1.3;\">Summer 2026 Event Series — First Look</h4>\n    <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.6;margin:0;\">Get an early look at what's coming this summer — new venues, new events, and all new energy across Atlantic City.</p>\n  </div>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "2hrosuvo",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "iih1x2k4",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;overflow:hidden;height:100%;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(0,0,0,0.4)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.boxShadow='none';\">\n  <div style=\"position:relative;aspect-ratio:16/9;background:#0e1218;display:flex;align-items:center;justify-content:center;\">\n    <span style=\"font-size:48px;\">🎤</span>\n    <div style=\"position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.3);\"><span style=\"font-size:36px;background:rgba(0,0,0,0.6);border-radius:50%;width:60px;height:60px;display:flex;align-items:center;justify-content:center;\">▶️</span></div>\n  </div>\n  <div style=\"padding:20px;\">\n    <span style=\"display:inline-block;background:#A855F722;color:#A855F7;border:1px solid #A855F755;padding:3px 10px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;margin-bottom:12px;\">Behind the Brand</span>\n    <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;margin:0 0 8px;line-height:1.3;\">Behind the Brand — Rico's Vision for AC</h4>\n    <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.6;margin:0;\">An exclusive look into what drives Party Like Rico Promotions and the mission to make Atlantic City unforgettable.</p>\n  </div>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "54jycu18",
+      "elType": "section",
+      "settings": {
+        "background_color": "#060a06",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "r2mfracw",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "8aznmxt5",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;margin-bottom:16px;\"><span style=\"display:inline-block;background:#22C55E22;color:#22C55E;border:1px solid #22C55E55;padding:6px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;\">SOCIAL</span></div>"
+              }
+            },
+            {
+              "id": "wacfn327",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8
+                }
+              }
+            },
+            {
+              "id": "3vhug358",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "FOLLOW THE <span style=\"color:#FACC15;\">VIBE</span>",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_weight": "900",
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "33mx8qqz",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 16
+                }
+              }
+            },
+            {
+              "id": "n48vcei8",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:#9CA3AF;font-size:16px;font-family:Inter,sans-serif;text-align:center;line-height:1.7;margin:0;\">Follow @PartyLikeRico for daily updates, behind-the-scenes content, and event announcements.</p>"
+              }
+            },
+            {
+              "id": "agubm1kt",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 24
+                }
+              }
+            },
+            {
+              "id": "b1bp6sv4",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display:flex;gap:12px;justify-content:center;flex-wrap:wrap;\"><a href=\"#instagram\" style=\"display:inline-block;background:#FACC15;color:#0B0F14;text-decoration:none;padding:14px 32px;border-radius:50px;font-family:Inter,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;\">Instagram</a><a href=\"#facebook\" style=\"display:inline-block;background:transparent;color:#FFFFFF;text-decoration:none;padding:14px 32px;border-radius:50px;border:2px solid rgba(255,255,255,0.3);font-family:Inter,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;\">Facebook</a><a href=\"#tiktok\" style=\"display:inline-block;background:transparent;color:#FFFFFF;text-decoration:none;padding:14px 32px;border-radius:50px;border:2px solid rgba(255,255,255,0.3);font-family:Inter,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;\">TikTok</a></div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yceicwdf",
+      "elType": "section",
+      "settings": {
+        "background_color": "#0B0F14",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "hr6ijavy",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "132h8q84",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;margin-bottom:16px;\"><span style=\"display:inline-block;background:#FACC1522;color:#FACC15;border:1px solid #FACC1555;padding:6px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;\">SOCIAL HIGHLIGHTS</span></div>"
+              }
+            },
+            {
+              "id": "2eutwfrr",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8
+                }
+              }
+            },
+            {
+              "id": "jvgm03gr",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "TAG <span style=\"color:#FACC15;\">@PARTYLIKERICO</span>",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_weight": "900",
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "pny92qaj",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 32
+                }
+              }
+            },
+            {
+              "id": "f4sy0j3k",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px;\"><div style=\"aspect-ratio:1;background:#0e1218;border-radius:10px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;cursor:pointer;\" onmouseover=\"this.children[1].style.opacity='1';\" onmouseout=\"this.children[1].style.opacity='0';\"><span style=\"font-size:32px;\">🌿</span><div style=\"position:absolute;inset:0;background:rgba(0,0,0,0.75);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s ease;font-size:24px;\">📲</div></div><div style=\"aspect-ratio:1;background:#0e1218;border-radius:10px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;cursor:pointer;\" onmouseover=\"this.children[1].style.opacity='1';\" onmouseout=\"this.children[1].style.opacity='0';\"><span style=\"font-size:32px;\">🎉</span><div style=\"position:absolute;inset:0;background:rgba(0,0,0,0.75);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s ease;font-size:24px;\">📲</div></div><div style=\"aspect-ratio:1;background:#0e1218;border-radius:10px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;cursor:pointer;\" onmouseover=\"this.children[1].style.opacity='1';\" onmouseout=\"this.children[1].style.opacity='0';\"><span style=\"font-size:32px;\">🌃</span><div style=\"position:absolute;inset:0;background:rgba(0,0,0,0.75);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s ease;font-size:24px;\">📲</div></div><div style=\"aspect-ratio:1;background:#0e1218;border-radius:10px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;cursor:pointer;\" onmouseover=\"this.children[1].style.opacity='1';\" onmouseout=\"this.children[1].style.opacity='0';\"><span style=\"font-size:32px;\">🎶</span><div style=\"position:absolute;inset:0;background:rgba(0,0,0,0.75);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s ease;font-size:24px;\">📲</div></div><div style=\"aspect-ratio:1;background:#0e1218;border-radius:10px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;cursor:pointer;\" onmouseover=\"this.children[1].style.opacity='1';\" onmouseout=\"this.children[1].style.opacity='0';\"><span style=\"font-size:32px;\">🏙</span><div style=\"position:absolute;inset:0;background:rgba(0,0,0,0.75);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s ease;font-size:24px;\">📲</div></div><div style=\"aspect-ratio:1;background:#0e1218;border-radius:10px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;cursor:pointer;\" onmouseover=\"this.children[1].style.opacity='1';\" onmouseout=\"this.children[1].style.opacity='0';\"><span style=\"font-size:32px;\">🎊</span><div style=\"position:absolute;inset:0;background:rgba(0,0,0,0.75);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s ease;font-size:24px;\">📲</div></div><div style=\"aspect-ratio:1;background:#0e1218;border-radius:10px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;cursor:pointer;\" onmouseover=\"this.children[1].style.opacity='1';\" onmouseout=\"this.children[1].style.opacity='0';\"><span style=\"font-size:32px;\">🌟</span><div style=\"position:absolute;inset:0;background:rgba(0,0,0,0.75);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s ease;font-size:24px;\">📲</div></div><div style=\"aspect-ratio:1;background:#0e1218;border-radius:10px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;cursor:pointer;\" onmouseover=\"this.children[1].style.opacity='1';\" onmouseout=\"this.children[1].style.opacity='0';\"><span style=\"font-size:32px;\">🎤</span><div style=\"position:absolute;inset:0;background:rgba(0,0,0,0.75);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s ease;font-size:24px;\">📲</div></div></div><p style=\"text-align:center;color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;margin:0;\">Tag us at <strong style=\"color:#FACC15;\">@PartyLikeRico</strong> to be featured here</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

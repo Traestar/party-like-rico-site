@@ -1,0 +1,748 @@
+{
+  "version": "0.4",
+  "title": "About | Party Like Rico",
+  "type": "page",
+  "page_settings": {
+    "background_color": "#0B0F14",
+    "hide_title": "yes"
+  },
+  "content": [
+    {
+      "id": "2pwb80fj",
+      "elType": "section",
+      "settings": {
+        "background_color": "#030b03",
+        "padding": {
+          "unit": "px",
+          "top": "140",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "xwmcvchc",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "d6yppxgp",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 20
+                }
+              }
+            },
+            {
+              "id": "n1e22v5e",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;margin-bottom:16px;\"><span style=\"display:inline-block;background:#FACC1522;color:#FACC15;border:1px solid #FACC1555;padding:6px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;\">OUR STORY</span></div>"
+              }
+            },
+            {
+              "id": "5bl2a8rq",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8
+                }
+              }
+            },
+            {
+              "id": "l2qu1rtx",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "ABOUT PARTY LIKE RICO",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 80
+                },
+                "typography_font_weight": "900",
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "klyp8wsl",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 16
+                }
+              }
+            },
+            {
+              "id": "r4gvyd3s",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:#9CA3AF;font-size:18px;font-family:Inter,sans-serif;text-align:center;line-height:1.7;margin:0;\">We're Atlantic City's event promotion company — built to connect people with unforgettable experiences and the energy that makes the Jersey Shore unlike anywhere else.</p>"
+              }
+            },
+            {
+              "id": "c41dpvr0",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 20
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "je82aojb",
+      "elType": "section",
+      "settings": {
+        "background_color": "#0B0F14",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "o35zcm7p",
+          "elType": "column",
+          "settings": {
+            "_column_size": 45,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "dls54zlc",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"position:relative;display:inline-block;width:100%;\">\n  <div style=\"aspect-ratio:4/5;background:#1A2233;border-radius:16px;display:flex;align-items:center;justify-content:center;overflow:hidden;\">\n    <span style=\"font-size:100px;\">🏙</span>\n  </div>\n  <div style=\"position:absolute;bottom:-16px;left:-16px;background:#1A2233;border:2px solid #FACC15;border-radius:12px;padding:16px 24px;box-shadow:0 8px 32px rgba(0,0,0,0.5);\">\n    <p style=\"color:#FACC15;font-family:Montserrat,sans-serif;font-weight:900;font-size:36px;margin:0;line-height:1;\">2026</p>\n    <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0;\">Year Founded</p>\n  </div>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "mk4tpg70",
+          "elType": "column",
+          "settings": {
+            "_column_size": 55,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "25o5vxq3",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"padding:20px 0 20px 20px;\">\n  <span style=\"display:inline-block;background:#22C55E22;color:#22C55E;border:1px solid #22C55E55;padding:5px 16px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px;\">WHO WE ARE</span>\n  <h2 style=\"font-family:Montserrat,sans-serif;font-weight:900;text-transform:uppercase;color:#fff;font-size:36px;line-height:1.2;margin:0 0 20px;\">MORE THAN AN EVENT COMPANY — WE CREATE <span style=\"color:#FACC15;\">MOMENTS</span></h2>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:15px;line-height:1.8;margin:0 0 16px;\">Party Like Rico Promotions LLC was born from a passion for Atlantic City's nightlife, culture, and community. We believe every event should be more than a night out — it should be a memory.</p>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:15px;line-height:1.8;margin:0 0 28px;\">From curated bud crawls and shore experiences to private events and brand activations — we bring the vision, the network, and the execution to make it happen.</p>\n  <div style=\"display:flex;gap:12px;flex-wrap:wrap;\">\n    <a href=\"/events\" style=\"display:inline-block;background:#F97316;color:#fff;text-decoration:none;padding:14px 28px;border-radius:50px;font-family:Inter,sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;\">See Our Events</a>\n    <a href=\"/about#mission\" style=\"display:inline-block;background:transparent;color:#fff;text-decoration:none;padding:14px 28px;border-radius:50px;border:2px solid rgba(255,255,255,0.25);font-family:Inter,sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;\">Our Mission</a>\n  </div>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f9kxsxpe",
+      "elType": "section",
+      "settings": {
+        "background_color": "#121826",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "m7sbsb4x",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "t90t836c",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;padding:40px;border-right:1px solid rgba(255,255,255,0.05);\"><p style=\"color:#FACC15;font-family:Montserrat,sans-serif;font-weight:900;font-size:48px;margin:0 0 8px;line-height:1;\">2026</p><p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0;\">Year of Launch</p></div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "f1o9199r",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "df4oi7xf",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;padding:40px;border-right:1px solid rgba(255,255,255,0.05);\"><p style=\"color:#FACC15;font-family:Montserrat,sans-serif;font-weight:900;font-size:48px;margin:0 0 8px;line-height:1;\">AC</p><p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0;\">Atlantic City Based</p></div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "q2nip5y8",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "omk3sfzm",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;padding:40px;border-right:1px solid rgba(255,255,255,0.05);\"><p style=\"color:#FACC15;font-family:Montserrat,sans-serif;font-weight:900;font-size:48px;margin:0 0 8px;line-height:1;\">12+</p><p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0;\">Events Planned 2026</p></div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j7nyjy5g",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "8bxhccz6",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;padding:40px;\"><p style=\"color:#FACC15;font-family:Montserrat,sans-serif;font-weight:900;font-size:48px;margin:0 0 8px;line-height:1;\">100%</p><p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0;\">Jersey Shore Energy</p></div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xoxgsvz3",
+      "elType": "section",
+      "settings": {
+        "background_color": "#060a06",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "jbga2l41",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "1kjf9j48",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;margin-bottom:16px;\"><span style=\"display:inline-block;background:#FACC1522;color:#FACC15;border:1px solid #FACC1555;padding:6px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;\">THE TEAM</span></div>"
+              }
+            },
+            {
+              "id": "9v3k1dzr",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8
+                }
+              }
+            },
+            {
+              "id": "3jczldim",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "THE PEOPLE BEHIND THE <span style=\"color:#FACC15;\">BRAND</span>",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_weight": "900",
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "92galyg9",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 32
+                }
+              }
+            },
+            {
+              "id": "lapd1qn2",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:16px;padding:40px;max-width:900px;margin:0 auto;\">\n  <div style=\"display:flex;flex-wrap:wrap;gap:32px;align-items:flex-start;\">\n    <div style=\"flex:0 0 120px;text-align:center;\">\n      <div style=\"width:120px;height:120px;border-radius:50%;background:#0B0F14;border:3px solid #FACC15;display:flex;align-items:center;justify-content:center;font-size:52px;margin:0 auto 12px;\">🤵</div>\n    </div>\n    <div style=\"flex:1;min-width:240px;\">\n      <h3 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:900;font-size:28px;text-transform:uppercase;margin:0 0 4px;\">Rico</h3>\n      <p style=\"color:#FACC15;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;margin:0 0 16px;\">Founder &amp; Event Director</p>\n      <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:14px;line-height:1.8;margin:0 0 12px;\">Born and raised with deep roots in the Jersey Shore, Rico built Party Like Rico Promotions from a simple belief: Atlantic City deserves world-class events and experiences that bring people together.</p>\n      <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:14px;line-height:1.8;margin:0 0 20px;\">With a passion for nightlife, community, and culture — Rico brings the vision, the hustle, and the network to every single event.</p>\n      <div style=\"display:flex;gap:8px;flex-wrap:wrap;\">\n        <a href=\"#ig\" style=\"background:transparent;border:1px solid rgba(255,255,255,0.2);color:#9CA3AF;text-decoration:none;padding:8px 16px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;\">Instagram</a>\n        <a href=\"#fb\" style=\"background:transparent;border:1px solid rgba(255,255,255,0.2);color:#9CA3AF;text-decoration:none;padding:8px 16px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;\">Facebook</a>\n        <a href=\"mailto:PartyLikeRico@gmail.com\" style=\"background:transparent;border:1px solid rgba(255,255,255,0.2);color:#9CA3AF;text-decoration:none;padding:8px 16px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;\">Email Rico</a>\n      </div>\n    </div>\n  </div>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5wc1l2bi",
+      "elType": "section",
+      "settings": {
+        "background_color": "#0a1a0a",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "unh5kdtr",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "yyjeawea",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;margin-bottom:16px;\"><span style=\"display:inline-block;background:#FACC1522;color:#FACC15;border:1px solid #FACC1555;padding:6px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;\">THE NAME</span></div>"
+              }
+            },
+            {
+              "id": "b7sgq1rt",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8
+                }
+              }
+            },
+            {
+              "id": "uiqh8lm5",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "BEHIND THE NAME <span style=\"color:#FACC15;\">RICO</span>",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_weight": "900",
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "lgqlbh03",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 32
+                }
+              }
+            },
+            {
+              "id": "qoz1ugrx",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"max-width:1000px;margin:0 auto;\">\n  <div style=\"display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(250,204,21,0.15);border:1px solid rgba(250,204,21,0.2);border-radius:16px;overflow:hidden;margin-bottom:32px;\">\n    <div style=\"background:#0B1A0B;padding:40px;text-align:center;\"><p style=\"color:#FACC15;font-family:Montserrat,sans-serif;font-weight:900;font-size:96px;margin:0 0 8px;line-height:1;\">R</p><p style=\"color:#FACC15;font-family:Montserrat,sans-serif;font-weight:700;font-size:18px;margin:0 0 6px;text-transform:uppercase;\">Realize</p><p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;margin:0;\">The Vision</p></div>\n    <div style=\"background:#0B1A0B;padding:40px;text-align:center;border-left:1px solid rgba(250,204,21,0.15);\"><p style=\"color:#FACC15;font-family:Montserrat,sans-serif;font-weight:900;font-size:96px;margin:0 0 8px;line-height:1;\">I</p><p style=\"color:#FACC15;font-family:Montserrat,sans-serif;font-weight:700;font-size:18px;margin:0 0 6px;text-transform:uppercase;\">Individuals</p><p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;margin:0;\">The People</p></div>\n    <div style=\"background:#0B1A0B;padding:40px;text-align:center;border-left:1px solid rgba(250,204,21,0.15);\"><p style=\"color:#FACC15;font-family:Montserrat,sans-serif;font-weight:900;font-size:96px;margin:0 0 8px;line-height:1;\">C</p><p style=\"color:#FACC15;font-family:Montserrat,sans-serif;font-weight:700;font-size:18px;margin:0 0 6px;text-transform:uppercase;\">Celebrate</p><p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;margin:0;\">The Moments</p></div>\n    <div style=\"background:#0B1A0B;padding:40px;text-align:center;border-left:1px solid rgba(250,204,21,0.15);\"><p style=\"color:#FACC15;font-family:Montserrat,sans-serif;font-weight:900;font-size:96px;margin:0 0 8px;line-height:1;\">O</p><p style=\"color:#FACC15;font-family:Montserrat,sans-serif;font-weight:700;font-size:18px;margin:0 0 6px;text-transform:uppercase;\">Occasions</p><p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;margin:0;\">The Events</p></div>\n  </div>\n  <p style=\"text-align:center;color:#9CA3AF;font-family:Inter,sans-serif;font-size:15px;line-height:1.8;max-width:600px;margin:0 auto;\">Every letter carries meaning. Every event carries purpose. When you party with Rico, you're part of something bigger than a night out.</p>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d19iy4ox",
+      "elType": "section",
+      "settings": {
+        "background_color": "#0B0F14",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "pww8em1p",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "19oly6sx",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;margin-bottom:16px;\"><span style=\"display:inline-block;background:#F9731622;color:#F97316;border:1px solid #F9731655;padding:6px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;\">WHAT DRIVES US</span></div>"
+              }
+            },
+            {
+              "id": "s4f4y265",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8
+                }
+              }
+            },
+            {
+              "id": "okos95bx",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "OUR BRAND <span style=\"color:#FACC15;\">VALUES</span>",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_weight": "900",
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "zlz4v8ij",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 32
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sgjn8hqc",
+      "elType": "section",
+      "settings": {
+        "background_color": "#0B0F14",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "20",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "uo0u2bqq",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "gdfirjpy",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:28px;height:100%;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='rgba(250,204,21,0.2)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.borderColor='rgba(255,255,255,0.07)';\">\n  <div style=\"font-size:36px;margin-bottom:16px;\">🔥</div>\n  <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:16px;text-transform:uppercase;margin:0 0 10px;\">Energy &amp; Excitement</h4>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.7;margin:0;\">We bring high-energy, unforgettable atmospheres to every event we touch.</p>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "9ftlnnuj",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "cbaodwg8",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:28px;height:100%;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='rgba(250,204,21,0.2)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.borderColor='rgba(255,255,255,0.07)';\">\n  <div style=\"font-size:36px;margin-bottom:16px;\">🤝</div>\n  <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:16px;text-transform:uppercase;margin:0 0 10px;\">Community First</h4>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.7;margin:0;\">Everything we do is rooted in lifting up and celebrating the Atlantic City community.</p>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "2zy2e2sv",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "ymr3wcdg",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:28px;height:100%;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='rgba(250,204,21,0.2)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.borderColor='rgba(255,255,255,0.07)';\">\n  <div style=\"font-size:36px;margin-bottom:16px;\">⭐</div>\n  <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:16px;text-transform:uppercase;margin:0 0 10px;\">Premium Experiences</h4>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.7;margin:0;\">We don't do average. Every detail is crafted for maximum impact and memory.</p>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6t7l0ch3",
+      "elType": "section",
+      "settings": {
+        "background_color": "#0B0F14",
+        "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "ssmbuxg3",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "bb7ax8yo",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:28px;height:100%;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='rgba(250,204,21,0.2)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.borderColor='rgba(255,255,255,0.07)';\">\n  <div style=\"font-size:36px;margin-bottom:16px;\">🌊</div>\n  <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:16px;text-transform:uppercase;margin:0 0 10px;\">Shore Town Roots</h4>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.7;margin:0;\">We're proudly rooted in the Jersey Shore — and that energy lives in everything we create.</p>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "tt79qih9",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "gvjzqz3z",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:28px;height:100%;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='rgba(250,204,21,0.2)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.borderColor='rgba(255,255,255,0.07)';\">\n  <div style=\"font-size:36px;margin-bottom:16px;\">🎯</div>\n  <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:16px;text-transform:uppercase;margin:0 0 10px;\">Results-Driven</h4>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.7;margin:0;\">Packed events, brand growth, and satisfied partners — results speak louder than promises.</p>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "4ons8ib3",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "6ehulxb0",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:28px;height:100%;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='rgba(250,204,21,0.2)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.borderColor='rgba(255,255,255,0.07)';\">\n  <div style=\"font-size:36px;margin-bottom:16px;\">📣</div>\n  <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:16px;text-transform:uppercase;margin:0 0 10px;\">Bold Promotion</h4>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.7;margin:0;\">We promote loud, proud, and with purpose. Your event deserves to be heard.</p>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6j24r12g",
+      "elType": "section",
+      "settings": {
+        "background_color": "#060a06",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "t2wd4j44",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "s1awtbmh",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;margin-bottom:16px;\"><span style=\"display:inline-block;background:#F9731622;color:#F97316;border:1px solid #F9731655;padding:6px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;\">JOIN US</span></div>"
+              }
+            },
+            {
+              "id": "wgxf03wl",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8
+                }
+              }
+            },
+            {
+              "id": "1ubbwmjt",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "READY TO PARTY LIKE <span style=\"color:#FACC15;\">RICO</span>?",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_weight": "900",
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "nw8fibf0",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 16
+                }
+              }
+            },
+            {
+              "id": "66ni734w",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:#9CA3AF;font-size:16px;font-family:Inter,sans-serif;text-align:center;line-height:1.7;margin:0;\">Join us at our next event, become a vendor partner, or reach out. Atlantic City is waiting.</p>"
+              }
+            },
+            {
+              "id": "6dphujiy",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 24
+                }
+              }
+            },
+            {
+              "id": "mvzllh8c",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display:flex;gap:12px;justify-content:center;flex-wrap:wrap;\"><a href=\"https://www.paypal.com/ncp/payment/AWCDNEHMYVWAG\" style=\"display:inline-block;background:#F97316;color:#FFFFFF;text-decoration:none;padding:14px 32px;border-radius:50px;font-family:Inter,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;\">🎟 Buy Tickets</a><a href=\"/vendor\" style=\"display:inline-block;background:transparent;color:#FFFFFF;text-decoration:none;padding:14px 32px;border-radius:50px;border:2px solid rgba(255,255,255,0.3);font-family:Inter,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;\">Become a Partner</a></div>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

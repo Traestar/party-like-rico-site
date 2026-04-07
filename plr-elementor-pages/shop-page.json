@@ -1,0 +1,551 @@
+{
+  "version": "0.4",
+  "title": "Merch Shop | Party Like Rico",
+  "type": "page",
+  "page_settings": {
+    "background_color": "#0B0F14",
+    "hide_title": "yes"
+  },
+  "content": [
+    {
+      "id": "y0g804p5",
+      "elType": "section",
+      "settings": {
+        "background_color": "#030b03",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "x5oqsj3q",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "ki2454ik",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"max-width:700px;margin:0 auto;padding:80px 20px;text-align:center;\">\n  <style>@keyframes plrpulse{0%,100%{box-shadow:0 0 0 0 rgba(250,204,21,0.4);}50%{box-shadow:0 0 0 14px rgba(250,204,21,0);}}</style>\n  <span style=\"display:inline-block;background:rgba(250,204,21,0.1);color:#FACC15;border:1px solid rgba(250,204,21,0.3);padding:8px 24px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:28px;animation:plrpulse 2s infinite;\">🛍️ SHOP — COMING SOON</span>\n  <h1 style=\"font-family:Montserrat,sans-serif;font-weight:900;text-transform:uppercase;color:#fff;font-size:64px;line-height:1.1;margin:0 0 20px;\">OFFICIAL PARTY LIKE RICO <span style=\"color:#FACC15;\">MERCH</span></h1>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:17px;line-height:1.7;margin:0 0 32px;\">Represent Atlantic City's most exciting event brand. Limited edition drops, exclusive event gear, and branded apparel are on the way.</p>\n  <div style=\"background:#1A2233;border:2px dashed rgba(250,204,21,0.3);border-radius:12px;padding:24px;margin-bottom:36px;\">\n    <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;margin:0 0 8px;\">Get notified when we launch — be first to shop:</p>\n    <code style=\"color:#FACC15;font-family:monospace;font-size:14px;\">[wpforms id=\"shop-notify-form-id\"]</code>\n  </div>\n  <div style=\"display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:24px;\">\n    <div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:20px 28px;min-width:90px;text-align:center;\">\n      <p id=\"plr-days\" style=\"color:#FACC15;font-family:Montserrat,sans-serif;font-weight:900;font-size:48px;margin:0;line-height:1;\">00</p>\n      <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;margin:6px 0 0;\">Days</p>\n    </div>\n    <div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:20px 28px;min-width:90px;text-align:center;\">\n      <p id=\"plr-hours\" style=\"color:#FACC15;font-family:Montserrat,sans-serif;font-weight:900;font-size:48px;margin:0;line-height:1;\">00</p>\n      <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;margin:6px 0 0;\">Hours</p>\n    </div>\n    <div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:20px 28px;min-width:90px;text-align:center;\">\n      <p id=\"plr-mins\" style=\"color:#FACC15;font-family:Montserrat,sans-serif;font-weight:900;font-size:48px;margin:0;line-height:1;\">00</p>\n      <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;margin:6px 0 0;\">Mins</p>\n    </div>\n    <div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:20px 28px;min-width:90px;text-align:center;\">\n      <p id=\"plr-secs\" style=\"color:#FACC15;font-family:Montserrat,sans-serif;font-weight:900;font-size:48px;margin:0;line-height:1;\">00</p>\n      <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;margin:6px 0 0;\">Secs</p>\n    </div>\n  </div>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;margin:0;\">Targeting a <strong style=\"color:#FACC15;\">Summer 2026</strong> launch</p>\n</div>\n<script>\n(function(){\n  var target=new Date(\"June 1, 2026 00:00:00\").getTime();\n  function pad(n){return String(n).padStart(2,\"0\");}\n  function tick(){\n    var diff=target-Date.now();\n    if(diff<0){diff=0;}\n    var d=Math.floor(diff/86400000);\n    var h=Math.floor((diff%86400000)/3600000);\n    var m=Math.floor((diff%3600000)/60000);\n    var s=Math.floor((diff%60000)/1000);\n    var el=document.getElementById(\"plr-days\");\n    if(el){el.textContent=pad(d);}\n    el=document.getElementById(\"plr-hours\");\n    if(el){el.textContent=pad(h);}\n    el=document.getElementById(\"plr-mins\");\n    if(el){el.textContent=pad(m);}\n    el=document.getElementById(\"plr-secs\");\n    if(el){el.textContent=pad(s);}\n  }\n  tick();setInterval(tick,1000);\n})();\n</script>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "te0aeop6",
+      "elType": "section",
+      "settings": {
+        "background_color": "#121826",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "vpzaqswy",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "fc9uabyt",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;margin-bottom:16px;\"><span style=\"display:inline-block;background:#FACC1522;color:#FACC15;border:1px solid #FACC1555;padding:6px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;\">WHAT'S COMING</span></div>"
+              }
+            },
+            {
+              "id": "k2gnxcjf",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8
+                }
+              }
+            },
+            {
+              "id": "rkt14jx9",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "MERCH <span style=\"color:#FACC15;\">CATEGORIES</span>",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_weight": "900",
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "i4audl41",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 32
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "w3bl9svp",
+      "elType": "section",
+      "settings": {
+        "background_color": "#121826",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "jdeh1e7c",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "8nedpqs0",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:28px;text-align:center;height:100%;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='rgba(250,204,21,0.3)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.borderColor='rgba(255,255,255,0.07)';\">\n  <div style=\"font-size:40px;margin-bottom:14px;\">👕</div>\n  <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;margin:0 0 8px;\">Apparel</h4>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.6;margin:0;\">Tees, hoodies, and event-specific drops</p>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "g6p3citr",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "9gzhrrbn",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:28px;text-align:center;height:100%;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='rgba(250,204,21,0.3)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.borderColor='rgba(255,255,255,0.07)';\">\n  <div style=\"font-size:40px;margin-bottom:14px;\">🧢</div>\n  <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;margin:0 0 8px;\">Headwear</h4>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.6;margin:0;\">Fitted caps, snapbacks, and branded hats</p>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "n3u5ejvn",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "j2lvf90p",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:28px;text-align:center;height:100%;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='rgba(250,204,21,0.3)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.borderColor='rgba(255,255,255,0.07)';\">\n  <div style=\"font-size:40px;margin-bottom:14px;\">🎟</div>\n  <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;margin:0 0 8px;\">Event Gear</h4>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.6;margin:0;\">Limited edition event merch and collectibles</p>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "hfcnsdb7",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "m852dz58",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:28px;text-align:center;height:100%;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='rgba(250,204,21,0.3)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.borderColor='rgba(255,255,255,0.07)';\">\n  <div style=\"font-size:40px;margin-bottom:14px;\">🛍</div>\n  <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;margin:0 0 8px;\">Accessories</h4>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.6;margin:0;\">Bags, lanyards, stickers, and branded items</p>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "znyodz3i",
+      "elType": "section",
+      "settings": {
+        "background_color": "#0B0F14",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "c995vh4n",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "z38f5l8j",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;margin-bottom:16px;\"><span style=\"display:inline-block;background:#FACC1522;color:#FACC15;border:1px solid #FACC1555;padding:6px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;\">SNEAK PEEK</span></div>"
+              }
+            },
+            {
+              "id": "mglxn8oc",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8
+                }
+              }
+            },
+            {
+              "id": "3cpjcm3x",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "COMING TO THE <span style=\"color:#FACC15;\">SHOP</span>",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_weight": "900",
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "h2i9tqqf",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8
+                }
+              }
+            },
+            {
+              "id": "g74ik3di",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:#9CA3AF;font-size:15px;font-family:Inter,sans-serif;text-align:center;line-height:1.7;margin:0;\">These items are locked until launch — sign up above to be notified first.</p>"
+              }
+            },
+            {
+              "id": "qoartb6w",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 32
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xayb5x9w",
+      "elType": "section",
+      "settings": {
+        "background_color": "#0B0F14",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "20",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "4n3qslvu",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "xogmeg6e",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;overflow:hidden;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(0,0,0,0.4)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.boxShadow='none';\">\n  <div style=\"position:relative;aspect-ratio:1;background:#111;display:flex;align-items:center;justify-content:center;\">\n    <span style=\"font-size:60px;opacity:0.5;\">👕</span>\n    <div style=\"position:absolute;inset:0;display:flex;align-items:center;justify-content:center;\"><span style=\"font-size:36px;background:rgba(0,0,0,0.5);border-radius:50%;width:70px;height:70px;display:flex;align-items:center;justify-content:center;\">🔒</span></div>\n    <span style=\"position:absolute;top:10px;right:10px;background:#FACC1522;color:#FACC15;border:1px solid #FACC1555;padding:3px 10px;border-radius:50px;font-family:Inter,sans-serif;font-size:10px;font-weight:700;text-transform:uppercase;\">Coming Soon</span>\n  </div>\n  <div style=\"padding:16px;text-align:center;\">\n    <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;margin:0 0 4px;\">PLR Classic Tee</h4>\n    <p style=\"color:#FACC15;font-family:Inter,sans-serif;font-size:15px;font-weight:700;margin:0 0 12px;\">Starting at $29.99</p>\n    <button disabled style=\"width:100%;background:transparent;color:#9CA3AF;border:2px dashed rgba(255,255,255,0.15);padding:10px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;cursor:not-allowed;\">🔒 Available at Launch</button>\n  </div>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "innnefw5",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "xt2mik56",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;overflow:hidden;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(0,0,0,0.4)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.boxShadow='none';\">\n  <div style=\"position:relative;aspect-ratio:1;background:#111;display:flex;align-items:center;justify-content:center;\">\n    <span style=\"font-size:60px;opacity:0.5;\">🧥</span>\n    <div style=\"position:absolute;inset:0;display:flex;align-items:center;justify-content:center;\"><span style=\"font-size:36px;background:rgba(0,0,0,0.5);border-radius:50%;width:70px;height:70px;display:flex;align-items:center;justify-content:center;\">🔒</span></div>\n    <span style=\"position:absolute;top:10px;right:10px;background:#FACC1522;color:#FACC15;border:1px solid #FACC1555;padding:3px 10px;border-radius:50px;font-family:Inter,sans-serif;font-size:10px;font-weight:700;text-transform:uppercase;\">Limited</span>\n  </div>\n  <div style=\"padding:16px;text-align:center;\">\n    <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;margin:0 0 4px;\">PLR Hoodie</h4>\n    <p style=\"color:#FACC15;font-family:Inter,sans-serif;font-size:15px;font-weight:700;margin:0 0 12px;\">Starting at $54.99</p>\n    <button disabled style=\"width:100%;background:transparent;color:#9CA3AF;border:2px dashed rgba(255,255,255,0.15);padding:10px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;cursor:not-allowed;\">🔒 Available at Launch</button>\n  </div>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bhhe2nz9",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "9jjdijyp",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;overflow:hidden;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(0,0,0,0.4)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.boxShadow='none';\">\n  <div style=\"position:relative;aspect-ratio:1;background:#111;display:flex;align-items:center;justify-content:center;\">\n    <span style=\"font-size:60px;opacity:0.5;\">🧢</span>\n    <div style=\"position:absolute;inset:0;display:flex;align-items:center;justify-content:center;\"><span style=\"font-size:36px;background:rgba(0,0,0,0.5);border-radius:50%;width:70px;height:70px;display:flex;align-items:center;justify-content:center;\">🔒</span></div>\n    <span style=\"position:absolute;top:10px;right:10px;background:#FACC1522;color:#FACC15;border:1px solid #FACC1555;padding:3px 10px;border-radius:50px;font-family:Inter,sans-serif;font-size:10px;font-weight:700;text-transform:uppercase;\">Fan Fav</span>\n  </div>\n  <div style=\"padding:16px;text-align:center;\">\n    <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;margin:0 0 4px;\">PLR Snapback Cap</h4>\n    <p style=\"color:#FACC15;font-family:Inter,sans-serif;font-size:15px;font-weight:700;margin:0 0 12px;\">Starting at $24.99</p>\n    <button disabled style=\"width:100%;background:transparent;color:#9CA3AF;border:2px dashed rgba(255,255,255,0.15);padding:10px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;cursor:not-allowed;\">🔒 Available at Launch</button>\n  </div>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bk51ywmt",
+      "elType": "section",
+      "settings": {
+        "background_color": "#0B0F14",
+        "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "ciycjdt2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "anwhsr4a",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;overflow:hidden;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(0,0,0,0.4)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.boxShadow='none';\">\n  <div style=\"position:relative;aspect-ratio:1;background:#111;display:flex;align-items:center;justify-content:center;\">\n    <span style=\"font-size:60px;opacity:0.5;\">🌿</span>\n    <div style=\"position:absolute;inset:0;display:flex;align-items:center;justify-content:center;\"><span style=\"font-size:36px;background:rgba(0,0,0,0.5);border-radius:50%;width:70px;height:70px;display:flex;align-items:center;justify-content:center;\">🔒</span></div>\n    <span style=\"position:absolute;top:10px;right:10px;background:#22C55E22;color:#22C55E;border:1px solid #22C55E55;padding:3px 10px;border-radius:50px;font-family:Inter,sans-serif;font-size:10px;font-weight:700;text-transform:uppercase;\">Event Drop</span>\n  </div>\n  <div style=\"padding:16px;text-align:center;\">\n    <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;margin:0 0 4px;\">420 Bud Crawl Event Tee</h4>\n    <p style=\"color:#FACC15;font-family:Inter,sans-serif;font-size:15px;font-weight:700;margin:0 0 12px;\">Starting at $32.99</p>\n    <button disabled style=\"width:100%;background:transparent;color:#9CA3AF;border:2px dashed rgba(255,255,255,0.15);padding:10px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;cursor:not-allowed;\">🔒 Available at Launch</button>\n  </div>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "47jyqfjb",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "k6kdeqqa",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;overflow:hidden;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(0,0,0,0.4)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.boxShadow='none';\">\n  <div style=\"position:relative;aspect-ratio:1;background:#111;display:flex;align-items:center;justify-content:center;\">\n    <span style=\"font-size:60px;opacity:0.5;\">🎒</span>\n    <div style=\"position:absolute;inset:0;display:flex;align-items:center;justify-content:center;\"><span style=\"font-size:36px;background:rgba(0,0,0,0.5);border-radius:50%;width:70px;height:70px;display:flex;align-items:center;justify-content:center;\">🔒</span></div>\n    <span style=\"position:absolute;top:10px;right:10px;background:#FACC1522;color:#FACC15;border:1px solid #FACC1555;padding:3px 10px;border-radius:50px;font-family:Inter,sans-serif;font-size:10px;font-weight:700;text-transform:uppercase;\">New</span>\n  </div>\n  <div style=\"padding:16px;text-align:center;\">\n    <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;margin:0 0 4px;\">PLR Tote Bag</h4>\n    <p style=\"color:#FACC15;font-family:Inter,sans-serif;font-size:15px;font-weight:700;margin:0 0 12px;\">Starting at $19.99</p>\n    <button disabled style=\"width:100%;background:transparent;color:#9CA3AF;border:2px dashed rgba(255,255,255,0.15);padding:10px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;cursor:not-allowed;\">🔒 Available at Launch</button>\n  </div>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "cy6h1f7u",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "20805d8q",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;overflow:hidden;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(0,0,0,0.4)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.boxShadow='none';\">\n  <div style=\"position:relative;aspect-ratio:1;background:#111;display:flex;align-items:center;justify-content:center;\">\n    <span style=\"font-size:60px;opacity:0.5;\">🎁</span>\n    <div style=\"position:absolute;inset:0;display:flex;align-items:center;justify-content:center;\"><span style=\"font-size:36px;background:rgba(0,0,0,0.5);border-radius:50%;width:70px;height:70px;display:flex;align-items:center;justify-content:center;\">🔒</span></div>\n    <span style=\"position:absolute;top:10px;right:10px;background:#FACC1522;color:#FACC15;border:1px solid #FACC1555;padding:3px 10px;border-radius:50px;font-family:Inter,sans-serif;font-size:10px;font-weight:700;text-transform:uppercase;\">Bundle</span>\n  </div>\n  <div style=\"padding:16px;text-align:center;\">\n    <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;margin:0 0 4px;\">PLR Starter Bundle</h4>\n    <p style=\"color:#FACC15;font-family:Inter,sans-serif;font-size:15px;font-weight:700;margin:0 0 12px;\">Starting at $69.99</p>\n    <button disabled style=\"width:100%;background:transparent;color:#9CA3AF;border:2px dashed rgba(255,255,255,0.15);padding:10px;border-radius:50px;font-family:Inter,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;cursor:not-allowed;\">🔒 Available at Launch</button>\n  </div>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7f2fu3d0",
+      "elType": "section",
+      "settings": {
+        "background_color": "#121826",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "v60o0duw",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "lykvjhe6",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;margin-bottom:16px;\"><span style=\"display:inline-block;background:#F9731622;color:#F97316;border:1px solid #F9731655;padding:6px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;\">CAN'T WAIT?</span></div>"
+              }
+            },
+            {
+              "id": "h6utr2wn",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8
+                }
+              }
+            },
+            {
+              "id": "1akzbdfj",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "BUY TICKETS <span style=\"color:#FACC15;\">NOW</span>",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_weight": "900",
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "f2es84j2",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 16
+                }
+              }
+            },
+            {
+              "id": "ob073kpn",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:#9CA3AF;font-size:16px;font-family:Inter,sans-serif;text-align:center;line-height:1.7;margin:0;\">The shop is coming — but our next event is April 18, 2026. Secure your spot today.</p>"
+              }
+            },
+            {
+              "id": "he28zdsw",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 24
+                }
+              }
+            },
+            {
+              "id": "ae4lh5cy",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display:flex;gap:12px;justify-content:center;flex-wrap:wrap;\"><a href=\"https://www.paypal.com/ncp/payment/AWCDNEHMYVWAG\" style=\"display:inline-block;background:#F97316;color:#FFFFFF;text-decoration:none;padding:14px 32px;border-radius:50px;font-family:Inter,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;\">🎟 Buy Tickets — $25</a><a href=\"/events\" style=\"display:inline-block;background:transparent;color:#FFFFFF;text-decoration:none;padding:14px 32px;border-radius:50px;border:2px solid rgba(255,255,255,0.3);font-family:Inter,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;\">View All Events</a></div>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

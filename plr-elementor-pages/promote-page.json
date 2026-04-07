@@ -1,0 +1,675 @@
+{
+  "version": "0.4",
+  "title": "Promote With Rico | Party Like Rico",
+  "type": "page",
+  "page_settings": {
+    "background_color": "#0B0F14",
+    "hide_title": "yes"
+  },
+  "content": [
+    {
+      "id": "p3c8l6s2",
+      "elType": "section",
+      "settings": {
+        "background_color": "#030b03",
+        "padding": {
+          "unit": "px",
+          "top": "140",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "ixjurcem",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "7gmz5amd",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 20
+                }
+              }
+            },
+            {
+              "id": "ypjvamfn",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;margin-bottom:16px;\"><span style=\"display:inline-block;background:#F9731622;color:#F97316;border:1px solid #F9731655;padding:6px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;\">GROW YOUR BRAND</span></div>"
+              }
+            },
+            {
+              "id": "dpjltcdq",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8
+                }
+              }
+            },
+            {
+              "id": "cys999vv",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "PROMOTE WITH RICO",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 80
+                },
+                "typography_font_weight": "900",
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "2nks625b",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 16
+                }
+              }
+            },
+            {
+              "id": "jeost48o",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:#9CA3AF;font-size:18px;font-family:Inter,sans-serif;text-align:center;line-height:1.7;margin:0;\">Partner with Party Like Rico Promotions and put your brand in front of Atlantic City's most engaged audience.</p>"
+              }
+            },
+            {
+              "id": "zku2l3cp",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 20
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "siirhbcn",
+      "elType": "section",
+      "settings": {
+        "background_color": "#0B0F14",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "gkl0t6c8",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "vsfupnbx",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;margin-bottom:16px;\"><span style=\"display:inline-block;background:#F9731622;color:#F97316;border:1px solid #F9731655;padding:6px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;\">OUR SERVICES</span></div>"
+              }
+            },
+            {
+              "id": "oju3tl1k",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8
+                }
+              }
+            },
+            {
+              "id": "0ip71ilt",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "WHAT WE <span style=\"color:#FACC15;\">OFFER</span>",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_weight": "900",
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "c7cpsvvk",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8
+                }
+              }
+            },
+            {
+              "id": "ffxle1im",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:#9CA3AF;font-size:16px;font-family:Inter,sans-serif;text-align:center;line-height:1.7;margin:0;\">From event promotion to full coordination — we handle it all.</p>"
+              }
+            },
+            {
+              "id": "9dt3if50",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 32
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oum3j5sa",
+      "elType": "section",
+      "settings": {
+        "background_color": "#0B0F14",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "20",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "onrmg9vw",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "o0h3dock",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:28px;height:100%;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='rgba(249,115,22,0.3)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.borderColor='rgba(255,255,255,0.07)';\">\n  <div style=\"font-size:36px;margin-bottom:16px;\">📣</div>\n  <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:16px;text-transform:uppercase;margin:0 0 10px;\">Event Promotion</h4>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.7;margin:0;\">We promote your event across our full social, email, and on-the-ground network.</p>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "6lcs4zh4",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "9c38ur18",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:28px;height:100%;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='rgba(249,115,22,0.3)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.borderColor='rgba(255,255,255,0.07)';\">\n  <div style=\"font-size:36px;margin-bottom:16px;\">🎨</div>\n  <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:16px;text-transform:uppercase;margin:0 0 10px;\">Flyer &amp; Brand Design</h4>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.7;margin:0;\">Eye-catching event flyers and marketing materials that cut through the noise.</p>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "v2201xrl",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "s9q0bx64",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:28px;height:100%;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='rgba(249,115,22,0.3)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.borderColor='rgba(255,255,255,0.07)';\">\n  <div style=\"font-size:36px;margin-bottom:16px;\">🚌</div>\n  <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:16px;text-transform:uppercase;margin:0 0 10px;\">Shuttle Party Coordination</h4>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.7;margin:0;\">Full shuttle party logistics — venues, transportation, timeline, execution.</p>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5lgyr0jp",
+      "elType": "section",
+      "settings": {
+        "background_color": "#0B0F14",
+        "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "y7g8a3ps",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "zog30lfr",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:28px;height:100%;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='rgba(249,115,22,0.3)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.borderColor='rgba(255,255,255,0.07)';\">\n  <div style=\"font-size:36px;margin-bottom:16px;\">📱</div>\n  <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:16px;text-transform:uppercase;margin:0 0 10px;\">Social Media Coverage</h4>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.7;margin:0;\">Live coverage, stories, reels, and post-event recap content for your brand.</p>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ei14kt7w",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "c7nxt683",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:28px;height:100%;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='rgba(249,115,22,0.3)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.borderColor='rgba(255,255,255,0.07)';\">\n  <div style=\"font-size:36px;margin-bottom:16px;\">🤝</div>\n  <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:16px;text-transform:uppercase;margin:0 0 10px;\">Vendor Placement</h4>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.7;margin:0;\">We place your brand or product at the right events in front of the right audience.</p>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "svtxs3z3",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "th30famw",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:28px;height:100%;transition:all 0.3s ease;\" onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='rgba(249,115,22,0.3)';\" onmouseout=\"this.style.transform='translateY(0)';this.style.borderColor='rgba(255,255,255,0.07)';\">\n  <div style=\"font-size:36px;margin-bottom:16px;\">🎤</div>\n  <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:16px;text-transform:uppercase;margin:0 0 10px;\">Private Event Planning</h4>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.7;margin:0;\">Birthdays, bachelorettes, corporate events — we handle it all end to end.</p>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rzb905vo",
+      "elType": "section",
+      "settings": {
+        "background_color": "#121826",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "0k7cjmi1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "pagggnl4",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;margin-bottom:16px;\"><span style=\"display:inline-block;background:#FACC1522;color:#FACC15;border:1px solid #FACC1555;padding:6px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;\">PROCESS</span></div>"
+              }
+            },
+            {
+              "id": "7i6fccjp",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8
+                }
+              }
+            },
+            {
+              "id": "vknvp8l8",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "HOW IT <span style=\"color:#FACC15;\">WORKS</span>",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_weight": "900",
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "hufk3cm7",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 32
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7dhkfx6h",
+      "elType": "section",
+      "settings": {
+        "background_color": "#121826",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "sy0bmgei",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "ao76kbja",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:32px 24px;text-align:center;height:100%;position:relative;overflow:hidden;\">\n  <div style=\"position:absolute;top:-10px;right:16px;font-family:Montserrat,sans-serif;font-weight:900;font-size:80px;color:rgba(255,255,255,0.04);line-height:1;user-select:none;\">1</div>\n  <div style=\"font-size:40px;margin-bottom:16px;\">🙋</div>\n  <div style=\"display:inline-block;background:rgba(250,204,21,0.1);color:#FACC15;border:1px solid rgba(250,204,21,0.3);padding:3px 12px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;\">Step 1</div>\n  <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:16px;text-transform:uppercase;margin:0 0 10px;\">Reach Out</h4>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.7;margin:0;\">Contact us via the form or phone. Tell us about your event or brand.</p>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "1vnl3pgu",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "8k830gke",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:32px 24px;text-align:center;height:100%;position:relative;overflow:hidden;\">\n  <div style=\"position:absolute;top:-10px;right:16px;font-family:Montserrat,sans-serif;font-weight:900;font-size:80px;color:rgba(255,255,255,0.04);line-height:1;user-select:none;\">2</div>\n  <div style=\"font-size:40px;margin-bottom:16px;\">📋</div>\n  <div style=\"display:inline-block;background:rgba(250,204,21,0.1);color:#FACC15;border:1px solid rgba(250,204,21,0.3);padding:3px 12px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;\">Step 2</div>\n  <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:16px;text-transform:uppercase;margin:0 0 10px;\">We Plan</h4>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.7;margin:0;\">We build a custom promotion strategy tailored to your goals.</p>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "5jl251n9",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "74jstzmr",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:32px 24px;text-align:center;height:100%;position:relative;overflow:hidden;\">\n  <div style=\"position:absolute;top:-10px;right:16px;font-family:Montserrat,sans-serif;font-weight:900;font-size:80px;color:rgba(255,255,255,0.04);line-height:1;user-select:none;\">3</div>\n  <div style=\"font-size:40px;margin-bottom:16px;\">📣</div>\n  <div style=\"display:inline-block;background:rgba(250,204,21,0.1);color:#FACC15;border:1px solid rgba(250,204,21,0.3);padding:3px 12px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;\">Step 3</div>\n  <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:16px;text-transform:uppercase;margin:0 0 10px;\">We Execute</h4>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.7;margin:0;\">We launch across all channels — social, email, and on the ground.</p>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ivjta0l8",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "mlbwo0yn",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:32px 24px;text-align:center;height:100%;position:relative;overflow:hidden;\">\n  <div style=\"position:absolute;top:-10px;right:16px;font-family:Montserrat,sans-serif;font-weight:900;font-size:80px;color:rgba(255,255,255,0.04);line-height:1;user-select:none;\">4</div>\n  <div style=\"font-size:40px;margin-bottom:16px;\">🎉</div>\n  <div style=\"display:inline-block;background:rgba(250,204,21,0.1);color:#FACC15;border:1px solid rgba(250,204,21,0.3);padding:3px 12px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;\">Step 4</div>\n  <h4 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:700;font-size:16px;text-transform:uppercase;margin:0 0 10px;\">You Shine</h4>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;line-height:1.7;margin:0;\">Your event is packed, your brand is seen, your audience grows.</p>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jcgxxn4l",
+      "elType": "section",
+      "settings": {
+        "background_color": "#0B0F14",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "k6f0lzql",
+          "elType": "column",
+          "settings": {
+            "_column_size": 60,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "rp8fo9mk",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:1px solid rgba(255,255,255,0.07);border-radius:16px;padding:40px;height:100%;\">\n  <h3 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:900;font-size:24px;text-transform:uppercase;margin:0 0 24px;\">Who We Help</h3>\n  <div style=\"display:flex;flex-direction:column;gap:14px;\">\n    <div style=\"display:flex;align-items:center;gap:12px;\"><span style=\"color:#22C55E;font-size:18px;\">✅</span><span style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:14px;\">Cannabis brands &amp; dispensaries</span></div>\n    <div style=\"display:flex;align-items:center;gap:12px;\"><span style=\"color:#22C55E;font-size:18px;\">✅</span><span style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:14px;\">Local Atlantic City businesses</span></div>\n    <div style=\"display:flex;align-items:center;gap:12px;\"><span style=\"color:#22C55E;font-size:18px;\">✅</span><span style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:14px;\">Artists &amp; DJs</span></div>\n    <div style=\"display:flex;align-items:center;gap:12px;\"><span style=\"color:#22C55E;font-size:18px;\">✅</span><span style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:14px;\">Bars &amp; nightclubs</span></div>\n    <div style=\"display:flex;align-items:center;gap:12px;\"><span style=\"color:#22C55E;font-size:18px;\">✅</span><span style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:14px;\">Vendors &amp; pop-up sellers</span></div>\n    <div style=\"display:flex;align-items:center;gap:12px;\"><span style=\"color:#22C55E;font-size:18px;\">✅</span><span style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:14px;\">Corporate event organizers</span></div>\n  </div>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "v5pq3u7u",
+          "elType": "column",
+          "settings": {
+            "_column_size": 40,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "smkpgiid",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"background:#1A2233;border:2px solid #FACC15;border-radius:16px;padding:40px;text-align:center;height:100%;\">\n  <h3 style=\"color:#fff;font-family:Montserrat,sans-serif;font-weight:900;font-size:28px;text-transform:uppercase;margin:0 0 16px;\">Ready to <span style=\"color:#FACC15;\">Promote?</span></h3>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:14px;line-height:1.7;margin:0 0 24px;\">Tell us about your brand, event, or idea. We'll build a custom strategy to get you in front of Atlantic City's most engaged audience.</p>\n  <a href=\"/contact\" style=\"display:inline-block;background:#F97316;color:#fff;text-decoration:none;padding:14px 32px;border-radius:50px;font-family:Inter,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:20px;\">Get In Touch</a>\n  <p style=\"color:#9CA3AF;font-family:Inter,sans-serif;font-size:13px;margin:8px 0 0;\">📞 <a href=\"tel:6095942265\" style=\"color:#FACC15;text-decoration:none;font-weight:700;\">(609) 594-2265</a></p>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bf8p5z9w",
+      "elType": "section",
+      "settings": {
+        "background_color": "#060a06",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "g60sy6ts",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "esisfrij",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;margin-bottom:16px;\"><span style=\"display:inline-block;background:#F9731622;color:#F97316;border:1px solid #F9731655;padding:6px 20px;border-radius:50px;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;\">PARTNER WITH US</span></div>"
+              }
+            },
+            {
+              "id": "bdxzsx29",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8
+                }
+              }
+            },
+            {
+              "id": "g119iasz",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "READY TO GROW?",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_weight": "900",
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "iolqz14p",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 16
+                }
+              }
+            },
+            {
+              "id": "gbibxbxw",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:#9CA3AF;font-size:16px;font-family:Inter,sans-serif;text-align:center;line-height:1.7;margin:0;\">Put your brand where the party is. Let&#8217;s build something great together.</p>"
+              }
+            },
+            {
+              "id": "uvahnke4",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 24
+                }
+              }
+            },
+            {
+              "id": "trgzkmxd",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display:flex;gap:12px;justify-content:center;flex-wrap:wrap;\"><a href=\"/vendor\" style=\"display:inline-block;background:#F97316;color:#FFFFFF;text-decoration:none;padding:14px 32px;border-radius:50px;font-family:Inter,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;\">Become a Vendor</a><a href=\"/contact\" style=\"display:inline-block;background:transparent;color:#FFFFFF;text-decoration:none;padding:14px 32px;border-radius:50px;border:2px solid rgba(255,255,255,0.3);font-family:Inter,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;\">Contact Us</a></div>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
